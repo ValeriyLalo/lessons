@@ -1,0 +1,116 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+[class*="title"] {
+	color: blue;
+}
+
+.gap {
+	color: rgba(255, 255, 255, 0);
+}
+.gap-1 + p {
+	color: rgb(255, 3, 3);
+}
+
+
+.main-link {
+	color: rgb(198, 127, 20);
+}
+
+
+.main-link *{
+	color: blue;
+} 
+
+.people h2 {
+	color: blue;
+}
+
+span.red {
+	color: red;
+}
+
+.yellow {
+	color: rgb(255, 242, 0);
+}
+
+.blue {
+	color: rgb(1, 196, 255);
+}
+
+.title-big {
+	color: #002c85;;
+}
+
+.about-ukraine > p {
+	color:rgb(1, 94, 182);
+}
+
+.climate > p{
+	color: chocolate;
+}
+
+/* .title {} */
+
+.people + p {
+	color: rgb(169, 24, 24);
+}
+
+
+ .gap-2 ~ p {
+	color: rgb(0, 184, 132);
+}
+
+
+
+/* .religion  {
+} */
+
+.time-zone {
+	color: #977070;
+}
+
+.transport{
+	color: rgb(198, 159, 235);
+}
+
+.transport p ~ p {
+	color: blueviolet;
+}
+
+.kitchen span {
+	color: rgb(97, 97, 97);
+}
+
+.kitchen .list {
+	color: #f9bb75;
+}
+
+.atractions>p {
+	color: rgb(107, 107, 200);
+}
+
+.sights p {
+	color: rgb(47, 181, 132);
+}
+
+.medicine li {
+	color:#002c85;
+}
+.medicine  {
+	color: rgb(120, 120, 120);
+}
+
+/* .title.sub-title {
+	color: rgb(0, 153, 255);
+} */
+
+.sights .subtext{
+	color:blueviolet;
+}
+.subtext {
+	color:blueviolet;
+}
+footer a{
+	color: rgb(88, 88, 255);
+}
