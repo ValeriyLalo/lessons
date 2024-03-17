@@ -15,13 +15,10 @@
 @import url("reset.css");
 
 
-body{
-
-font-family: "Proxima-Nova" ;
-
-}
 
 .navigation a{
+	font-family: "Sometype Mono";
+	
 	color: blue;
 	text-transform: uppercase;
 	text-decoration: underline blue;
@@ -36,6 +33,7 @@ font-family: "Proxima-Nova" ;
 }
 
 .text-link {
+
 	color: red;
 	text-decoration-style: double;
 	text-decoration: underline double red  ;
@@ -154,19 +152,19 @@ span.weight-900 {
 }
 
 span.weight-700 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Proxima-Nova";
 	font-weight: 700;
 	color: blueviolet;
 	text-shadow: none;
 }
 span.weight-600 {
-	font-family: "Proxima-Nova";
+	font-family: "Causten";
 	color: #808a91;
 	font-weight: 600;
 	text-shadow: none;
 }
 span.weight-500 {
-	font-family: "Quicksand";
+	font-family: "SometypeMono";
 	font-weight: 500;
 	color: chartreuse;
 	text-shadow: none;
@@ -184,6 +182,14 @@ span.weight-300 {
 	color: blue;
 	text-shadow: none;
 }
+.fonts2{
+	font-family:"SometypeMono";
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
 
 .bed{
 	color: #2b2929;
