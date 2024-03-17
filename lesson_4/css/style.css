@@ -151,7 +151,7 @@ span.weight-900 {
 }
 
 span.weight-700 {
-	font-family: "Proxima-Nova";
+	font-family: "Proxima-Nova", sans-serif;
 	font-weight: 700;
 	color: blueviolet;
 	text-shadow: none;
@@ -169,17 +169,24 @@ span.weight-500 {
 	text-shadow: none;
 }
 span.weight-400 {
-	font-family: "Proxima-Nova";
+	font-family: "Proxima-Nova", sans-serif;
 	font-weight: 400;
 	color: chocolate;
 	text-shadow: none;
 
 }
 span.weight-300 {
-	font-family:"Proxima-Nova";
+	font-family:"Proxima-Nova", sans-serif;
 	font-weight: 300;
 	color: blue;
 	text-shadow: none;
+}
+.fonts-SometypeMono{
+	font-family: "SometypeMono";
+	font-weight: 500;
+	font-style: italic;
+	text-shadow:-2px -2px 10px #00fff7;
+	color: #1d454e;
 }
 
 
@@ -187,7 +194,7 @@ span.weight-300 {
 .bed{
 	color: #2b2929;
 	text-align: center;
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova", sans-serif;
 }
 
 .title-bed {
@@ -208,7 +215,7 @@ span.weight-300 {
 
 } */
 .room{
-	font-family: "Proxima Nova" ;
+	font-family: "Proxima Nova", sans-serif;
 }
 .room p {
 	font-size: 16px;
