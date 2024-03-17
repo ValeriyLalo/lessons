@@ -17,8 +17,7 @@
 
 
 .navigation a{
-	font-family: "Sometype Mono";
-	
+
 	color: blue;
 	text-transform: uppercase;
 	text-decoration: underline blue;
@@ -164,7 +163,7 @@ span.weight-600 {
 	text-shadow: none;
 }
 span.weight-500 {
-	font-family: "SometypeMono";
+	font-family: "Roboto";
 	font-weight: 500;
 	color: chartreuse;
 	text-shadow: none;
@@ -181,12 +180,6 @@ span.weight-300 {
 	font-weight: 300;
 	color: blue;
 	text-shadow: none;
-}
-.fonts2{
-	font-family:"SometypeMono";
-	font-style: normal;
-	font-size: 20px;
-	font-weight: 500;
 }
 
 
