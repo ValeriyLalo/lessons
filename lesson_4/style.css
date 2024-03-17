@@ -1,0 +1,254 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+/* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:regular,500,600,700);  
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900);
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+
+.navigation a{
+	font-family: "Sometype Mono";
+	
+	color: blue;
+	text-transform: uppercase;
+	text-decoration: underline blue;
+}
+
+.heder-link{
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 2.50; /* 50px/20px */
+	
+}
+
+.text-link {
+
+	color: red;
+	text-decoration-style: double;
+	text-decoration: underline double red  ;
+}
+
+h1,
+h2{
+	
+	font-weight: 600;
+	
+}
+h1{
+	line-height: 2.50; /* 50px/20px */
+	font-size: 20px;
+	font-style: oblique;
+	text-align: center;
+	color: rgb(87, 87, 87);
+	text-shadow:2px 1px 2px #7a7a7a,10px 7px 5px #808a91;
+}
+.uzhhorod h2{
+	line-height: 2.77777778; /* 50px/18 */
+	font-size: 18px;
+	word-spacing: 8px;
+	color: #222222;
+	text-shadow: 2px 5px 3px #686868;
+}
+
+.uzhhorod .image+p {
+color: rgb(35, 77, 126);
+text-shadow: 5px 0 5px #000;
+ }
+.uzhhorod {
+	text-align: left;
+	line-height: 25px;
+	letter-spacing: 0.5px;
+	word-spacing: 5px;
+}
+.uzhhorod p{
+	color: rgb(40, 40, 40);
+}
+.uzhhorod p~p{
+	
+	text-align: justify;
+	text-decoration:underline coral ;
+}
+.uzhhorod p+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: rgb(67, 168, 0);
+	text-align: right;
+	text-decoration: overline red;
+	
+}
+.image{
+	
+	text-align: center;
+}
+ img{
+	
+	line-height: 50px;
+}
+
+.uzhhorod span {
+	text-shadow:1px 1px 1px #686868;
+	text-decoration:underline;
+	text-decoration-style:dotted ;
+	font-size: 16px;
+	font-weight: 600;
+}
+.link-text__blue{
+	text-transform: capitalize;
+	font-family:"Roboto",sans-serif ;
+	font-size: 16px;
+	font-weight: 600;
+	color: blue;
+	text-decoration-color: green ;
+	text-decoration-style: wavy;
+}
+.uzhhorod a{
+	color: blue;
+	text-decoration: underline red;
+}
+span.line-through{
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 18px;
+	color: blueviolet;
+	/* text-decoration: line-through;
+	text-decoration-color: aqua;
+	text-decoration-style: dashed; */
+	text-decoration: line-through dashed rgb(255, 0, 0);
+	
+}
+
+.history p{
+	color: rgb(71, 43, 137);
+}
+.tourism+p{
+	
+	text-shadow: none;
+	color: blue;
+	white-space: nowrap;
+	text-transform: lowercase;
+}
+
+
+
+
+span.weight-900 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: brown;
+	text-shadow: none;
+}
+
+span.weight-700 {
+	font-family: "Proxima-Nova";
+	font-weight: 700;
+	color: blueviolet;
+	text-shadow: none;
+}
+span.weight-600 {
+	font-family: "Causten";
+	color: #808a91;
+	font-weight: 600;
+	text-shadow: none;
+}
+span.weight-500 {
+	font-family: "SometypeMono";
+	font-weight: 500;
+	color: chartreuse;
+	text-shadow: none;
+}
+span.weight-400 {
+	font-family: "Proxima-Nova";
+	font-weight: 400;
+	color: chocolate;
+	text-shadow: none;
+
+}
+span.weight-300 {
+	font-family:"Proxima-Nova";
+	font-weight: 300;
+	color: blue;
+	text-shadow: none;
+}
+.fonts2{
+	font-family:"SometypeMono";
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
+
+.bed{
+	color: #2b2929;
+	text-align: center;
+		font-family: "Proxima Nova";
+}
+
+.title-bed {
+	
+	font-weight:600;
+	font-size: 40px;
+	line-height: 1.20; /* 48px/40px */
+}
+.text-bed {
+	font-size: 16px;
+	text-align: left;
+	/* font-weight: 400; */
+	line-height: 1.875; /* 30px/16 */
+
+}
+
+/* .foto-room {
+
+} */
+.room{
+	font-family: "Proxima Nova" ;
+}
+.room p {
+	font-size: 16px;
+	line-height: 1.875; /* 30px/16 */
+	/* font-weight: 400; */
+}
+.title-room {
+
+	font-size: 40px;
+	text-align: left;
+	line-height: 1.20; /* 48px/40px */
+
+}
+p.title-list{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.40; /* 28px/20 */
+
+
+}
+
+
+.room-list {
+	font-size: 16px;
+	line-height: 1.875; /* 30px/16 */
+}
+
+.room-list span{
+	color: blue;
+}
+.contacts ul{
+	color: blue;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
