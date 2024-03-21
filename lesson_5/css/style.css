@@ -250,7 +250,6 @@ body{
 	overflow: scroll;
 }
 .overflow-x p {
-	white-space: wrap;
 	overflow-x: hidden;
 }
 .overflow-y p{
@@ -262,9 +261,6 @@ body{
 	overflow: auto;
 }
 
-.vertical-align {
-	
-}
 .align-container{
 	min-height: 200px;
 	margin: 0 auto;
