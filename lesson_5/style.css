@@ -1,0 +1,440 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body{
+	font-family: "Proxima Nova", sans-serif;
+	min-height: 100%;
+	width: 100%;
+	
+
+}
+.content-navigation {
+	
+	padding: 20px 0 ;
+	margin: 20px 0;
+	max-width: 100%;
+	text-align:center;
+	font-weight: 600;
+	
+}
+
+.header-title{
+	font-family:"SometypeMono", sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+	margin: 20px 5px 30px 5px;
+}
+
+.practice {
+
+	overflow: hidden;
+	background-color: rgb(207, 232, 246);
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px auto;
+	min-width: 400px;
+	max-width: 90%;
+}
+
+.practice p{
+
+	min-height:80px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(3, 99, 17);
+}
+
+.practice-title{
+	
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+[class^="padding"] {
+	
+	margin-bottom: 5px;
+	padding: 5px;
+	display:inline-block;
+	width: 32%;
+	background-color: rgb(68, 151, 17);
+	max-width: 90%;
+	min-width: 300px;
+	
+}
+
+
+.padding{
+
+	padding: 0px;
+
+}
+
+.padding1{
+	padding: 20px;
+}
+
+.padding2{
+	padding: 30px 20px ;
+	min-height:80px;
+}
+
+.padding3{
+	padding: 10px 30px 40px;
+	
+}
+
+.padding4{
+	padding:30px 10px 30px 40px;
+}
+
+
+.navigation a{
+	margin-bottom:10px ;
+	color: blue;
+	text-transform: uppercase;
+	text-decoration: underline blue;
+}
+
+.margin {
+	margin: 20px auto ;
+	background-color: antiquewhite;
+	width: 100%;
+	
+}
+.margin p{
+	min-height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(3, 99, 17);
+}
+
+.container-margin {
+	margin: 10px ;
+	padding: 10px ;
+	background-color: chocolate;
+	width: 32%;
+	display: inline-block;
+	min-height: 100%;
+	max-width: 100%;
+	min-width: 300px;
+}
+.container-margin6{
+	background-color: chocolate;
+	width: 100%;
+	/* padding: 10px; */
+}
+
+.container-margin7{
+	background-color: chocolate;
+	width: 100%;
+	
+}
+.item {
+	min-height: 100%;
+	margin: 0px;
+}
+.item1 {
+	min-height: 100%;
+	margin: 20px;
+}
+.item2 {
+	min-height: 100%;
+	margin: 30px 10px;
+}
+.item3 {
+	min-height: 100%;
+	margin: 20px 10px 5px;
+}
+.item4 {
+	min-height: 100%;
+	margin: 10px 20px 30px 40px;
+}
+.item5 {
+	min-height: 100%;
+	margin: -10px -20px 30px 40px;
+}
+.item6 {
+	width: 20%;
+	min-height: 100%;
+	margin: 20px auto ;
+
+}
+.item7 {
+	width: 20%;
+	min-height: 100%;
+	margin: 20px auto 0;
+}
+
+.display{
+	font-size: 30px;
+	text-align: center;
+	padding: 10px 0 ;
+	background-color: blue;
+	width: 80%;
+	margin: 10px auto;
+}
+
+.inline {
+	/* margin: 10px auto; */
+	background-color: rgb(117, 97, 97);
+	display: inline;
+	height: 100px;
+	width: 50%;
+
+}
+.block {
+	margin: 10px auto;
+	background-color: rgb(129, 239, 245);
+	display: block;
+	height: 100px;
+	width: 50%;
+}
+.inline-block {
+	margin: 10px auto;
+	background-color: rgb(147, 129, 245);
+	display: inline-block;
+	height: 100px;
+	width: 50%;
+}
+.none{
+	margin: 10px auto;
+	background-color: rgb(33, 49, 27);
+	display: none ;
+	height: 100px;
+	width: 50%;
+	
+}
+
+.overflow {
+
+	font-size: 30px;
+	text-align: center;
+	padding: 10px 0 ;
+	background-color: rgb(51, 105, 130);
+	width: 80%;
+	color: rgb(7, 7, 7);
+	margin: 10px auto;
+}
+.overflow p{
+	color: aqua;
+	max-height: 40px;
+	margin: 20px;
+	background-color: rgb(232, 169, 85);
+}
+.visible {
+	white-space: nowrap;
+	overflow: visible;
+}
+.hidden p {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.clip p {
+	white-space: nowrap;
+	overflow: clip;
+}
+.scroll p {
+	white-space: nowrap;
+	overflow: scroll;
+}
+.overflow-x p {
+	overflow-x: hidden;
+}
+.overflow-y p{
+	white-space: nowrap;
+	overflow-y:hidden;
+}
+.overflow-auto p{
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.vertical-align {
+	
+}
+.align-container{
+	min-height: 200px;
+	margin: 0 auto;
+	max-width: 80%;
+	background-color: antiquewhite;
+}
+.align-container a{
+	vertical-align: bottom;
+	color: blue;
+}
+
+.img{
+	vertical-align:bottom;
+	max-width: 200px;
+	min-width: 200px;
+}
+
+.products {
+	padding: 100px 0 70px 0 ;
+	font-family: "Roboto",sans-serif;
+	min-height: 490px;
+	max-width: 1920px;
+	background-color: rgb(246, 246, 246);
+	margin: 20px auto ;
+}
+.products h2 {
+	text-transform: capitalize;
+	margin-bottom: 60px;
+	font-weight: 500;
+	color: #000;
+	font-size: 50px;
+	text-align: center;
+}
+
+.container-products {
+	margin: 0 auto;
+	max-width: 1320px;
+
+}
+.images-row {
+	text-align: center;
+	display: inline-block;
+	margin: 0 -12px ;
+	/* margin: 0 auto; */
+	min-width: 200px;
+	
+}
+.images-row img {
+
+	margin-bottom: 24px;
+	padding: 0 12px;
+	width: 220px;
+	
+}
+
+
+.room{
+	font-family: "Proxima Nova", sans-serif;
+	margin-bottom: 20px;
+	padding: 67px 0 45px 0;
+	color: #2b2929;
+	background-color: rgb(246, 246, 246);
+}
+.room-content{
+	margin: 0 auto;
+	max-width: 1070px;
+}
+.container{
+	margin-bottom:40px ;
+}
+.room p {
+	margin-bottom: 10px ;
+	font-size: 16px;
+	line-height: 1.875; /* 30px/16 */
+	/* font-weight: 400; */
+}
+.title-room {
+	margin-bottom: 40px ;
+	font-weight: 600;
+	font-size: 40px;
+	text-align: left;
+	line-height: 1.20; /* 48px/40px */
+
+
+}
+
+.room-img{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+p.title-list{
+	margin: 0 0 30px 0;
+	padding: 0;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.40; /* 28px/20 */
+
+}
+
+.room-list p {
+	padding-left: 47px;
+	margin-bottom: 25px ;
+	font-size: 16px;
+	line-height: 1.875; /* 30px/16 */
+	
+}
+p.p-last {
+	padding: 20px 0 0 0 ;
+}
+
+.krovato {
+	color: hsl(0, 2%, 16%);
+	max-width: 1290px;
+	margin: 0 auto;
+	background-color: rgb(246, 246, 246);
+	font-family: "Proxima Nova",sans-serif;
+}
+
+.krovato h2{ 
+
+	margin-bottom: 40px;
+	font-weight: 600;
+	text-align: center;
+	font-size: 40px;
+	line-height: 120%; /* 48px/40 */
+}
+
+.container-krovato {
+	margin: 0 -15px;
+	text-align: center;
+}
+
+.krovato-block {
+	width:326px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 15px;
+	margin-bottom: 30px ;
+	
+
+}
+
+.krovato-block p {
+	
+	font-size: 16px;
+	text-align: center;
+	line-height: 187.5%; /* 30px/16 */
+}
+.block-img {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.block-img img{
+	
+	width: 170px;
+}
+.block-title {
+	margin-bottom: 20px;
+	font-size: 26px;
+	text-align: center;
+	line-height: 130.769231%; /* 34px/26 */
+	
+}
+
+
+
+
+.contacts ul{
+	color: blue;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
