@@ -9,14 +9,15 @@
 body{
 	font-family: "Proxima Nova", sans-serif;
 	min-height: 100%;
-	width: 100%;
+	padding: 0 10px;
+	min-width: 420px ;
 	
 
 }
 .content-navigation {
 	
-	padding: 20px 0 ;
-	margin: 20px 0;
+	padding: 40px 20px 0 ;
+	margin: 0px 0 20px;
 	max-width: 100%;
 	text-align:center;
 	font-weight: 600;
@@ -29,8 +30,8 @@ body{
 	font-weight: 500;
 	font-style: italic;
 	text-align: center;
-	padding: 10px;
-	margin: 20px 5px 30px 5px;
+	padding: 30px 0 0 0 ;
+	margin: 0px 0px 40px 0px;
 }
 
 .practice {
@@ -39,7 +40,7 @@ body{
 	background-color: rgb(207, 232, 246);
 	font-size: 20px;
 	padding: 10px;
-	margin: 10px auto;
+	margin: 0px auto 20px;
 	min-width: 400px;
 	max-width: 90%;
 }
@@ -278,14 +279,20 @@ body{
 	min-width: 200px;
 }
 
+
 .products {
-	padding: 100px 0 70px 0 ;
+	padding: 100px 10px 100px ;
 	font-family: "Roboto",sans-serif;
-	min-height: 490px;
-	max-width: 1920px;
+	max-width: 100%;
 	background-color: rgb(246, 246, 246);
-	margin: 20px auto ;
+	margin: 0px auto ;
 }
+.container-products{
+	max-width: 1320px;
+	margin: 0 auto;
+
+}
+
 .products h2 {
 	text-transform: capitalize;
 	margin-bottom: 60px;
@@ -295,31 +302,27 @@ body{
 	text-align: center;
 }
 
-.container-products {
-	margin: 0 auto;
-	max-width: 1320px;
-
-}
 .images-row {
-	text-align: center;
-	display: inline-block;
-	margin: 0 -12px ;
-	/* margin: 0 auto; */
+	font-size: 0;
+	margin: 0 -12px -24px ;
 	min-width: 200px;
-	
 }
-.images-row img {
 
-	margin-bottom: 24px;
-	padding: 0 12px;
-	width: 220px;
-	
+.images-col {
+	display: inline-block;
+	width: 16.6667%;
+	padding: 0 12px 24px;
+	font-style: 16px;
+}
+
+.images-content img {
+	width: 100%;
 }
 
 
 .room{
 	font-family: "Proxima Nova", sans-serif;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	padding: 67px 0 45px 0;
 	color: #2b2929;
 	background-color: rgb(246, 246, 246);
@@ -332,25 +335,30 @@ body{
 	margin-bottom:40px ;
 }
 .room p {
-	margin-bottom: 10px ;
 	font-size: 16px;
 	line-height: 1.875; /* 30px/16 */
-	/* font-weight: 400; */
 }
+
 .title-room {
 	margin-bottom: 40px ;
 	font-weight: 600;
 	font-size: 40px;
 	text-align: left;
 	line-height: 1.20; /* 48px/40px */
+}
 
-
+.foto-room {
+	margin-bottom: 40px;
 }
 
 .room-img{
 	width: 100%;
-	margin-bottom: 40px;
 }
+
+.foto-room~p {
+	margin-bottom: 15px ;
+}
+
 
 p.title-list{
 	margin: 0 0 30px 0;
@@ -361,27 +369,28 @@ p.title-list{
 
 }
 
-.room-list p {
+.room-list {
+	background: url(../img/icons/mark.png)0 0 / 32px no-repeat;
+	min-height: 32px;
 	padding-left: 47px;
-	margin-bottom: 25px ;
+	padding-bottom: 20px ;
 	font-size: 16px;
 	line-height: 1.875; /* 30px/16 */
 	
 }
-p.p-last {
-	padding: 20px 0 0 0 ;
+.p-last {
+	margin: 20px 0 0 0 ;
 }
 
 .krovato {
 	color: hsl(0, 2%, 16%);
-	max-width: 1290px;
-	margin: 0 auto;
+	max-width: 100%;
+	margin: 0px auto 20px;
 	background-color: rgb(246, 246, 246);
 	font-family: "Proxima Nova",sans-serif;
 }
 
 .krovato h2{ 
-
 	margin-bottom: 40px;
 	font-weight: 600;
 	text-align: center;
@@ -390,48 +399,44 @@ p.p-last {
 }
 
 .container-krovato {
-	margin: 0 -15px;
+	max-width: 1290px;
+	margin: 0 auto;
+}
+
+.krovato-row {
+	font-size: 0;
+	margin: 0 -15px -30px;
 	text-align: center;
+	min-width: 300px;
 }
 
 .krovato-block {
-	width:326px;
+	width:25%;
 	vertical-align: top;
 	display: inline-block;
-	padding: 0 15px;
-	margin-bottom: 30px ;
-	
-
+	padding: 0 15px 30px;
 }
 
 .krovato-block p {
-	
 	font-size: 16px;
 	text-align: center;
 	line-height: 187.5%; /* 30px/16 */
 }
+
 .block-img {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 .block-img img{
-	
 	width: 170px;
 }
+
 .block-title {
 	margin-bottom: 20px;
 	font-size: 26px;
 	text-align: center;
 	line-height: 130.769231%; /* 34px/26 */
-	
 }
 
-
-
-
-.contacts ul{
-	color: blue;
-	font-size: 30px;
-	text-decoration: underline;
-}
 
