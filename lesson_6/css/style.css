@@ -69,10 +69,12 @@ body{
 
 .foto-room {
 	margin-bottom: 40px;
+	border-radius: 8px;
 }
 
 .room-img{
 	width: 100%;
+	border-radius: 8px;
 }
 
 .text-room{
