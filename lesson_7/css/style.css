@@ -258,7 +258,7 @@ body{
 	color: #44ff00;
 	text-decoration: underline;
 }
-.text-child10:has(span){
+.text-child10:has(p) {
 background-color: #abbdc654;
 
 }
@@ -547,7 +547,7 @@ p.title-list{
 
 .separator{
 	background-color: #000;
-	background-position: cover;
+	/* background-position: center; */
 	min-height: 50px;
 	max-width: 100%;
 	margin-top: -10px;
@@ -650,7 +650,7 @@ p.title-list{
 
 /*----------- game---------- */
 
-.game1{
+.game{
 	font-family:"Exo",sans-serif;
 	padding: 40px 0 20px 0;
 
@@ -668,7 +668,8 @@ p.title-list{
 	font-size: 0;
 	padding: 10px;
 	background: url(../img/Game/game.jpg) center / cover no-repeat;
-	width: 90%;
+	/* width: 90%; */
+	width: 1500px;
 	height: 700px;
 	margin: 0 auto;
 	background-color: #504181;
