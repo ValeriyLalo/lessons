@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<header >
+		<div class="navigation">
+			<div class="content-navigation">
+				<ul>
+
+					<li>
+						<a href="#practice">Практика</a>
+					</li>
+
+					<li>
+						<a href="#room">Оформлення вітальні</a>
+					</li>
+
+					<li>
+						<a href="#about">About me</a>
+					</li>
+
+					<li>
+						<a href="#consult">I am ready to consult you</a>
+					</li>
+
+					<li>
+						<a href="#game">Game</a>
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="header-title">
+				<h1>Lesson 7</h1>
+			</div>
+			
+		</div>
+	</header>
+
+	<main>
+
+		<div id="practice" class="practice">
+			<div id="practice" class="practice-title" >Практика</div>
+			<div class="pseudo">
+				<div class="title-pseudo">Псевдокласи стану</div>
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:hover</h2>
+					<div class="button-wrap">
+						<a class="button" href="#practice">button</a>
+					</div>
+				</div>
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:active</h2>
+					<div class="button-wrap">
+						<a class="button1" href="#practice">button</a>
+					</div>
+				</div>
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:visited</h2>
+					<div class="button-wrap">
+						<a class="button2" href="###">button</a>
+					</div>
+				</div>
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:focus</h2>
+					<div class="button-wrap">
+						<a class="button3" href="#">button</a>
+					</div>
+				</div>
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:focus-visible(TAB)</h2>
+					<div class="button-wrap">
+						<a class="button4" href="#practice">button</a>
+					</div>
+				</div>
+
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:target</h2>
+					<div class="button-wrap">
+						<a class="button5" href="#button5">показати текст</a>
+					</div>
+				</div>
+				<div class="pseudoclass-block" >
+					<h2 class="practice-text">:target</h2>
+					<div class="button-wrap">
+						<a class="button5" href="#text-display-block">сховати текст</a>
+					</div>
+				</div>
+
+				<div id="button5"  class="text-button5">
+					<p id="text-display-block" class="text5">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						 Minima, incidunt libero quidem ullam iusto voluptates, vero magni veritatis 
+						 veniam deleniti sunt totam hic, illo eos nisi! Officia ex exercitationem neque.
+
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						 Minima, incidunt libero quidem ullam iusto voluptates, vero magni veritatis 
+						 veniam deleniti sunt totam hic, illo eos nisi! Officia ex exercitationem neque.
+					</p>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:first-child - звернення до першого дочірнього елементу в коді</h2>
+					<div class="text-child1" >
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+						<p>текст</p>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:first-of-type - звернення до першого вказаного об'єкту в коді</h2>
+					<div class="text-child2">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+						<p>текст</p>
+					</div>
+				</div>
+				<div class="child-title">
+					<h2 class="practice-text">:last-child - Звернення до останього елементу в коді</h2>
+					<div class="text-child3">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+						<p>текст</p>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:last-of-type - Звернення до останнього вказаного об'єкту в коді</h2>
+					<div class="text-child4">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:nth-child(odd-	even -) - звернення до конкретного елементу в коді</h2>
+					<div class="text-child5">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:nth-child(even - через один парні)</h2>
+					<div class="text-child6">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p><span>span</span></p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:nth-child(1,4,8)</h2>
+					<div class="text-child7">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p><span>span</span></p>
+						<p><span>span</span></p>
+						<img>зображення</img>
+						<p>текст</p>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">nth-child (3n) або (3n + 1) - ("кожен-через" +починаючи з)</h2>
+					<div class="text-child8">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<p><span>span</span></p>
+						<p><span>span</span></p>
+						<img>зображення</img>
+						<p>текст</p>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">:not()(селектор або псевдоклас(виключення":first-child"))</h2>
+					<div class="text-child9">
+						<p>текст</p>
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+					</div>
+				</div>
+
+				<div class="child-title">
+					<h2 class="practice-text">	:has(селектор або псевдоклас)(span) -/тоді-background-color/ псевдоклас присутності в коді</h2>
+					<div class="text-child10">
+						<p>текст</p>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<span>span</span>
+						<p>текст</p>
+						<img>зображення</img>
+						<p>текст</p>
+					</div>
+				</div>
+
+				<div class="title-pseudo"> Псевдоелементи</div>
+				<p class="p-elements">
+					Псевдоелементи не можна додати до 
+					одинарних тегів ( наприклад img, br ), 
+					тому що ці теги не можуть містити в собі контенту.<br>
+					::before{ } та ::after{ } <br>Псевдоелементи - рядкові ( але в reset доданий display: inline-block; ).
+					Властивість content: ""; - Обов'язкова!
+				</p>
+
+				<div class="list__title"> Title</div>
+
+				<ul class="list">
+					<li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+					<li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+					<li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+					<li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+					<li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+					<li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+
+		<div class="room">
+			<div class="room-content" >
+				<h2 id="room" class="title-room">Оформлення вітальні. Які м'які меблі краще вибрати?</h2>
+				<div class="container">
+					<div class="foto-room">
+						<img class="room-img" src="img/image/1.png" alt="вітальня">
+					</div>
+					<p class="text-room">
+						Вітальня – це основна кімната у кожному будинку. Саме вона служить для прийому гостей, проведення часу всією сім'єю та просто для відпочинку у приємній теплій атмосфері. Оформляючи свій будинок та вітальню зокрема, всі намагаються зробити її максимально зручною, комфортною та красивою. Основним та центральним елементом оформлення вітальні, як і будь-якої іншої кімнати, є м'які меблі.
+					</p>
+					<P class="text-room">
+						Будь-які меблі для вітальні повинні бути не тільки стильними і красивими, але і функціональними. На таких меблів має бути зручно та приємно відпочивати та приймати гостей. Однак сьогодні існує величезна різноманітність найрізноманітніших м'яких меблів для вітальні, яка підходить для кімнат різних розмірів і форм. На чому варто зупинити свій вибір? Як краще оформити свою вітальню, щоб вам було комфортно, а гості хотіли приходити до вас знову та знову?
+					</P>
+				</div>
+				<div class="container2">
+					<p class="title-list">На сайті інтернет магазину Кровато представлено велику різноманітність м'яких меблів для вітальні, серед яких кожен зможе вибрати для себе найбільш вдалий варіант. У нас ви знайдете:</p>
+					<ul >
+						<li class="room-list">
+							<p>
+								Прямі дивани. Такі дивани вважаються класикою. Вони підходять для віталень будь-яких форм та розмірів. Прямий диван виглядає стильно та лаконічно, на ньому зручно відпочивати, приймати гостей або навіть спати. Прямі дивани можуть стояти біля стіни, так і в центрі кімнати. Багато моделей прямих диванів легко розкладаються, перетворюючись на повноцінне спальне місце. Також більшість диванів мають великі та місткі ніші, які є додатковим місцем для зберігання;
+							</p>
+						</li>
+						<li class="room-list">
+							<p>
+								Кутові дивани Кутові дивани вважаються найзручнішими та комфортнішими. Вони ідеально підійдуть для приємного проведення часу в колі сім'ї або друзів. Кутові дивани в основному використовуються для оформлення великих віталень, так як вони займають багато місця, і для кімнат з невеликою площею просто не підійдуть;
+							</p>
+						</li>
+						<li class="room-list">
+							<p>
+								Тахти. Тахта - це одна з варіацій дивана, але стильніша і мінімалістична. Виглядають тахти дуже незвично і можуть підійти для будь-якого інтер'єру. Також тахти більше ніж звичайні дивани підходять для сну, оскільки в їх основі не пружинні блоки, а дерев'яні ламелі або ортопедичні матраци;
+							</p>
+						</li>
+						<li class="room-list">
+							<p>
+								Крісла. Крісло – це особливий предмет інтер'єру. Сучасні дизайнери не часто використовують його, вважаючи застарілим, проте саме крісла створюють особливий затишок та комфорт у будь-якій кімнаті. Сьогодні існує величезна різноманітність класичних та сучасних моделей крісел, що дозволяє кожному відшукати ідеальне крісло для свого будинку;
+							</p>
+						</li>
+						<li class="room-list">
+							<p>
+								Набір меблів. Комплект м'яких меблів – це відмінне рішення для тих, хто хоче меблювати свою вітальню не лише диваном, а й кріслами. Існують набори з одним або двома кріслами, із прямими або кутовими диванами. Основна перевага будь-якого готового меблевого гарнітура – це те, що предмети меблів у ньому ідеально поєднуються один з одним, і вам не потрібно буде витрачати свій час та сили на їхній підбір.
+							</p>
+						</li>
+					</ul>
+					<p>
+						Підбір м'яких меблів для вітальні – це заняття непросте. Однак при виборі та покупці меблів для своєї вітальні пам'ятайте, що якісні м'які меблі повинні бути не тільки красивими, але й зручними для вас і всіх мешканців вашого будинку.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="about-me">
+			<div class="about-section">
+				<div id="about" class="about-title">About me</div>
+				<p class="about-text">
+					Welcome to the cinematic realm of Jimmy, where creativity meets technology to craft visually stunning narratives. 
+					With a passion for storytelling and a keen eye for detail, I embark on a journey to transform ordinary footage into 
+					extraordinary visual experiences.
+				</p>
+			</div>
+			<div class="scills">
+				<div class="scills-item">
+					<a href="#">Cash cow editing</a>
+				</div>
+				<div class="scills-item">
+					<a href="#">Reels editng</a>
+				</div>
+				<div class="scills-item" >
+					<a href="#">logo animation</a>
+				</div>
+				<div class="scills-item">
+					<a href="#">podcast edit</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="separator">
+			<img src="img/icons/Separator.png" alt="Separator" width="100%" height="50">
+		</div>
+
+
+		<div class="consult">
+			<div class="consult-container">
+				<div id="consult" class="consult-title">I am ready to consult you</div>
+				<div class="contacts">
+					<div class="tel">
+						<a href="#">+92 455 478 112</a>
+					</div>
+					<div class="location">
+						<a href="#">defense phase 3, lahore pakistan </a>
+					</div>
+					<div class="mail">
+						<a href="#">videoeditor@gmail.com</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+				<!-- Game -->
+
+		<div class="game1">
+			<div id="game" class="game-title">Game</div>
+			
+			<div class="game-row">
+				<div class="image1"></div>
+				<div class="interval-1 interval"></div>
+				<div class="interval-2 interval"></div>
+				<div class="interval-2-3 interval "></div>
+				<div class="interval-4 interval"></div>
+				<div class="interval-4-5 interval"></div>
+				<div class="interval-5 interval"></div>
+				<div class="interval-5-6 interval"></div>
+				<div class="interval-6 interval"></div>
+				<div class="interval-7 interval"></div>
+				<div class="interval-8 interval"></div>
+				<div class="interval-9 interval"></div>
+				<div class="interval-10 interval"></div>
+				<div class="interval-11 interval"></div>
+				<div class="interval-12 interval"></div>
+				<div class="interval-13 interval"></div>
+				<div class="interval-14 interval"></div>
+				<div class="interval-15 interval"></div>
+				<div class="image2"></div>
+				<div class="image3"></div>
+			</div>
+		</div>
+
+
+
+	</main>
+	<footer>
+		<div class="navigation">
+			<div class="content-navigation">
+				<ul>
+					<li>
+						<a href="#practice">Практика</a>
+					</li>
+
+					<li>
+						<a href="#room">Оформлення вітальні</a>
+					</li>
+
+					<li>
+						<a href="#about">About me</a>
+					</li>
+
+					<li>
+						<a href="#consult">I am ready to consult you</a>
+					</li>
+
+					<li>
+						<a href="#game">Game</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
+</html>
