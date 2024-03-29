@@ -258,7 +258,7 @@ body{
 	color: #44ff00;
 	text-decoration: underline;
 }
-.text-child10:has(p) {
+.text-child10:has( img) {
 background-color: #abbdc654;
 
 }
