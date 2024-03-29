@@ -258,7 +258,7 @@ body{
 	color: #44ff00;
 	text-decoration: underline;
 }
-.text-child10:has(p) {
+.text-child10:has( img) {
 background-color: #abbdc654;
 
 }
@@ -652,7 +652,7 @@ p.title-list{
 
 .game{
 	font-family:"Exo",sans-serif;
-	padding: 40px 0 20px 0;
+	padding: 40px 5px 20px ;
 
 	
 }
