@@ -525,6 +525,7 @@ p.title-list{
 	background-color:  #171717;
 	outline: 1px solid  #00fff7;
 	outline-offset: 5px;
+	box-shadow: 2px 2px 10px 0 #ececec;
 }
 
 .scills-item a:active {
@@ -619,6 +620,7 @@ p.title-list{
 	border-radius: 5px;
 	outline: 1px solid  #00fff7;
 	outline-offset: 5px;
+	box-shadow: 2px 2px 10px 0 #ececec;
 }
 .consult a:active {
 	color: #ff0000;
