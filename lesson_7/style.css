@@ -10,6 +10,7 @@ body{
 	font-family: "Proxima Nova", sans-serif;
 	min-height: 100%;
 	min-width: 1500px;
+	/* min-width: 800px; */
 	padding: 0 5px;
 	max-width: 100%;
 }
@@ -122,7 +123,6 @@ body{
 	color: rgb(255, 255, 255);
 	line-height: 1.44; /* 36px/25 */
 }
-
 
 .button-wrap{
 	text-align: center;
@@ -280,8 +280,8 @@ background-color: #abbdc654;
 	line-height: 1.33333333; /* 40px/30 */
 	margin-bottom: 30px;
 }
-.list__title::after {
 
+.list__title::after {
 	margin: 0px auto ;
 	content:"";
 	display:block;
@@ -290,14 +290,13 @@ background-color: #abbdc654;
 	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
 }
 
-
-
 .list {
 	display: inline-block;
 	max-width: 400px;
 	font-size: 20px;
 	color: #fff;
 }
+
 .list__item::before {
 	content:"";
 	background: url(../img/icons/mark.png) 0 0 / 100% no-repeat ;
@@ -311,6 +310,7 @@ background-color: #abbdc654;
 .list__item:not(:last-child){
 	margin-bottom: 10px;
 }
+
 .list__item a:hover {
 	text-decoration: underline;
 	color: #3c01ff;
@@ -341,18 +341,13 @@ background-color: #abbdc654;
 	max-width: 1070px;
 }
 
-
-
 .container > * {
 	margin-bottom:15px ;
 }
+
 /* .container2 > * {
 	margin-bottom:15px ;
 } */
-
-
-
-
 
 .container{
 	margin-bottom: 40px;
@@ -525,6 +520,7 @@ p.title-list{
 	background-color:  #171717;
 	outline: 1px solid  #00fff7;
 	outline-offset: 5px;
+	box-shadow: 2px 2px 10px 0 #ececec;
 }
 
 .scills-item a:active {
@@ -619,6 +615,7 @@ p.title-list{
 	border-radius: 5px;
 	outline: 1px solid  #00fff7;
 	outline-offset: 5px;
+	box-shadow: 2px 2px 10px 0 #ececec;
 }
 .consult a:active {
 	color: #ff0000;
@@ -668,8 +665,7 @@ p.title-list{
 	font-size: 0;
 	padding: 10px;
 	background: url(../img/Game/game.jpg) center / cover no-repeat;
-	/* width: 90%; */
-	width: 1500px;
+	max-width: 1500px; 
 	height: 700px;
 	margin: 0 auto;
 	background-color: #504181;
