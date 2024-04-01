@@ -5,6 +5,7 @@
 @import url("reset.css");
 
 body{
+	min-width: 800px;
 	max-width: 100%;
 	background-color: rgb(227, 235, 255);
 	margin: 0 auto;
@@ -85,7 +86,7 @@ body{
 	padding-bottom: 10px;
 }
 .icons-text {
-	margin: 0 15px 20px;
+	margin: 0 0px 20px;
 	font-size: 25px;
 	line-height: 1.40; /* 35px/25 */
 	color: #262e3d;
@@ -138,11 +139,15 @@ body{
 	margin-bottom: 20px ;
 }
 
+.icons-background-3{
+	margin-bottom: 0px ;
+}
+
 .icons-background-1 p::before {
 	margin-right: 20px ;
 	content: "";
 	vertical-align: middle;
-	background: url(../img/icons/arrow\ down.svg) 0 0px /100% no-repeat ;
+	background: url(../img/icons/arrow-down.svg) 0 0px /100% no-repeat ;
 	width: 40px;
 	height: 30px;
 
@@ -151,13 +156,13 @@ body{
 	margin-right: 20px ;
 	content: "";
 	vertical-align: middle;
-	background: url(../img/icons/arrow\ up.svg) 0 0px /100% no-repeat ;
+	background: url(../img/icons/arrow-up.svg) 0 0px /100% no-repeat ;
 	width: 40px;
 	height: 30px;
 }
 
 .icons-background-3 p::before{
-	margin-right: 20px ;
+	/* margin-right: 20px ; */
 	content: "";
 	vertical-align: middle;
 	background: url(../img/icons/question.svg) 0 0px /100% no-repeat ;
@@ -180,6 +185,8 @@ body{
 	border: 5px solid #fffffb;
 	border-radius: 20px;
 	padding: 10px;
+}
+.image-list:not(:last-child) {
 	margin-bottom: 10px;
 }
 
@@ -210,12 +217,24 @@ margin-right: 30px;
 	border: 5px solid #fffffb;
 	border-radius: 20px;
 	padding: 10px;
+
+}
+.image-list2:not(:last-child) {
 	margin-bottom: 10px;
 }
+
 
 .image-list2:hover {
 	background-color: #03d3c5;
 	color: #1100ff;
+}
+
+.quality-optimization {
+	max-width: 100%;
+}
+
+.quality-optimization img {
+	width: 100%;
 }
 
 .image-icons2 {
