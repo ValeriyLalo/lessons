@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 10</title>
+</head>
+
+<body>
+	<div id="button" class="wrapper">
+		<header class="header">
+			<h1 class="header__title" >Позиціонування(position:)</h1>
+			<div class="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link" href="#">static</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="#">relative</a>
+						<div class="sub-menu">
+							<ul class="sub-menu__list">
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">top</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">left</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">right</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">bottom</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">z-index</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="#">absolute</a>
+						<div class="sub-menu">
+							<ul class="sub-menu__list">
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">top</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">left</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">right</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">bottom</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">z-index</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="#">fixed</a>
+						<div class="sub-menu">
+							<ul class="sub-menu__list">
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">top</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">left</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">right</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">bottom</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">z-index</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="#">sticky</a>
+						<div class="sub-menu">
+							<ul class="sub-menu__list">
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">top</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">left</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">right</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">bottom</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="sub-menu__link" href="#">z-index</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main  class="page">
+
+			<div   class="practice">
+				<h2 class="practice__title">position:static:</h2>
+				<div class="blocks">
+					<div class="blocks__item">Block 1</div>
+					
+					<div class="blocks__item">Block 2(static)</div>
+					
+					<div class="blocks__item">Block 3</div>
+				</div>
+	
+				<h2 class="practice__title">position:sticky:</h2>
+				<div class="blocks2 ">
+					<div class="blocks2__item1">Block 1</div>
+					<div class="blocks2__item blocks2__item--sticky">Block 2(sticky)</div>
+					<div class="blocks2__item3">Block 3</div>
+				</div>
+	
+				<h2 class="practice__title">position:relative:</h2>
+				<div class="blocks">
+					<div class="blocks__item">Block 1</div>
+					
+					<div class="blocks__item blocks__item--relative">Block 2(relative)</div>
+					
+					<div class="blocks__item">Block 3</div>
+				</div>
+	
+				<h2 class="practice__title">position:absolute:</h2>
+				<div class="blocks">
+					<div class="blocks__item">Block 1</div>
+					
+					<div class="blocks__item blocks__item--absolute">Block 2(absolute)</div>
+					
+					<div class="blocks__item">Block 3</div>
+				</div>
+	
+				<h2 class="practice__title">position:fixed:</h2>
+				<div class="blocks">
+					<div class="blocks__item">Block 1</div>
+					<div class="blocks__item blocks__item--fixed">Block 2(fixed)</div>
+					<div class="blocks__item">Block 3</div>
+				</div>
+	
+				<ul class="list">
+					<li class="list__item">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolore distinctio aperiam perspiciatis repellendus dolorem voluptate blanditiis iure officia! Maxime eveniet alias officia eum dolor sit quaerat soluta delectus?
+					</li>
+					<li class="list__item">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolore distinctio aperiam perspiciatis repellendus dolorem voluptate blanditiis iure officia! Maxime eveniet alias officia eum dolor sit quaerat soluta delectus?
+					</li>
+					<li class="list__item">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolore distinctio aperiam perspiciatis repellendus dolorem voluptate blanditiis iure officia! Maxime eveniet alias officia eum dolor sit quaerat soluta delectus?
+					</li>
+					<li class="list__item">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolore distinctio aperiam perspiciatis repellendus dolorem voluptate blanditiis iure officia! Maxime eveniet alias officia eum dolor sit quaerat soluta delectus?
+					</li>
+					<li class="list__item">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolore distinctio aperiam perspiciatis repellendus dolorem voluptate blanditiis iure officia! Maxime eveniet alias officia eum dolor sit quaerat soluta delectus?
+					</li>
+					<li class="list__item">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolore distinctio aperiam perspiciatis repellendus dolorem voluptate blanditiis iure officia! Maxime eveniet alias officia eum dolor sit quaerat soluta delectus?
+					</li>
+				</ul>
+	
+				<h2 class="practice__title">Зміна кольору іконки при :hover</h2>
+					<div class="row-icon">
+						<svg class="some-icon"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14.72 8.79L10.43 13.09L8.78 11.44C8.69036 11.3353 8.58004 11.2503 8.45597 11.1903C8.33191 11.1303 8.19678 11.0965 8.05906 11.0912C7.92134 11.0859 7.78401 11.1091 7.65568 11.1594C7.52736 11.2096 7.41081 11.2859 7.31335 11.3833C7.2159 11.4808 7.13964 11.5974 7.08937 11.7257C7.03909 11.854 7.01589 11.9913 7.02121 12.1291C7.02653 12.2668 7.06026 12.4019 7.12028 12.526C7.1803 12.65 7.26532 12.7604 7.37 12.85L9.72 15.21C9.81344 15.3027 9.92426 15.376 10.0461 15.4258C10.1679 15.4755 10.2984 15.5008 10.43 15.5C10.6923 15.4989 10.9437 15.3947 11.13 15.21L16.13 10.21C16.2237 10.117 16.2981 10.0064 16.3489 9.88458C16.3997 9.76272 16.4258 9.63201 16.4258 9.5C16.4258 9.36799 16.3997 9.23728 16.3489 9.11542C16.2981 8.99356 16.2237 8.88296 16.13 8.79C15.9426 8.60375 15.6892 8.49921 15.425 8.49921C15.1608 8.49921 14.9074 8.60375 14.72 8.79ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88743 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23984 18.6518 7.55544C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z" fill="#82B09D"/>
+						</svg>
+					</div>
+	
+				<h2 class="practice__title">Зображення з ефектом</h2>
+				<div  class="row-image">
+					<div class="image">
+						<img class="image__item" src="img/image/img_1.webp" alt="Image">
+					</div>
+				</div>
+			</div>
+
+			<div class="krovato">
+				<div class="krovato__container">
+					<div class="krovato__logo logo">
+						<a class="logo__link" href="#">
+							<img src="img/image/logo-header.svg" alt="logo">
+						</a>
+					</div>
+					<div class="catalog">
+						<a class="catalog__link" href="#catalog">
+							<span>Каталог</span>
+						</a>
+					</div>
+					<div id="catalog" class="menu-krovato">
+						<ul class="menu-krovato__list">
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/lizhka.svg" alt="Ліжка">
+									<span>Ліжка</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Ліжка від krovato</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Ліжка з підйомним механізмом</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Ліжка Акції</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Ліжка з м'яким узголів'ям</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дерев'яні ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Інші ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Інші  ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Інші  ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Інші ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Інші  ліжка</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Інші  ліжка</a>
+										</li>
+
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/matrac.svg" alt="Матраци">
+									<span>Матраци</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/mm.svg" alt="М’які-меблі">
+									<span>М’які меблі</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дивани з Акції</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Прямі дивани</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Кутові дивани</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі дивани</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Тахти</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Крісла</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/shafa.svg" alt="Шафи">
+									<span>Шафи</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/komod.svg" alt="Комоди">
+									<span>Комоди</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/tumba.svg" alt="Тумби">
+									<span>Тумби</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/stol.svg" alt="Столи">
+									<span>Столи</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/stilci.svg" alt="Стільці">
+									<span>Стільці</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Обідні стільці</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Табуретки</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/mstiny.svg" alt="Меблеві-стіни">
+									<span>Меблеві стіни</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu-krovato__item">
+								<a class="menu-krovato__link" href="#">
+									<img src="img/icon-menu/kuhni.svg" alt="Кухні">
+									<span>Кухні</span>
+								</a>
+								<div class="sub-menu-krovato">
+									<ul class="sub-menu-krovato__list">
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Односпальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Двоспальні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Bonnel</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Пружинний блок Pocket Spring</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Безпружинні матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци з ефектом Зима-Літо</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Футони</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Дитячі матраци</a>
+										</li>
+										<li class="sub-menu-krovato__item">
+											<a class="sub-menu-krovato__link" href="#">Матраци Економ</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<div class="popular">
+						<h2 class="popular__title">Популярні категорії</h2>
+		
+						<div class="popular__row">
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/01.webp" alt="popular">
+									</a>
+									<a href="#" class="item__name">
+										h3>Ліжка</h3>
+									</a>
+									<span class="item__counter">54</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+									<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/02.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Матраци</h3>
+									</a>
+									<span class="item__counter">30</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/03.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>М'які меблі</h3>
+									</a>
+									<span class="item__counter">196</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+							</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/04.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Шафи</h3>
+									</a>
+									<span class="item__counter">79</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/05.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Комоди</h3>
+									</a>
+									<span class="item__counter">54</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/06.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Тумби</h3>
+									</a>
+									<span class="item__counter">64</span>
+										</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/07.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Столи</h3>
+									</a>
+									<span class="item__counter">35</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/08.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Стільці</h3>
+									</a>
+									<span class="item__counter">89</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/09.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Меблеві стіни</h3>
+									</a>
+									<span class="item__counter">24</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+	
+							<div class="popular__block">
+								<div class="popular__item item">
+									<a class="item__image" href="#"><img src=".//img/popular/10.webp" alt="popular"></a>
+									<a href="#" class="item__name">
+										<h3>Кухні</h3>
+									</a>
+									<span class="item__counter">30</span>
+									<a class="item__arrow" href="#">
+										<img src="img/icons/arrow2.svg" alt="arrow">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="overlay" href="#"></a>
+		</main>
+	
+		<footer class="footer">
+			<div class="footer__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link" href="#button">Вгору</a>
+					</li>
+				</ul>
+			</div>
+
+		</footer>
+	</div>
+</body>
+
+</html>
