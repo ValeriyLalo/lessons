@@ -191,8 +191,9 @@ body{
 .blocks__item--fixed:nth-child(2) {
 	background-color: #77608d;
 	position:fixed;
-	top: 150px;
-	left: 0px;
+	top: 90px;
+	left: 10px;
+	z-index: 200;
 }
 
 .blocks2{
@@ -321,6 +322,7 @@ margin: 0 auto;
 
 
 .krovato {
+	z-index: 2;
 	font-family: "Proxima Nova",sans-serif;
 	padding-top: 30px;
 	background-color: #f8f8f8;
