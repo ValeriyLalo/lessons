@@ -296,7 +296,7 @@ body{
 }
 
 .image {
-	
+	border-radius: 8px;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
@@ -494,6 +494,7 @@ body:has( #catalog:target) .overlay{
 	position: relative;
 	display: inline-block;
 	max-width: 20%;
+	width: 100%;
 	padding: 0 5px 24px;
 }
 
@@ -507,7 +508,7 @@ body:has( #catalog:target) .overlay{
 
 .item__image {
 	display: inline-block;
-	background: url(../img/image/frame.svg) 0 100%/100%  no-repeat;
+	background: url(../img/image/frame.svg) 0 100%/100% no-repeat;
 	width: 100%;
 }
 
