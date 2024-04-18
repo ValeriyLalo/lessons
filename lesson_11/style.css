@@ -86,9 +86,9 @@ body{
 	color: rgb(4, 255, 171);
 	transform: translate(0px,1px) skew( -3deg,0deg);
 }
+
 .menu__link:active{
 	background-color: rgb(199, 199, 199);
-	
 }
 
 /* -----2D Transform---  */
@@ -665,19 +665,19 @@ background-color: #f9f9f9;
 
 
 
-.car__headlight-body:hover .car__headlight7{
+.car__body-headlight:hover .car__headlight7{
 	background-color: #ff8000;
 	box-shadow: 2px 2px 20px 0px #fa8d21;
 }
-.car__headlight-body:hover .car__headlight6{
+.car__body-headlight:hover .car__headlight6{
 	background-color: #ff8000;
 	box-shadow: 2px 2px 20px 0px #fa8d21;
 }
-.car__headlight-body:hover .car__headlight1{
+.car__body-headlight:hover .car__headlight1{
 	background-color: #d1feff;
 	box-shadow: 2px 2px 20px 0px #ffffff;
 }
-.car__headlight-body:hover .car__headlight2{
+.car__body-headlight:hover .car__headlight2{
 	box-shadow: 2px 2px 20px 0px #ffffff;
 	background-color: #d1feff;
 }
@@ -697,7 +697,7 @@ background-color: #f9f9f9;
 	border-radius: 110% 0 0 0 ;
 	transform: rotate(-4deg) skew(-15deg);
 }
-.car__window-front {
+.car__front-window {
 	z-index: 0;
 	background: linear-gradient(180deg, rgba(168,245,253,1) 0%, rgba(115,229,241,1) 50%, rgba(53,236,255,1) 100%);
 	width: 100%;
@@ -718,7 +718,7 @@ background-color: #f9f9f9;
 	border-radius: 0% 100% 0% 0;
 	transform: rotate(-2deg) skew(-15deg);
 }
-.car__window-rear {
+.car__rear-window {
 	background: linear-gradient(180deg, rgba(168,245,253,1) 0%, rgba(115,229,241,1) 50%, rgba(53,236,255,1) 100%);
 	width: 100%;
 	height: 100%;
