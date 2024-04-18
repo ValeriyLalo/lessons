@@ -77,7 +77,7 @@ body{
 	border: 3px solid ;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px 0px #222222;
-
+	transition: 0.2s;
 }
 .menu__link:hover {
 	background-color: rgb(34, 34, 34);
@@ -85,7 +85,6 @@ body{
 	box-shadow: 2px 2px 5px 0 #ffffff;
 	color: rgb(4, 255, 171);
 	transform: translate(0px,1px) skew( -3deg,0deg);
-	transition: 0.2s;
 }
 .menu__link:active{
 	background-color: rgb(199, 199, 199);
@@ -440,7 +439,7 @@ background-color: #f9f9f9;
 
 
 
-.car__wheel-left{
+.car__left-wheel{
 	z-index: 6;
 	position: absolute;
 	bottom: 252px;
@@ -449,7 +448,7 @@ background-color: #f9f9f9;
 	height: 190px;
 
 }
-.car__wheel-right{
+.car__right-wheel{
 	z-index: 6;
 	position: absolute;
 	bottom: 252px;
@@ -458,12 +457,12 @@ background-color: #f9f9f9;
 	height: 190px;
 }
 
-.car__wheel:hover .car__wheel-right{
+.car__wheel:hover .car__right-wheel{
 	transform: rotate(-720deg);
 	transition: all 1s;
 }
 
-.car__wheel:hover .car__wheel-left{
+.car__wheel:hover .car__left-wheel{
 	transform: rotate(-720deg);
 	transition: all 1s;
 }
@@ -562,7 +561,7 @@ background-color: #f9f9f9;
 	
 }
 
-.car__bumper2-rear{
+.car__rear-bumper2{
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(0deg, rgb(71, 19, 21) 0%, rgba(176,38,43,1) 40%,  rgb(102, 10, 13) 100%);
