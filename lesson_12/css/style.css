@@ -524,20 +524,6 @@ body{
 		transform:rotate(-720deg);
 	}
 }
-@keyframes translate{
-	0%{
-		transform:translateY(0 0);
-		transform:translateX(0 0);
-	}
-	50%{
-		transform:translateY(0px 2px);
-		transform:translateX(5px 0px);
-	}
-	100%{
-		transform:translateY(0 0);
-		transform:translateX(0 0);
-	}
-}
 
 .car__another-car{
 	z-index: 8;
@@ -553,33 +539,27 @@ body{
 @keyframes car-2{
 	0%{
 		transform: scale(1.5);
-		transform:translateY(150px);
 		left:-1500px ;
 	}
 
 	35%{
 		transform: scale(1.5);
-		transform:translateX(0,10px);
 		left:-1200px ;
 	}
 	45%{
 		transform: scale(1.8);
-		transform:translateX(0,30px);
 		left:-900px ;
 	}
 	50%{
 		transform: scale(1.8);
-		transform:translateX(0, 0px);
 		left:1000px ;
 	}
 	70%{
 		transform: scale(1.8);
-		transform:translateX(0,0px);
 		left:1300px ;
 	}
 	100%{
 		transform: scale(1.5);
-		transform:translateX(0,100px);
 		left:2000px ;
 	}
 }
