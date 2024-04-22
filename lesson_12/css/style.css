@@ -457,7 +457,7 @@ body{
 	top: 450px;
 	left: -150px;
 	width: 150px;
-	animation:ship 170s infinite 2s;
+	animation:ship 100s infinite 2s;
 }
 
 @keyframes ship {
@@ -524,16 +524,18 @@ body{
 		transform:rotate(-720deg);
 	}
 }
-@keyframes rotate{
+@keyframes translate{
 	0%{
-
-		transform:translate(0 0);
+		transform:translateY(0 0);
+		transform:translateX(0 0);
 	}
 	50%{
-		transform:translate(5px 2px);
+		transform:translateY(0px 2px);
+		transform:translateX(5px 0px);
 	}
 	100%{
-		transform:translate(0 0);
+		transform:translateY(0 0);
+		transform:translateX(0 0);
 	}
 }
 
@@ -551,33 +553,33 @@ body{
 @keyframes car-2{
 	0%{
 		transform: scale(1.5);
-		transform:translate(0px 150px);
+		transform:translateY(150px);
 		left:-1500px ;
 	}
 
 	35%{
 		transform: scale(1.5);
-		transform:translate(0px 10px);
+		transform:translateX(0,10px);
 		left:-1200px ;
 	}
 	45%{
 		transform: scale(1.8);
-		transform:translate(0px 30px);
+		transform:translateX(0,30px);
 		left:-900px ;
 	}
 	50%{
 		transform: scale(1.8);
-		transform:translate(0px 0px);
+		transform:translateX(0, 0px);
 		left:1000px ;
 	}
 	70%{
 		transform: scale(1.8);
-		transform:translate(0px 0px);
+		transform:translateX(0,0px);
 		left:1300px ;
 	}
 	100%{
 		transform: scale(1.5);
-		transform:translate(0px 100px);
+		transform:translateX(0,100px);
 		left:2000px ;
 	}
 }
@@ -611,24 +613,22 @@ body{
 
 .car__right-wheel-2 img,
 .car__left-wheel-2 img{
-	animation-name: rotate;
+	animation-name: rotate-2;
 	animation-duration: 0.7s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 
 
 }
-@keyframes rotate{
+@keyframes rotate-2{
 	0%{
 		transform: rotate(0deg);
-		transform:translate(0px 0px);
+
 	}
-	50%{
-		transform:translate(5px 2px);
-	}
+
 	100%{
 		transform: rotate(-720deg);
-		transform:translate(0px 0px);
+
 	}
 }
 
@@ -1177,7 +1177,7 @@ body{
 		outline: 0px solid rgb(255, 255, 0);
 	}
 	10%{
-		width: 102 px;
+		width: 102px;
 		height: 102px;
 		outline-offset: 0px;
 		outline: 0px solid rgb(255, 255, 0);
