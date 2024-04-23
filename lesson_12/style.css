@@ -112,7 +112,7 @@ body{
 	margin-bottom: 20px;
 }
 
-.block__link{
+.list__link{
 	text-decoration: underline;
 	display: block;
 	margin: auto;
@@ -122,7 +122,7 @@ body{
 	margin-bottom: 10px;
 
 }
-.block__link:hover .list__item{
+.list__link:hover .list__item{
 	transform: translate(20%, 0px);
 	color: rgb(0, 255, 76);
 
@@ -361,6 +361,7 @@ body{
 	animation-duration: 20s;
 	animation-timing-function:ease-in;
 	animation-delay: 5s;
+	animation-iteration-count: infinite;
 
 }
 @keyframes plane{
@@ -524,18 +525,6 @@ body{
 		transform:rotate(-720deg);
 	}
 }
-@keyframes translate{
-	0%{
-
-		transform:translate(0 0);
-	}
-	50%{
-		transform:translate(5px 2px);
-	}
-	100%{
-		transform:translate(0 0);
-	}
-}
 
 .car__another-car{
 	z-index: 8;
@@ -551,33 +540,27 @@ body{
 @keyframes car-2{
 	0%{
 		transform: scale(1.5);
-		transform:translateY(150px);
 		left:-1500px ;
 	}
 
 	35%{
 		transform: scale(1.5);
-		transform:translateX(0,10px);
 		left:-1200px ;
 	}
 	45%{
 		transform: scale(1.8);
-		transform:translateX(0,30px);
 		left:-900px ;
 	}
 	50%{
 		transform: scale(1.8);
-		transform:translateX(0, 0px);
 		left:1000px ;
 	}
 	70%{
 		transform: scale(1.8);
-		transform:translateX(0,0px);
 		left:1300px ;
 	}
 	100%{
 		transform: scale(1.5);
-		transform:translateX(0,100px);
 		left:2000px ;
 	}
 }
@@ -621,14 +604,12 @@ body{
 @keyframes rotate-2{
 	0%{
 		transform: rotate(0deg);
-		transform:translateX(0px 0px);
+
 	}
-	50%{
-		transform:translateX(5px 2px);
-	}
+
 	100%{
-		transform: rotateX(-720deg);
-		transform:translate(0px 0px);
+		transform: rotate(-720deg);
+
 	}
 }
 
@@ -734,7 +715,7 @@ body{
 	transform: rotateY(60deg) skew(0deg);
 }
 
-.car__headlight1{
+.car__front-headlight1{
 	z-index: 4;
 	position: absolute;
 	top: 520px;
@@ -747,7 +728,7 @@ body{
 	border: 2px solid #000;
 	border-left: transparent;
 }
-.car__headlight2{
+.car__front-headlight2{
 	z-index: 4;
 	position: absolute;
 	top: 522px;
@@ -799,7 +780,7 @@ body{
 	border: 2px solid #000;
 	border-right: transparent;
 }
-.car__headlight6{
+.car__back-headlight6{
 	z-index: 6;
 	position: absolute;
 	top: 480px;
@@ -813,7 +794,7 @@ body{
 	border-right: transparent;
 	border-bottom: transparent;
 }
-.car__headlight7{
+.car__back-headlight7{
 	z-index: 6;
 	position: absolute;
 	top: 480px;
@@ -830,19 +811,19 @@ body{
 
 
 
-.car__body-headlight:hover .car__headlight7{
+.car__headlight-body:hover .car__back-headlight7{
 	background-color: #ff8000;
 	box-shadow: 2px 2px 20px 0px #fa8d21;
 }
-.car__body-headlight:hover .car__headlight6{
+.car__headlight-body:hover .car__back-headlight6{
 	background-color: #ff8000;
 	box-shadow: 2px 2px 20px 0px #fa8d21;
 }
-.car__body-headlight:hover .car__headlight1{
+.car__headlight-body:hover .car__front-headlight1{
 	background-color: #bcfeff;
 	box-shadow: 2px 2px 20px 0px #ffffff;
 }
-.car__body-headlight:hover .car__headlight2{
+.car__headlight-body:hover .car__front-headlight2{
 	box-shadow: 2px 2px 20px 0px #ffffff;
 	background-color: #d1feff;
 }
