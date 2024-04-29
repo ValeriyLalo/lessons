@@ -184,7 +184,6 @@ width: 100%;
 	background: url(../img/icons/menu-catalog.svg) 0px 0px /100% no-repeat;
 	margin-right: 10px;
 	vertical-align: top;
-	transition:all 0.2s ease 0 ;
 	animation-name:catalog ;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
@@ -294,7 +293,7 @@ cursor: pointer;
 .contacts__text {
 	color: #535353;
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.69230769; /* 22px/13 */
 
  
@@ -661,7 +660,7 @@ transition: fill 0.3s;
 .block-2__size {
 	color: #535353;
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.69230769; /* 22px/13 */
 	/* margin-bottom: 10px; */
 }
@@ -682,7 +681,7 @@ transition: fill 0.3s;
 .block-2__clairvoyance span{
 	color: #2b2929;
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.69230769; /* 22px/13 */
 }
 .block-2__clairvoyance{
@@ -707,7 +706,6 @@ transition: fill 0.3s;
 	text-decoration: line-through;
 	color: #e03d3d;
 	font-size: 15px;
-	font-weight: 400;
 	line-height: 1.46666667; /* 22px/15 */
 
 }
@@ -814,7 +812,6 @@ outline:1px solid #ffbc57;
 }
 .footer__container {
 	display: flex;
-	/* justify-content:space-evenly; */
 	flex-wrap: wrap;
 	column-gap: 100px;
 
@@ -825,7 +822,7 @@ outline:1px solid #ffbc57;
 	
 }
 .footer__logo img{
-	transition:all 0.2s ;
+	transition: all 0.2s ;
 }
 .footer__logo img:hover{
 	outline: 1px solid #ffbc57;
@@ -836,7 +833,4 @@ outline:1px solid #ffbc57;
 .menu--footer{
 	padding: 40px 0;
 	color: #ffffff;
-
-
-	
 }
