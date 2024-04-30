@@ -49,13 +49,14 @@ body{
 .menu__list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
+	column-gap: 30px;
+	row-gap: 10px;
 }
 
 
 .menu__link {
 	font-size: 16px;
-	line-height: 30px;
+	line-height: 1.875; /* 30px/16 */
 	border-radius: 5px;
 	transition: color 0.2s, outline 0.2s, outline-offset 0.2s ;
 
@@ -77,8 +78,7 @@ body{
 
 }
 .info-help img{
-	max-width: 30px;
-	width: 100%;
+	flex-basis:30px ;
 }
 
 .info-help__row{
@@ -164,7 +164,7 @@ body{
 	flex-wrap: wrap;
 }
 .info-main__logo {
-	max-width: 250px;
+	flex-basis: 250px;
 	transition:all 0.2s ;
 	outline:1px solid #53535300;
 }
@@ -175,7 +175,7 @@ body{
 }
 
 .info-main__logo img{
-width: 100%;
+	width: 100%;
 }
 .info-main__catalog {
 	padding: 11px 20px 11px 20px;
@@ -223,7 +223,7 @@ width: 100%;
 
 .info-main__search-row{
 	position: relative;
-	max-width: 421px;
+	flex-basis: 421px;
 	height: 50px;
 	width: 100%;
 	padding: 10px 15px;
@@ -238,7 +238,7 @@ width: 100%;
 
 .info-main__search {
 	vertical-align: middle;
-	width: 100%;
+	/* width: 100%; */
 	color: #b1b1b1;
 	font-size: 16px;
 	line-height: 24px;
@@ -376,13 +376,6 @@ cursor: pointer;
 
 
 }
-.shares__list li{
-	/* transition: transform 0.2s,; */
-}
-.shares__list li:hover {
-	 /* transform: scale(1.1);   */
-}
-
 
 .shares__item {
 	flex-basis: 24px;
@@ -424,6 +417,8 @@ cursor: pointer;
 
 }
 .info-footer__menu {
+
+
 }
 .info-footer__menu li:not(:last-child) {
 	margin-right: 10px;
@@ -433,7 +428,6 @@ cursor: pointer;
 	font-size: 19px;
 	font-weight: 600;
 	line-height: 1.26315789; /* 24px/19*/
-	/* padding-right: 10px; */
 	gap: 40px; 
 }
 
@@ -584,6 +578,7 @@ transition: fill 0.3s;
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
+	will-change:transform ;
 	border-radius: 50%;
 	transition:all 0.2s;
 
@@ -713,6 +708,7 @@ transition: fill 0.3s;
 .block-2__price {
 }
 .price {
+	max-width: 150px;
 }
 .price__not-relevant {
 	text-decoration: line-through;
@@ -733,17 +729,23 @@ transition: fill 0.3s;
 	flex-direction: column;
 	justify-content: space-between;
 	flex: 1;
+	gap: 5px; 
 	/* gap: 10px; */
 	}
 
 .block-2__row-3{
+	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
 .block-2__icons-shopping {
 }
 .shopping-icons {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	display: flex;
 	gap: 5px;
 }
