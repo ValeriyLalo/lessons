@@ -708,7 +708,6 @@ transition: fill 0.3s;
 .block-2__price {
 }
 .price {
-	max-width: 150px;
 }
 .price__not-relevant {
 	text-decoration: line-through;
@@ -730,11 +729,10 @@ transition: fill 0.3s;
 	justify-content: space-between;
 	flex: 1;
 	gap: 5px; 
-	/* gap: 10px; */
+
 	}
 
 .block-2__row-3{
-	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -743,9 +741,6 @@ transition: fill 0.3s;
 .block-2__icons-shopping {
 }
 .shopping-icons {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	display: flex;
 	gap: 5px;
 }
