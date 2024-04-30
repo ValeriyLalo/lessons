@@ -728,22 +728,26 @@ transition: fill 0.3s;
 	flex-direction: column;
 	justify-content: space-between;
 	flex: 1;
-	/* gap: 10px; */
+	gap: 5px; 
+
 	}
 
 .block-2__row-3{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
 .block-2__icons-shopping {
 }
 .shopping-icons {
+
 	display: flex;
 	gap: 5px;
 }
 .shopping-icons__selected img,
 .shopping-icons__basket img {
+	will-change: transform;
 	transition:transform 0.2s, opacity 0.2s ;
 	border-radius: 50px;
 }
