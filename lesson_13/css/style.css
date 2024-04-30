@@ -58,6 +58,7 @@ body{
 	font-size: 16px;
 	line-height: 1.875; /* 30px/16 */
 	border-radius: 5px;
+	outline-offset: 10px;
 	transition: color 0.2s, outline 0.2s, outline-offset 0.2s ;
 
 }
@@ -185,7 +186,8 @@ body{
 	line-height: 24px;
 	border-radius: 8px;
 	background-color: #ffbc57;
-	transition:background-color 0.2s ;
+	will-change: transform;
+	transition:background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .info-main__catalog::before{
 	content: "";
@@ -201,6 +203,12 @@ body{
 
 .info-main__catalog:hover{
 	background-color: #fea622;
+	transform: scale(1.03);
+	box-shadow: 1px 1px 1px 0px #535353;
+}
+
+.info-main__catalog:hover::before{
+	
 }
 
 @keyframes catalog{
@@ -741,11 +749,13 @@ transition: fill 0.3s;
 .block-2__icons-shopping {
 }
 .shopping-icons {
+
 	display: flex;
 	gap: 5px;
 }
 .shopping-icons__selected img,
 .shopping-icons__basket img {
+	will-change: transform;
 	transition:transform 0.2s, opacity 0.2s ;
 	border-radius: 50px;
 }
