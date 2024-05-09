@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 15(Адаптивна верстка)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="navigation">
+				<div class="info-top">
+					<div class="info-top__container">
+						<div class="info-top__menu menu">
+							<input class="menu__burger-input" id="burger-toggle" type="checkbox" >
+							<label class="menu__burger-toggle" for="burger-toggle">
+								<span></span>
+							</label>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="#">Про нас</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Оплата</a>
+								</li>
+								<li  class="menu__item">
+									<a class="menu__link" href="#">Доставка та збірка</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Відгуки</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Блог</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Контакти</a>
+								</li>
+							</ul>
+						</div>
+					
+						<div class="info-top__help-info info-help" >
+							<div class="info-help__row">
+								<p class="info-help__text">Допомога і консультація:</p>
+								<div class="info-help__images-icon images-icon" >
+									<div class="images-icon__row">
+										<a href="#"><img src="img/icons/whatsapp.svg" alt="whatsapp"></a>
+										<a href="#"><img src="img/icons/telegram.svg" alt="telegram"></a>
+										<a href="#"><img src="img/icons/viber.svg" alt="viber"></a>
+									</div>
+								</div>
+							</div>
+							<form action="#" class="languages">
+								<select class="languages__select" name="form[select]">
+									<option class="languages__option" selected value="ua">UA</option>
+									<option class="languages__option"  value="eng">	ENG</option>
+									<option class="languages__option" value="de">DE</option>
+									<option class="languages__option" value="fr">FR</option>
+									<option class="languages__option" value="it">IT</option>
+								 </select>
+							</form>
+						</div>
+					</div>
+				</div>
+	
+				<div class="info-main info-main--white">
+					<div class="info-main__container">
+						<a class="info-main__logo" href="#">
+							<img src="img/image/krovato-logo.svg" alt="krovato-logo"> 
+						</a>
+						<button class="info-main__catalog">Каталог</button>
+						<form  action="#" class="info-main__search search">
+							<input  type="text" placeholder="Пошук товарів" class="search__input">
+							<button type="submit" class="search__button"></button>
+						</form>
+
+
+						<div class="info-main__contacts contacts">
+							<a class="contacts__image" href="#">
+								<img  src="img/icons/icon-tel.svg" alt="icon-tel">
+							</a>
+							<div class="contacts__data">
+								<p class="contacts__text">Щодня з 9:00 до 18:00 </p>
+								<a class="contacts__tel" href="#">067 929-45-45 </a>
+							</div>
+
+						</div>
+						<div class="info-main__icons-info icons-info">
+							<form action="#">
+								<label class="icons-info__icon-search" for="search"><img src="img/icons/search.svg" alt="search">
+									<input class="icons-info__toggle-input" type="checkbox">
+								</label>
+							</form>
+
+							<a class="icons-info__selected" href="#">
+								<img src="img/icons/obrane.svg" alt="obrane">
+							</a>
+							<a class="icons-info__basket" href="#">
+								<img src="img/icons/korzina.svg" alt="obrane">
+							</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="info-footer">
+					<div class="info-footer__container">
+						<div class="info-footer__shares shares" >
+							<ul class="shares__list">
+								<li class="shares__item-akcii" >
+									<a href="#" class="shares__link">Акції</a>
+								</li>
+								<li class="shares__item-sale" >
+									<a href="#" class="shares__link">Розпродаж</a>
+								</li>
+								<li class="shares__item-credit" >
+									<a href="#" class="shares__link">Купити в кредит</a>
+								</li>
+							</ul>
+						</div>
+						<div class="info-footer__menu menu" >
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Дитяча</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Кухня</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Ванна</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Спальня</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Передпокій</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Вітальня</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link menu__link--big" href="#">Офіс</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__container">
+				<div class="orders">
+					<h1 class="orders__title">Оформлення замовлення</h1>
+					<div class="orders__form">
+						<form action="#" class="form-new">
+
+							<div class="form-new__section section-form">
+								<div class="section-form__header">
+									<div class="section-form__image">
+										<img src="img/icons-form/icon-info.svg" alt="icon-info">
+									</div>
+									<h2 class="section-form__title">Інформація про покупця</h2>
+								</div>
+								<div class="section-form__row">
+									<div class="section-form__block" >
+										<input class="section-form__input" required  name="form[]" placeholder="Прізвище"  type="text">
+										<input class="section-form__input" required name="form[]" placeholder="Ім’я" type="text">
+										<input class="section-form__input" required name="form[]" placeholder="По батькові" type="text">
+									</div>
+									<div class="section-form__block" >
+										<input class="section-form__input" required name="form[]" placeholder="Контактний телефон" type="tel">
+										<input class="section-form__input" name="form[]" placeholder="E-mail" type="email">
+									</div>
+								</div>
+								<label class="section-form__check check ">
+									<input class="check__input" name="form[check]" type="checkbox">
+									<span class="check__text" >Отримуватиме замовлення інша людина</span>
+								</label>
+							</div>
+
+							<div class="form-new__section section-form">
+								<div class="section-form__header">
+									<div class="section-form__image">
+										<img src="img/icons-form/icon-dostavka.svg" alt="icon-dostavka">
+									</div>
+									<h2 class="section-form__title">Вибір способу доставки</h2>
+								</div>
+
+								<ul class="section-form__list">
+									<li  class="section-form__item choice">
+										<input class="choice__input" checked id="pickup" value="pickup" type="radio" name="delivery" >
+										<label class="choice__row-label" for="pickup">
+											<img class="choice__image" src="img/icons-form/shop-1.svg" alt="shop">
+											<span class="choice__title">
+												<span class="choice__text-1">Самовивіз із магазину </span>
+												<span class="choice__text-2">Бесплатно</span>
+											</span>
+										</label>
+									</li>
+									<li class="section-form__item choice">
+										<input class="choice__input" id="new-post" value="new-post" type="radio" name="delivery" >
+										<label class="choice__row-label" for="new-post">
+											<img class="choice__image" src="img/icons-form/np.svg" alt="new-post">
+											<span class="choice__title">
+												<span class="choice__text-1">Доставка Нова Пошта</span>
+												<span class="choice__text-2">≈ від 500 грн</span>
+											</span>
+										</label>
+									</li>
+									<li class="section-form__item choice">
+										<input class="choice__input" value="courier" id="courier" type="radio" name="delivery" >
+										<label class="choice__row-label" for="courier">
+											<img class="choice__image" src="img/icons-form/shop.svg" alt="courier">
+											<span class="choice__title">
+												<span class="choice__text-1">Доставка кур'єром</span>
+												<span class="choice__text-2">≈ від 200 грн</span>
+											</span>
+										</label>
+									</li>
+								</ul>
+
+								<div class="contacts-form">
+									<div class="contacts-form__row">
+										<div class="contacts-form__text">
+											<div class="text">
+												<span class="text__schedule">Графік роботи: щодня з 9:00 до 18:00</span>
+												<span class="text__location">м. Київ, пров. Ізяславський 52, пов. 2</span>
+											</div>
+										</div>
+									
+										<a class="contacts-form__button" href="#">
+											<span>На мапі </span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-new__section section-form">
+								<div class="section-form__header">
+									<div class="section-form__image">
+										<img src="img/icons-form/icon-oplata.svg" alt="icon-oplata">
+									</div>
+									<h2 class="section-form__title">Вибір способу оплати</h2>
+								</div>
+								<ul class="section-form__payment-item payment">
+									<li class="payment__list">
+										<label for="payment" class="payment__row-list" >
+											<input checked id="payment" class="payment__radio" value="cash"  type="radio" name="form[payment]">
+											<span class="payment__text"> Готівкою при отриманні (Післясплата)</span>
+										</label>
+									</li>
+									<li class="payment__list">
+										<label for="payment-2"  class="payment__row-list" >
+											<input class="payment__radio" id="payment-2" value="card"  type="radio" name="form[payment]">
+											<span class="payment__text">Оплата карткою на сайті</span>
+											<img src="img/icons-form/master-card-logo.svg" alt="master-card-logo">
+											<img src="img/icons-form/visa-card-logo.svg" alt="visa-card-logo">
+										</label>
+									</li>
+									<li class="payment__list">
+										<label class="payment__row-list" for="payment-3" >
+											<input class="payment__radio" id="payment-3" value="Privat Pay" type="radio" name="form[payment]">
+											<span class="payment__text">Privat Pay</span>
+											<img src="img/icons-form/privat-pay-logo.svg" alt="privat-pay-logo">
+										</label>
+									</li>
+									
+									<li class="payment__list">
+										<label class="payment__row-list" for="payment-4"  >
+											<input class="payment__radio" id="payment-4" value="credit" type="radio" name="form[payment]">
+											<span class="payment__text">Кредит від Krovato</span>
+										</label>
+									</li>
+									<li class="payment__list">
+										<label class="payment__row-list" for="payment-5" >
+											<input class="payment__radio" id="payment-5" value="in-parts-privaty" type="radio" name="form[payment]">
+											<span class="payment__text">Оплата частинами ПриватБанк</span>
+											<img src="img/icons-form/privaty-credit-logo.svg" alt="privaty-credit-logo">
+										</label>
+									</li>
+									<li class="payment__list">
+										<label class="payment__row-list" for="payment-6" >
+											<input class="payment__radio" id="payment-6" value="in-parts-mono-bank" type="radio" name="form[payment]">
+											<span class="payment__text">Оплата частинами МоноБанк</span>
+											<img src="img/icons-form/mono-bank-logo.svg" alt="mono-bank-logo">
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="form-new__section section-form">
+								<div class="section-form__header">
+									<div class="section-form__image">
+										<img src="img/icons-form/icon-comment.svg" alt="icon-comment">
+									</div>
+									<h2 class="section-form__title">Коментар до замовлення</h2>
+								</div>
+								<textarea class="section-form__comment" name="form[textarea]" placeholder="Ваш коментар" ></textarea>
+							</div>
+
+							<div class="form-new__section section-form">
+								<button type="submit" class="section-form__button" >ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+								<div class="section-form__agreement agreement">
+									<p class="agreement__text">
+										Підтверджуючи замовлення, я приймаю умови<a href="#"><span> Угоди користувача</span></a>
+									</p>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main>
+	
+		<footer class="footer">
+			<div class="footer__container ">
+				<a class="footer__logo" href="#">
+					<img src="img/image/krovato-logo.svg" alt="krovato-logo"> 
+				</a>
+				<div class="footer__menu menu menu--footer">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="#">Про нас</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Оплата</a>
+						</li>
+						<li  class="menu__item">
+							<a class="menu__link" href="#">Доставка та збірка</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Відгуки</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Блог</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Контакти</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+</body>
+
+</html>
