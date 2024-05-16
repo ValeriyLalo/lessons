@@ -92,6 +92,8 @@ body{
 .images-icon__row{
 	font-size: 0;
 	gap: 10px;
+
+
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -253,26 +255,15 @@ body{
 	height: 24px;
 	background: url(../img/icons/menu-catalog.svg) 0px 0px /100% no-repeat;
 	flex-shrink: 0;
-	animation-name:catalog ;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
+	animation: rotate 10s linear infinite;
 }
 
-@keyframes catalog{
+@keyframes rotate{
 	0%{
 		transform: rotate(0deg);
 	}
-	8%{
+	10%, 100%{
 		transform: rotate(360deg);
-	}
-	8.1%{
-		transform: rotate(0deg);
-	}
-	40%{
-		transform: rotate(0deg);
-	}
-	100%{
-		transform: rotate(0deg);
 	}
 }
 
@@ -483,16 +474,17 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* flex-wrap: wrap; */
 	column-gap: 20px;
 	row-gap: 10px;
-	
 }
-
+.shares{
+	flex: 0 0 40% ; 
+}
 
 .shares__list {
 	display: flex;
 	flex-wrap: wrap;
+	
 	column-gap: 40px;
 	row-gap: 5px;
 
@@ -533,11 +525,14 @@ body{
 }
 
 .info-footer__menu {
+	
 }
 .menu-use {
+	flex: 0 0 56%;
 }
 .menu-use__list {
 	display: flex;
+	justify-content: flex-end;
 	flex-wrap: wrap;
 	column-gap: 40px;
 	row-gap: 5px;
@@ -1239,6 +1234,7 @@ body{
 	.menu__list,
 	.shares__list,
 	.menu-use__list {
+		display: inline-flex;
 		flex-direction: column;
 		row-gap: 25px;
 	}
@@ -1259,6 +1255,22 @@ body{
 	.info-help {
 		align-self: stretch;
 		justify-content: space-between;
+		column-gap: 20px;
+		row-gap: 40px;
+	}
+
+
+	.images-icon__row{
+		gap: 30px;
+	
+	}
+
+	.images-icon__link img{
+		width: 45px;
+		height: 45px;
+	}
+	.languages__label{
+		font-size: 24px;
 	}
 
 	/* Переноситься в бургер */
@@ -1343,7 +1355,6 @@ body{
 		transform: scale(1.1);
 		opacity: 0.8;
 	}
-
 	.menu-use__link:hover{
 		color: #ffbc57;
 		outline: 1px solid #ffbc57;
