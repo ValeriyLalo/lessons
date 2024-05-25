@@ -1176,6 +1176,12 @@ body{
 	.info-main__logo img {
 		width: 200px;
 	}
+	.menu__footer-link{
+		font-size: 20px;
+	}
+	.menu__list-footer{
+		row-gap: 20px;
+	}
 
 }
 @media (max-width: 400px){
@@ -1190,6 +1196,7 @@ body{
 		padding-top: 5px;
 		padding-bottom: 5px;
 	} 
+
 }
 
 
