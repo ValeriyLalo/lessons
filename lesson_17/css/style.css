@@ -942,11 +942,9 @@ body{
 }
 
 @media(max-width:579.98px){
-
 	.block-2__image{
 		max-height: 350px; 
 	}
-	
 }
 
 @media(max-width:400px){
@@ -1202,8 +1200,8 @@ body{
 	}
 	.info-footer,
 	.info-main {
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	} 
 
 }
