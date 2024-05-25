@@ -721,6 +721,7 @@ body{
 	padding-top: 40px;
 	padding-bottom: 40px;
 	margin: 0 auto;
+	
 }
 
 .popular__row-title{
@@ -938,16 +939,24 @@ body{
 	.block-2 {
 		padding: 15px;
 	}
- }
+}
 
- @media(max-width:400px){
+@media(max-width:579.98px){
+
+	.block-2__image{
+		max-height: 350px; 
+	}
+	
+}
+
+@media(max-width:400px){
 	.block-2 {
 		padding: 10px;
 	}
 	.popular__section-2{
 		grid-template-columns: 1fr;
 	}
- }
+}
 
 
 /* ------------- */
