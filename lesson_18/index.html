@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 18(Препроцесор SASS/SCSS)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			
+			<div class="header__container ">
+				<div class="header__logo ">
+					<div class="header__name-logo">
+						 <img src="img/header_img/logo.svg" alt="logo">
+					</div>
+				</div>
+				<div class="header__menu ">
+					<ul class="menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#home">home</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#about">about</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#portfolio">portfolio</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">testimonials</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">contact</a>
+						</li>
+					</ul>
+
+				</div>
+				<div data-da=".about-me__container, 500, 1" class="header__social-networks social">
+					<a class="social__link" target="_blank" href="#">
+						<svg class="social__icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15 0.996875V14C15 14.55 14.5531 14.9969 14.0031 14.9969H9.54688L9.51562 9.39375H11.7312V6.97188H9.5L9.49063 5.55C9.49063 5.15 9.8125 4.82812 10.2125 4.82812H11.7281V2.21875H8.69687C7.69375 2.21875 6.88125 3.03125 6.88125 4.03125L6.89687 6.97188H4.75313V9.39375H6.90938L6.9375 15H1C0.446875 15 0 14.5531 0 14.0031V0.996875C0 0.446875 0.446875 0 0.996875 0H14C14.5531 0 15 0.446875 15 0.996875Z" fill="white"/>
+						</svg>
+					</a>
+					<a class="social__link" target="_blank" href="#">
+						<svg class="social__icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.006 0H0.997082C0.446968 0 0 0.446968 0 0.997083V14.0029C0 14.553 0.446968 15 0.997082 15H14.0029C14.553 15 15 14.553 15 14.0029V0.997083C15.0031 0.446968 14.5561 0 14.006 0ZM4.86976 12.8339H2.52552V6.20442H4.86663V12.8339H4.86976ZM3.69764 4.42592C3.05063 4.42592 2.52552 3.90081 2.52552 3.2538C2.52552 2.60679 3.05063 2.08168 3.69764 2.08168C4.34465 2.08168 4.86976 2.60679 4.86976 3.2538C4.86976 3.90081 4.34465 4.42592 3.69764 4.42592ZM12.9808 12.9183H10.6397V10.1677C10.6397 9.69264 10.2553 9.31131 9.78328 9.31131C9.31131 9.31131 8.92685 9.69577 8.92685 10.1677V12.8339H6.58574V6.20442H8.92685V7.52032C9.17378 7.40467 9.42695 7.30777 9.68951 7.23901C10.174 7.10773 10.6772 7.07647 11.1711 7.15149C11.5024 7.2015 11.8525 7.28589 12.1431 7.45468C12.662 7.75787 12.9808 8.36424 12.9808 8.96124C12.9808 8.95812 12.9808 12.9183 12.9808 12.9183Z" fill="white"/>
+						</svg>
+					</a>
+
+					<a class="social__link" target="_blank" href="#">
+						<svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3398 0.445312C15.0742 0.296875 11.5352 0.164062 10 0.164062C8.46484 0.164062 4.92578 0.296875 2.66016 0.445312C1.51562 0.523437 0.625 1.47266 0.625 2.62109V11.3789C0.625 12.5273 1.51562 13.4766 2.66016 13.5547C4.92578 13.7031 8.46484 13.8359 10 13.8359C11.5352 13.8359 15.0742 13.7031 17.3398 13.5547C18.4844 13.4805 19.375 12.5273 19.375 11.3789V2.62109C19.375 1.47266 18.4844 0.523437 17.3398 0.445312ZM8.28516 9.9375V4.0625L13.3711 7L8.28516 9.9375Z" fill="white"/>
+						</svg>
+					</a>
+
+				</div>
+				<button type="button" class="header__icon-burger">
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+
+		<main class="page">
+			
+			<div id="home" class="hero ">
+				
+				<div class="hero__container">
+					<div  class="hero__row">
+
+						<div  class="hero__block-text text-hero">
+							<div class="text-hero__name">Jimmy Turner </div>
+							<h1 class="text-hero__title ">Professional video editor </h1>
+							<div class="text-hero__subtitle">Making your videos look more cool.</div>
+							<a href="#" class="text-hero__button" >lets talk </a>
+						</div>
+
+
+						<div class="hero__block-image image-hero">
+							<div class="image-hero__current-left">
+								<img src="img/hero-img/hero-1.webp" alt="current">
+							</div>
+							<div class="image-hero__current-right">
+								<img src="img/hero-img/hero-2.webp" alt="current">
+							</div>
+
+							<div data-da=".adaptive-hero ,859.98"  class="image-hero__hero">
+								<img  src="img/hero-img/hero.webp" alt="hero">
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="adaptive-hero "></div>
+
+			<div id="about" class="about-me about-me--margin">
+				<div  class="about-me__container">
+					<div  class="about-me__block-text text-block">
+						<h2 class="text-block__title">About me</h2>
+						<div class="text-block__text">
+							<p>
+								Welcome to the cinematic realm of Jimmy, where creativity meets technology to craft visually 
+								stunning narratives. With a passion for storytelling and a keen eye for detail, I embark on a journey 
+								to transform ordinary footage into extraordinary visual experiences.
+							</p>
+						</div>
+					</div>
+					<div data-da=".hero__container, 859.98, 1"  class="about-me__section section">
+						<ul class="section__list">
+							<li class="section__item">
+								Cash cow editing
+							</li>
+							<li class="section__item">
+								Reels editng
+							</li>
+							<li class="section__item">
+								logo animation
+							</li>
+							<li class="section__item">
+								podcast edit
+							</li>
+
+							<li class="section__item">
+								Cash cow editing
+							</li>
+							<li class="section__item">
+								Reels editng
+							</li>
+							<li class="section__item">
+								logo animation
+							</li>
+							<li class="section__item">
+								podcast edit
+							</li>
+
+							<li class="section__item">
+								Cash cow editing
+							</li>
+							<li class="section__item">
+								Reels editng
+							</li>
+							<li class="section__item">
+								logo animation
+							</li>
+							<li class="section__item">
+								podcast edit
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="portfolio" class="edits edits--margin">
+				<div class="edits__container">
+					<h2 class="edits__title">my best edits</h2>
+
+					<div class="edits__video-row">
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/edits/video-img-1.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">CAsh cow</h3>
+							</div>
+						</a>
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/edits/video-img-2.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">Reel</h3>
+							</div>
+						</a>
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/edits/video-img-3.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">Vlog</h3>
+							</div>
+						</a>
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/edits/video-img-4.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">Cash cow</h3>
+							</div>
+						</a>
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/edits/video-img-5.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">podcast</h3>
+							</div>
+						</a>
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/edits/video-img-6.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">Cash cow</h3>
+							</div>
+						</a>
+
+						<a href="#" target="_blank" class="edits__block-video ">
+							<div class="block-video">
+								<div class="block-video__item">
+									<img class="block-video__image" src="img/hero-img/hero.webp" alt="play video">
+									<img class="block-video__play" src="img/edits/vector.svg" alt="play video">
+								</div>
+								<h3 class="block-video__name">Jimmy Turner </h3>
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+	
+		<footer class="footer">
+			<footer class="footer__container"></footer>
+		</footer>
+	</div>
+	
+	<script src="js/dynamic_adapt.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
