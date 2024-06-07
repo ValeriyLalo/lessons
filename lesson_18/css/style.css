@@ -91,7 +91,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  color: w;
+  color: #fff;
 }
 
 .edits__title::after, .text-block__title::after {
@@ -210,24 +210,24 @@ body {
 }
 @media (min-width: 83.3125em) {
   .header__name-logo img {
-    width: 11rem;
+    width: 11.0625rem;
   }
 }
 @media (min-width: 20em) and (max-width: 83.3125em) {
-  @supports (width: clamp( 8.125rem , 7.2168065153rem  +  4.5409674235vw , 11rem )) {
+  @supports (width: clamp( 5.875rem , 4.2363030602rem  +  8.1934846989vw , 11.0625rem )) {
     .header__name-logo img {
-      width: clamp( 8.125rem , 7.2168065153rem  +  4.5409674235vw , 11rem );
+      width: clamp( 5.875rem , 4.2363030602rem  +  8.1934846989vw , 11.0625rem );
     }
   }
-  @supports not (width: clamp( 8.125rem , 7.2168065153rem  +  4.5409674235vw , 11rem )) {
+  @supports not (width: clamp( 5.875rem , 4.2363030602rem  +  8.1934846989vw , 11.0625rem )) {
     .header__name-logo img {
-      width: calc(8.125rem + 2.875 * (100vw - 20rem) / 63.3125);
+      width: calc(5.875rem + 5.1875 * (100vw - 20rem) / 63.3125);
     }
   }
 }
 @media (max-width: 20em) {
   .header__name-logo img {
-    width: 8.125rem;
+    width: 5.875rem;
   }
 }
 @media (max-width: 959.98px) {
@@ -735,7 +735,7 @@ body {
   row-gap: 10px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.11111111;
+  line-height: 1.1;
   /* 20px/18 */
   letter-spacing: 0.3px;
   text-transform: uppercase;
@@ -1253,11 +1253,6 @@ body {
 @media (max-width: 859.98px) and (max-width: 20em) {
   .image-hero__current-left {
     padding-left: 0.0000000625rem;
-  }
-}
-@media (max-width: 499.98px) {
-  .image-hero__current-left {
-    padding-left: -40px;
   }
 }
 @media (max-width: 329.98px) {
@@ -1847,7 +1842,7 @@ body {
 }
 @media (max-width: 859.98px) {
   .section__list {
-    margin: 30px;
+    padding: 30px;
   }
 }
 @-webkit-keyframes about-slider {
