@@ -297,11 +297,11 @@ body {
 	// &__link {
 	// }
 	&__icon {
-		flex: 0 0 15px;
+		flex: 1 0 15px;
 		height: 15px;
 		transition: transform 0.2s;
 		@media (max-width: 500px) {
-			flex: 0 0 30px;
+			flex: 1 0 30px;
 			width: 30px;
 			height: 20px;
 		}
@@ -323,8 +323,8 @@ body {
 }
 
 .page {
-	margin-top: 150px;
-	@include adaptiveValue ("margin-top", 150, 110);
+	// margin-top: 150px;
+	@include adaptiveValue ("margin-top", 150, 80);
 }
 
 // ========== Hero =========
