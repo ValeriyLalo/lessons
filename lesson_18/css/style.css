@@ -483,6 +483,13 @@ body {
           column-gap: 25px;
   row-gap: 15px;
 }
+@media (max-width: 500px) {
+  .social {
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+  }
+}
 .social__icon {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 15px;
@@ -492,6 +499,15 @@ body {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
+}
+@media (max-width: 500px) {
+  .social__icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+    width: 30px;
+    height: 20px;
+  }
 }
 .social__link path {
   -webkit-transition: 0.2s linear;
