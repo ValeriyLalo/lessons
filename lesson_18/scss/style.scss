@@ -107,16 +107,18 @@ body {
 	}
 
 	&__name-logo {
-
-		padding: 10px 0px;
+		padding-block: 10px;
+		// padding: 10px 0px;
 		outline: 1px solid #6e00a900;
+		@include adaptiveValue ("padding-block",10, 0);
 	}
 
 	&__name-logo img {
 
 		width: 176px;
 		height: 22px;
-		@include adaptiveValue ("width", 177, 94);
+		@include adaptiveValue ("width", 177, 115);
+
 	}
 
 	&__menu {
