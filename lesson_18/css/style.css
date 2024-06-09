@@ -304,24 +304,24 @@ body {
 }
 @media (min-width: 60em) {
   .header__menu {
-    top: 8.5rem;
+    top: 8rem;
   }
 }
 @media (min-width: 20.625em) and (max-width: 60em) {
-  @supports (top: clamp( 6.25rem , 5.0714285714rem  +  5.7142857143vw , 8.5rem )) {
+  @supports (top: clamp( 5.4375rem , 4.0952380952rem  +  6.5079365079vw , 8rem )) {
     .header__menu {
-      top: clamp( 6.25rem , 5.0714285714rem  +  5.7142857143vw , 8.5rem );
+      top: clamp( 5.4375rem , 4.0952380952rem  +  6.5079365079vw , 8rem );
     }
   }
-  @supports not (top: clamp( 6.25rem , 5.0714285714rem  +  5.7142857143vw , 8.5rem )) {
+  @supports not (top: clamp( 5.4375rem , 4.0952380952rem  +  6.5079365079vw , 8rem )) {
     .header__menu {
-      top: calc(6.25rem + 2.25 * (100vw - 20.625rem) / 39.375);
+      top: calc(5.4375rem + 2.5625 * (100vw - 20.625rem) / 39.375);
     }
   }
 }
 @media (max-width: 20.625em) {
   .header__menu {
-    top: 6.25rem;
+    top: 5.4375rem;
   }
 }
 .menu-open .header__menu {
