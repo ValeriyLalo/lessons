@@ -336,7 +336,7 @@ body {
 	font-family: "Exo", sans-serif;
 	background-color: $colorBlack;
 	color:$colorWhite;
-	@include adaptiveValue ("padding-top", 94, 0);
+	@include adaptiveValue ("padding-top", 94, 10);
 
 	&::before,
 	&::after {
