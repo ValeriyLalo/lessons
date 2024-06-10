@@ -323,7 +323,6 @@ body {
 }
 
 .page {
-	// margin-top: 150px;
 	@include adaptiveValue ("margin-top", 150, 80);
 }
 
@@ -337,7 +336,7 @@ body {
 	font-family: "Exo", sans-serif;
 	background-color: $colorBlack;
 	color:$colorWhite;
-	@include adaptiveValue ("padding-top", 94, 20);
+	@include adaptiveValue ("padding-top", 94, 0);
 
 	&::before,
 	&::after {

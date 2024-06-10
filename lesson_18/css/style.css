@@ -561,20 +561,20 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 83.3125em) {
-  @supports (padding-top: clamp( 1.25rem , -0.2110069102rem  +  7.3050345508vw , 5.875rem )) {
+  @supports (padding-top: clamp( 0.0000000625rem , -1.8558735604rem  +  9.2793681145vw , 5.875rem )) {
     .hero {
-      padding-top: clamp( 1.25rem , -0.2110069102rem  +  7.3050345508vw , 5.875rem );
+      padding-top: clamp( 0.0000000625rem , -1.8558735604rem  +  9.2793681145vw , 5.875rem );
     }
   }
-  @supports not (padding-top: clamp( 1.25rem , -0.2110069102rem  +  7.3050345508vw , 5.875rem )) {
+  @supports not (padding-top: clamp( 0.0000000625rem , -1.8558735604rem  +  9.2793681145vw , 5.875rem )) {
     .hero {
-      padding-top: calc(1.25rem + 4.625 * (100vw - 20rem) / 63.3125);
+      padding-top: calc(0.0000000625rem + 5.8749999375 * (100vw - 20rem) / 63.3125);
     }
   }
 }
 @media (max-width: 20em) {
   .hero {
-    padding-top: 1.25rem;
+    padding-top: 0.0000000625rem;
   }
 }
 .hero::before, .hero::after {
