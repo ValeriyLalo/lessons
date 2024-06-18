@@ -23,13 +23,13 @@ $maxWidth: 1920;
 $maxWidthContainer: 1303;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
-$containerPadding: 30;
+$containerPadding: 15;
 // Ширина спрацьовування першого брейкпоінту
 $containerWidth: $maxWidthContainer + $containerPadding;
 
 // =====================================================
 $colorBlack: #000000;
-$colorWhite:#fff;
+$colorWhite: #fff;
 
 //====== Шаблони=====
 %title {
@@ -54,9 +54,7 @@ $colorWhite:#fff;
 
 body {
 	background-color: $colorBlack;
-	max-width: 100%;
 	font-family: "Exo", sans-serif;
-
 }
 
 .wrapper {
@@ -64,16 +62,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+
+	main {
+		flex-grow: 1;
+	}
 }
 
-.wrapper>main {
-	flex-grow: 1;
-}
 
 [class*="__container"] {
 	max-width: #{$maxWidthContainer}px;
-	// max-width: 1303px;
-	padding: 0 15px;
+	padding-inline: #{$containerPadding}px;
 	margin: 0 auto;
 }
 
@@ -81,15 +79,27 @@ body {
 .header {
 	background-color: rgba(0, 0, 0, 0.910);
 	position: fixed;
+	padding-top:55px;
+	padding-bottom:55px;
 	top: 0px;
 	left: 0;
 	width: 100%;
 	z-index: 50;
-
-	@include adaptiveValue ("padding-top", 55, 50);
-	@include adaptiveValue ("padding-bottom", 55, 17);
-
-
+	@media (max-width:1100.98px) {
+		padding-top:50px;
+		padding-bottom:41px;
+	}
+	@media (max-width:959.98px) {
+		padding-bottom:30px;
+	}
+	@media (max-width:719.98px) {
+		padding-bottom:20px;
+	}
+	@media (max-width:499.98px) {
+		padding-bottom:17px;
+	}
+	// @include adaptiveValue ("padding-top", 55, 50);
+	// @include adaptiveValue ("padding-bottom", 55, 17);
 
 	&__container {
 		width: 100%;
@@ -102,20 +112,15 @@ body {
 	}
 
 
-	&__logo {
-		z-index: 2;
-	}
+	&__logo {}
 
 	&__name-logo {
 		padding-block: 10px;
-		// padding: 10px 0px;
 		outline: 1px solid #6e00a900;
-		@include adaptiveValue ("padding-block",10, 0);
+		@include adaptiveValue ("padding-block", 10, 0);
 	}
 
 	&__name-logo img {
-
-		width: 176px;
 		height: 22px;
 		@include adaptiveValue ("width", 177, 115);
 
@@ -137,7 +142,7 @@ body {
 			height: 100%;
 			overflow: auto;
 
-			&__menu::before {
+			&::before {
 				content: "";
 				position: fixed;
 				top: 0px;
@@ -152,21 +157,30 @@ body {
 		}
 
 		@include adaptiveValue ("top", 128, 87, 0, 960, 330);
+
+		.menu-open & {
+			right: 0;
+
+			::before {
+				right: 0;
+			}
+		}
 	}
 
 	// &__social-networks {}
 
-	.menu-open &__menu {
-		right: 0;
+
+
+	&__social-networks {
+		max-width: 102px;
+		@media (max-width:959.98px) {
+			max-width: 50%;
+		}
+		@media (max-width:499.98px) {
+			margin: 0 auto;
+			max-width: 90%;
+		}
 	}
-
-	.menu-open &__menu::before {
-		right: 0;
-	}
-
-	// &__social-networks {
-
-	// }
 
 	&__icon-burger {
 		display: none;
@@ -179,48 +193,68 @@ body {
 			flex-shrink: 0;
 			z-index: 2;
 		}
+
+		& span,
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			background-color: #ffffff;
+			width: 100%;
+			height: 3px;
+			border-radius: 50px;
+			transition: all 0.3s;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		& span {
+			top: 45%;
+		}
 	}
 
-	&__icon-burger span,
-	&__icon-burger::after,
-	&__icon-burger::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		background-color: #ffffff;
-		width: 100%;
-		height: 3px;
-		border-radius: 50px;
-		transition: all 0.3s;
+
+
+	.menu-open &__icon-burger {
+		&::after {
+			transform: rotate(45deg);
+			bottom: 50%;
+			margin-bottom: -1px;
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+			top: 50%;
+			margin-top: -1.5px;
+		}
+
+		& span {
+			transform: scale(0);
+		}
 	}
 
-	&__icon-burger::before {
-		top: 0;
-	}
+	// .menu-open &__icon-burger::after {
+	// 	transform: rotate(45deg);
+	// 	bottom: 50%;
+	// 	margin-bottom: -1px;
+	// }
 
-	&__icon-burger::after {
-		bottom: 0;
-	}
+	// .menu-open &__icon-burger::before {
+	// 	transform: rotate(-45deg);
+	// 	top: 50%;
+	// 	margin-top: -1.5px;
+	// }
 
-	&__icon-burger span {
-		top: 45%;
-	}
-
-	.menu-open &__icon-burger::after {
-		transform: rotate(45deg);
-		bottom: 50%;
-		margin-bottom: -1px;
-	}
-
-	.menu-open &__icon-burger::before {
-		transform: rotate(-45deg);
-		top: 50%;
-		margin-top: -1.5px;
-	}
-
-	.menu-open &__icon-burger span {
-		transform: scale(0);
-	}
+	// .menu-open &__icon-burger span {
+	// 	transform: scale(0);
+	// }
 }
 
 
@@ -247,7 +281,6 @@ body {
 		@media (max-width: 959.98px) {
 			align-self: flex-end;
 			padding-right: 30px;
-
 		}
 
 		@media (max-width: 399.98px) {
@@ -264,60 +297,62 @@ body {
 		line-height: 20px;
 		text-transform: uppercase;
 		transition: background-color 0.2s;
-		@include adaptiveValue ("font-size", 16, 10);
-		font-size: calc(14px + (16 - 14) * ((100vw - 960px) / (1303 - 960)));
-
+		@include adaptiveValue ("font-size", 16, 10, 0, 1920, 960);
 		@media (max-width: 959.98px) {
 			font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (959.98 - 300)));
 		}
-	}
 
-	@media (any-hover: hover) {
-		&__link:hover {
-			background-color: #6F00A9;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #6F00A9;
+			}
 		}
 	}
-
 }
 
 .social {
+	font-size: 0;
 	z-index: 2;
 	display: flex;
-	justify-content: center;
+	justify-content:space-between;
 	flex: 1 0 100px;
-	// max-width: 100px;
 	flex-wrap: wrap;
 	column-gap: 25px;
 	row-gap: 15px;
+	@media (max-width:959.98px) {
+		justify-content: center;
+	}
 	@media (max-width: 500px) {
 		column-gap: 35px;
-		}
-
+		
+	}
 
 	// &__link {
 	// }
+
 	&__icon {
-		flex: 0 0 15px;
+		width: 100%;
 		height: 15px;
 		transition: transform 0.2s;
+
+		& path {
+			transition: 0.2s linear;
+		}
+
 		@media (max-width: 500px) {
-			flex: 0 0 30px;
-			width: 30px;
 			height: 20px;
-		}
-	}
-
-	&__link path {
-		transition: 0.2s linear;
-	}
-
-	@media (any-hover: hover) {
-		&__icon:hover path {
-			fill: #6F00A9;
+			width: 100%;
+			
 		}
 
-		&__icon:hover {
-			transform: scale(1.5);
+		@media (any-hover: hover) {
+			&:hover path {
+				fill: #6F00A9;
+			}
+
+			&:hover {
+				transform: scale(1.5);
+			}
 		}
 	}
 }
@@ -335,21 +370,26 @@ body {
 	position: relative;
 	font-family: "Exo", sans-serif;
 	background-color: $colorBlack;
-	color:$colorWhite;
+	color: $colorWhite;
 	@include adaptiveValue ("padding-top", 94, 10);
+
+	&--margin {
+		margin-bottom: 78px;
+		@include adaptiveValue ("margin-bottom", 78, 20);
+	}
 
 	&::before,
 	&::after {
 		position: absolute;
 		content: "";
 		@include adaptiveValue ("width", 480, 100);
-		@include adaptiveValue ("height", 480, 100);
-		// width: 480px;
-		// height: 480px;
+		aspect-ratio: 1/1;
 		border-radius: 50%;
 		opacity: 0.3;
+
 		background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(87, 255, 28, 0.6) 36.9%, rgba(255, 0, 0, 0.6) 67.4%, rgba(0, 56, 255, 0.6) 100%);
 		filter: blur(50px);
+		z-index: 0;
 
 		@media (max-width: 859.98px) {
 			display: none;
@@ -400,18 +440,17 @@ body {
 		display: flex;
 		gap: 58px;
 		@include adaptiveValue ("gap", 58, 0);
+
 	}
 
 	&__block-text {
 		padding-top: 28px;
+		z-index: 1;
 	}
 
-	// &__block-image {}
-}
-
-.hero--margin {
-	margin-bottom: 78px;
-	@include adaptiveValue ("margin-bottom", 78, 20);
+	&__block-image {
+		z-index: 1;
+	}
 }
 
 .text-hero {
@@ -419,6 +458,7 @@ body {
 	flex-direction: column;
 	gap: 20px;
 	flex: 0 1 584px;
+
 
 	&__name {
 		display: flex;
@@ -448,16 +488,16 @@ body {
 		font-size: 80px;
 		@extend %title;
 		@include adaptiveValue ("font-size", 80, 32);
-		@include adaptiveValue ("line-height", 70, 35);
+		line-height: 87.5%; /* 70/80 */
+
 	}
 
 	&__subtitle {
 		@include adaptiveValue ("font-size", 18, 14);
-		@include adaptiveValue ("line-height", 40, 30);
 		font-weight: 300;
 		font-size: 18px;
 		text-align: left;
-		line-height: 40px;
+		line-height: 2.2%; /* 40px/18 */
 		letter-spacing: -0.5px;
 		text-transform: capitalize;
 	}
@@ -470,26 +510,33 @@ body {
 		font-weight: 900;
 		line-height: 20px;
 		text-transform: uppercase;
-		padding-inline: 60px;
-		padding-block: 15px;
 		background-color: #6f00a9;
 		transition: background-color 0.2s;
 		@include adaptiveValue ("font-size", 20, 14);
-		@include adaptiveValue ("padding-inline", 60, 40);
-		@include adaptiveValue ("padding-block", 15, 8);
 
+		// @include adaptiveValue ("padding-inline", 60, 40);
+		// @include adaptiveValue ("padding-block", 15, 8);
+			// padding-block:15px ;
+			padding-block:2.5% ;
+			// padding-inline: 60px;
+			padding-inline: 10.5%;
+		@media (max-width:959.98px) {
+			font-size: 16px;
+		}
+		@media (max-width:499.98px) {
+			font-size: 14px;
+		}
 		@media (max-width:399.98px) {
 			align-self: stretch;
 			text-align: center;
 		}
-	}
 
-	@media(any-hover: hover) {
-		&__button:hover {
-			background-color: #0b0045;
+		@media(any-hover: hover) {
+			&:hover {
+				background-color: #0b0045;
+			}
 		}
 	}
-
 }
 
 .image-hero {
@@ -513,26 +560,40 @@ body {
 		position: absolute;
 		content: "";
 		transform: rotate(-45deg);
-		background: url(../img/hero-img/hero-befor.svg) 0 0 / 100%  no-repeat;
-		@include adaptiveValue ("width", 110, 28);
-		@include adaptiveValue ("height", 136, 34);
-		@include adaptiveValue ("left", 55, 0);
-		@include adaptiveValue ("top", 0, 40, 0, 856, 300);
+		background: url(../img/hero-img/hero-befor.svg) 0 0 / 100% no-repeat;
+		width: 16%;
+		left:8%;
+		top:0;
+		aspect-ratio: 110/136;
+		@media (max-width: 549.98px) {
+			top: 30%;
+			width: 16%;
+		}
+		@media (max-width: 399.98px){ 
+			top: 50%;
+		}
 	}
 
 	&:after {
 		position: absolute;
 		content: "";
 		transform: rotate(30deg);
-		background: url(../img/hero-img/hero-after.svg) 0 0 /100% no-repeat;
-		@include adaptiveValue ("width", 70, 20);
-		@include adaptiveValue ("height", 88, 28);
-		@include adaptiveValue ("top", 0, 85, 0, 856, 300);
-		@include adaptiveValue ("right", 82, 0, 0, 856, 300);
-
+		background: url(../img/hero-img/hero-after.svg) 0 0 / 100% no-repeat;
+		top: 0;
+		right:12% ;
+		width: 10%;
+		aspect-ratio: 70/88;
+		@media (max-width: 549.98px) {
+			width: 16%;
+			top: 30%;
+		}
+		@media (max-width: 399.98px){ 
+			top: 50%;
+		}
 	}
 
-	@media (max-width: 329.98px) {
+
+	@media (max-width: 369.98px) {
 
 		&:after,
 		&:before {
@@ -545,26 +606,32 @@ body {
 		left: 0px;
 		bottom: 0;
 
-
 		@media (max-width: 859.98px) {
-			@include adaptiveValue ("padding-left", 230, 0);
+			padding-top: 30px;
+			left:30%;
+			bottom: 0;
+			width:80% ;
+			@media (max-width:549.98px) {
+				left:20%;
+			}
+			img{
+
+				object-fit: contain;
+				aspect-ratio: 316/353;
+			
+				max-height: 353px;
+				max-width: 100%;
+				@media (max-width:549.98px) {
+					max-width:100%;
+				}
+			}
 		}
-		@media (max-width:329.98px) {
+
+		@media (max-width:369.98px) {
 			display: none;
 		}
 	}
 
-
-	&__current-left img {
-		@include adaptiveValue ("max-width", 316, 90);
-		@include adaptiveValue ("min-height", 353, 95);
-		object-fit: contain;
-		aspect-ratio: 316/353;
-		// width: 100%;
-		// height: 100%;
-
-		@media (max-width:859.98px) {}
-	}
 
 	&__current-right {
 		position: absolute;
@@ -576,26 +643,28 @@ body {
 		}
 	}
 
-	&__current-right img {
-		@include adaptiveValue ("max-width", 278, 70);
-		@include adaptiveValue ("min-height", 322, 80);
-		// width:100%;
-		// height:100%;
-		aspect-ratio: 278/322;
-		object-fit: contain;
-
+	&__current-right {
+		img {
+			// @include adaptiveValue ("max-width", 278, 70);
+			// @include adaptiveValue ("min-height", 322, 80);
+			max-height: 372px;
+			max-width: 100%;
+			aspect-ratio: 278/322;
+			object-fit: contain;
+		}
 	}
 
 	&__hero {
 		z-index: 3;
 	}
 
-	&__hero img {
-		@include adaptiveValue ("max-width", 376, 177);
-		@include adaptiveValue ("min-height", 508, 260);
-		object-fit: contain;
-		aspect-ratio: 376/508;
-
+	&__hero {
+		img {
+			@include adaptiveValue ("max-width", 376, 177);
+			@include adaptiveValue ("min-height", 508, 260);
+			object-fit: contain;
+			aspect-ratio: 376/508;
+		}
 	}
 }
 
@@ -610,7 +679,6 @@ body {
 
 		&::before,
 		&::after {
-
 			position: absolute;
 			content: "";
 			border-radius: 50%;
@@ -679,12 +747,12 @@ body {
 	padding-block: 120px;
 	@include adaptiveValue ("padding-block", 120, 40);
 
-	// &__container {
-	// }
-
-	&__container:not(:last-child) {
-		margin-bottom: 60px;
+	&__container {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
 	}
+
 	&__block-text {
 		margin: 0 auto;
 		// margin-bottom: 60px;
@@ -716,11 +784,13 @@ body {
 		text-align: center;
 		@extend %title;
 		@include adaptiveValue ("font-size", 60, 24);
-		@include adaptiveValue ("line-height", 70, 35);
+		line-height: 116.666667%; /* 70px/60 */
+		// @include adaptiveValue ("line-height", 70, 35);
 		@include adaptiveValue ("row-gap", 20, 0);
 	}
 
 	&__title::after {
+		margin: 0 auto;
 		@extend %title-after;
 		@include adaptiveValue ("width", 400, 142);
 		width: 400px;
@@ -730,15 +800,13 @@ body {
 
 		font-weight: 300;
 		font-size: 18px;
-		line-height: 40px;
 		letter-spacing: -0.3px;
 		text-transform: capitalize;
 		text-align: center;
 		@include adaptiveValue ("font-size", 18, 14);
-		@include adaptiveValue ("line-height", 40, 30);
+		line-height: 2.2;
+			
 	}
-
-
 }
 
 .section {
@@ -754,6 +822,11 @@ body {
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
 		@include adaptiveValue ("gap", 60, 20);
+		@media(any-hover: hover) {
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
 
 		@media (max-width:859.98px) {
 			padding: 30px;
@@ -770,14 +843,6 @@ body {
 		}
 	}
 
-	// @include adaptiveValue ("margin-left", -660, -115);
-	@media(any-hover: hover) {
-		&__list:hover {
-			animation-play-state: paused;
-		}
-	}
-
-
 	&__item {
 		display: flex;
 		flex: 0 0 auto;
@@ -786,26 +851,21 @@ body {
 		font-size: 20px;
 		font-family: "Orbitron", sans-serif;
 		font-weight: 500;
-		line-height: 1.25;/* 25px/20 */
-		text-transform:capitalize;
+		line-height: 1.25;
+		/* 25px/20 */
+		text-transform: capitalize;
 		cursor: default;
 		transition: color 0.2s;
 		@include adaptiveValue ("font-size", 20, 14);
 		@include adaptiveValue ("gap", 60, 20);
-	}
 
-	@media(any-hover: hover) {
-		&__item:hover {
-			color: #6f00a9;
+		&::after {
+			content: "";
+			width: 7.5px;
+			height: 7.5px;
+			border-radius: 50%;
+			background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 49%, rgba(36, 0, 255, 1) 100%);
 		}
-	}
-
-	&__item::after {
-		content: "";
-		width: 7.5px;
-		height: 7.5px;
-		border-radius: 50%;
-		background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 49%, rgba(36, 0, 255, 1) 100%);
 	}
 }
 
@@ -823,6 +883,20 @@ body {
 	@include adaptiveValue ("padding-top", 200, 20);
 	@include adaptiveValue ("padding-bottom", 100, 20);
 
+	&::after {
+		content: "";
+		position: absolute;
+		top: -225px;
+		left: 305px;
+		background: url(../img/edits/bg.svg) 0 0 / cover no-repeat;
+		aspect-ratio: 1398/1470;
+		z-index: 0;
+		transform: rotate(45deg);
+		@include adaptiveValue ("width", 1398, 398);
+		@include adaptiveValue ("left", 305, 0);
+		@include adaptiveValue ("top", -225, -140);
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -835,16 +909,18 @@ body {
 
 	&__title {
 		@extend %title;
+		line-height: 1.16666667; /* 70/60 */
 		@include adaptiveValue ("font-size", 60, 24);
-		@include adaptiveValue ("line-height", 70, 35);
 		@include adaptiveValue ("row-gap", 20, 0);
+
+		&::after {
+			width: 571px;
+			@extend %title-after;
+			@include adaptiveValue ("width", 571, 193);
+		}
 	}
 
-	&__title::after {
-		width: 571px;
-		@extend %title-after;
-		@include adaptiveValue ("width", 571, 193);
-	}
+
 
 	&__video-row {
 		overflow-y: hidden;
@@ -856,56 +932,46 @@ body {
 
 	&__block-video {
 		transition: all 0.2s;
-	}
 
-	@media(any-hover: hover) {
-		&__block-video:hover .block-video__play {
-			transform: translate(0, -20px);
+		@media(any-hover: hover) {
+			&:hover &__play {
+				transform: translate(0, -20px);
+			}
 		}
-	}
 
-	@media(any-hover: hover) {
-		&__block-video:hover .block-video__name {
-			color: #6f00a9;
+		@media(any-hover: hover) {
+			&:hover .block-video__name {
+				color: #6f00a9;
+			}
 		}
-	}
 
-	@media(any-hover: hover) {
-		&__block-video:hover .block-video__image {
-			background-color: #000000;
+		@media(any-hover: hover) {
+			&:hover .block-video__image {
+				background-color: #000000;
+			}
 		}
-	}
 
-	@media(any-hover: hover) {
-		&__block-video:hover .block-video__item::before {
-			transform: scale(1) translate(0, 50px);
-			opacity: 1;
+		@media(any-hover: hover) {
+			&:hover .block-video__item {
+				&::before {
+					transform: scale(1) translate(0, 60px);
+					opacity: 1;
+				}
+			}
 		}
-	}
 
-	@media(any-hover: hover) {
-		&__block-video:hover .block-video__item::after {
-			border: 10px solid #6f00a9;
-			background-color: hsla(0, 0%, 0%, 0.801);
+		@media(any-hover: hover) {
+			&:hover .block-video__item {
+				&::after {
+					border: 10px solid #6f00a9;
+					background-color: hsla(0, 0%, 0%, 0.801);
+				}
+			}
 		}
 	}
 }
 
-.edits::after {
-	content: "";
-	position: absolute;
-	top: -225px;
-	left: 305px;
-	background: url(../img/edits/bg.svg) 0 0 / cover no-repeat;
-	width: 1398px;
-	height: 1470px;
-	z-index: 0;
-	transform: rotate(45deg);
-	@include adaptiveValue ("width", 1398, 398);
-	@include adaptiveValue ("height", 1470, 470);
-	@include adaptiveValue ("left", 305, 0);
-	@include adaptiveValue ("top", -225, -140);
-}
+
 
 
 .block-video {
@@ -917,75 +983,65 @@ body {
 	@include adaptiveValue ("padding-bottom", 20, 0);
 
 	&__item {
-
 		position: relative;
 		overflow: clip;
-		width: 360px;
-		height: 360px;
 		flex-shrink: 1;
 		transition: translate 0.3s;
 		z-index: 0;
+		aspect-ratio: 1/1;
+		// @include adaptiveValue ("width", 360, 193);
+		// @include adaptiveValue ("height", 360, 193);
 
-		@include adaptiveValue ("width", 360, 193);
-		@include adaptiveValue ("height", 360, 193);
-	}
+		&::before {
+			display: none;
+			content: "play video";
+			position: absolute;
+			top: 50%;
+			left: 18%;
+			font-size: 40px;
+			font-weight: 700;
+			opacity: 0;
+			transition: transform 0.4s, opacity 0.2s;
+			z-index: 2;
+			text-transform: uppercase;
 
-	&__item::before {
-		display: none;
-		content: "play video";
-		position: absolute;
-		top: 50%;
-		left: 18%;
-		font-size: 40px;
-		font-weight: 700;
-		opacity: 0;
-		// transform: scale(0);
-		transition: transform 0.4s, opacity 0.2s;
-		z-index: 2;
-		text-transform: uppercase;
+			@media(min-width:900px) {
+				display: block;
+			}
+		}
 
-		@media(min-width:900px) {
-			display: block;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: hsla(0, 0%, 0%, 0.308);
+			border: 10px solid #9900ff00;
+			z-index: 1;
+			transition: background-color 0.3s, border 0.3s;
 		}
 	}
 
-	&__item::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background-color: hsla(0, 0%, 0%, 0.308);
-		border: 10px solid #9900ff00;
-		z-index: 1;
-		transition: background-color 0.3s, border 0.3s;
-	}
-
 	&__image {
-		max-width: 360px;
-		min-height: 360px;
 		@include adaptiveValue ("max-width", 360, 193);
-		@include adaptiveValue ("min-height", 360, 193);
-	}
-
-	&__image img {
-		aspect-ratio: 360 / 360;
-		object-fit: contain;
+		img {
+			aspect-ratio: 1 / 1;
+			object-fit: contain;
+		}
 	}
 
 	&__play {
-		width: 100px;
-		height: 100px;
+		display: flex;
+		justify-content: center;
 		position: absolute;
-		top: 125px;
-		left: 125px;
+		top: 35%;
+		left: 35%;
 		transition: transform 0.3s;
 		z-index: 2;
-		@include adaptiveValue ("top", 125, 70);
-		@include adaptiveValue ("left", 125, 70);
+		aspect-ratio: 1/1;
 		@include adaptiveValue ("width", 100, 50);
-		@include adaptiveValue ("height", 100, 50);
 	}
 
 	&__name {
@@ -1006,5 +1062,4 @@ body {
 	height: 50px;
 	background: linear-gradient(14deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 49%, rgba(36, 0, 255, 1) 100%);
 	opacity: 0.2;
-
 }
