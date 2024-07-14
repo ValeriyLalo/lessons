@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 19(Семантика)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top top-header">
+
+					<button  data-da=".top-header__social,450, 2" data-da=".top-header__social,450, 1" class="top-header__button" type="button" title="Search"  >
+						<svg class="top-header__icon-search" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+						</svg>
+					</button>
+
+					<div class="top-header__logo ">
+						<img src="img/header/logo.svg" alt="Логотип">
+					</div>
+
+					<div class="top-header__social social">
+						<a target="_blank" class="social__link " href="#">
+							<svg class="social__icon "  viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.5 10.5C6.72656 10.5 4.5 8.27344 4.5 5.5C4.5 2.76562 6.72656 0.5 9.5 0.5C12.2344 0.5 14.5 2.76562 14.5 5.5C14.5 8.27344 12.2344 10.5 9.5 10.5ZM11.4531 12.375C15.2031 12.375 18.25 15.4219 18.25 19.1719C18.25 19.9141 17.625 20.5 16.8828 20.5H2.07812C1.33594 20.5 0.75 19.9141 0.75 19.1719C0.75 15.4219 3.75781 12.375 7.50781 12.375H11.4531Z" fill="#1E2832"/>
+							</svg>
+							<span>Account</span>
+						</a>
+						<a target="_blank" class="social__link " href="#">
+							<svg class="social__icon "   viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+							</svg>
+							<span>Shoping</span>
+						</a>
+						<button class="social__burger-icon" >
+							<span></span>
+						</button>
+					</div>
+				</div>
+
+				<form  class="header__form-search search" action="#">
+					<input class="search__input" required placeholder="grin dress" type="search">
+					<button class="search__button ">submit
+						<svg class="search__icon " viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.6562 1.15625C16.9062 1.3125 17.0312 1.59375 16.9375 1.875L14.9375 15.375C14.9062 15.5938 14.7812 15.8125 14.5625 15.9062C14.4688 15.9688 14.3438 16.0312 14.2188 16.0312C14.0938 16.0312 14 16 13.9062 15.9688L10.8438 14.6562L7.375 16.9062C7.25 16.9688 7.09375 17 6.96875 17C6.875 17 6.75 16.9688 6.625 16.9375C6.375 16.7812 6.25 16.5312 6.25 16.25V12.7188L1.4375 10.7188C1.1875 10.5938 1 10.3438 1 10.0625C0.96875 9.78125 1.125 9.5 1.375 9.375L15.875 1.125C16.125 0.96875 16.4375 1 16.6562 1.15625ZM12.5312 4.75L3.4375 9.90625L6.6875 11.2812L12.5312 4.75ZM7.71875 14.875L9.15625 13.9688L7.71875 13.3438V14.875ZM13.625 14.1875L15.125 4.09375L8.125 11.875L13.625 14.1875Z" fill="#1E2832"/>
+						</svg>
+					</button>
+				</form>
+
+				<nav class="header__nav ">
+					<ul class="nav">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Jewelry & Accessories</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link">Clothing & Shoes</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link">Home & Living</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link">Wedding & Party</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link">Toys & Entertainment</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link">Art & Collectibles</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link">Craft Supplies & Tools</a>
+						</li>
+
+
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+
+		<main>
+			<section class="collections">
+				<div class="collections__container">
+					<div class="collections__block-text text-block">
+						<h1 class="text-block__title">Collections </h1>
+						<div class="text-block__subtitle">
+							<p>
+								you can explore ans shop many differnt collection
+								from various barands here.
+							</p>
+
+						</div>
+						<a class="text-block__button " href="#">
+							<svg class="text-block__icon" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+							</svg>
+							<span>shop now</span>
+						</a>
+
+					</div>
+					<div class="collections__block-image image-block">
+						<div class="image-block__frame">
+							<img class="image-block__img" src="img/colections/woman.webp" alt="woman">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="brands">
+				<div class="brands__container">
+					<ul class="brands__list">
+						<li class="brands__item">
+							<img class="brands__img" src="img/brands/graphic-studio_01.webp" alt="graphic-studio">
+						</li>
+						<li class="brands__item">
+							<img class="brands__img" src="img/brands/s.salva_02.webp" alt=".svg" alt="graphic-studio">
+						</li>
+						<li class="brands__item">
+							<img class="brands__img" src="img/brands/golden-studio_03.webp" alt="golden-studio">
+						</li>
+						<li class="brands__item">
+							<img class="brands__img" src="img/brands/furniture_04.webp" alt="furniture">
+						</li>
+						<li class="brands__item">
+							<img class="brands__img" src="img/brands/travel-lookbook_05.webp" alt="travel-lookbook">
+						</li>
+	
+					</ul>
+				</div>
+			</div>
+
+			<section class="explore-styles">
+				<div class="explore-styles__container">
+					<h2 class="explore-styles__title">Explore new and popular styles</h2>
+					<div class="explore-styles__body ">
+						<a class="explore-styles__item " href="#">
+							<img class="explore-styles__img" src="img/popular-style/img_01.webp" alt="Popular style">
+							<header class="explore-styles__header header-styles ">
+								<h3 class="header-styles__title">manto </h3>
+								<div class="header-styles__presence">
+									<span>86</span> product
+								</div>
+							</header>
+							<ul class="explore-styles__stickers stickers">
+								<li class="stickers__item stickers__item--light-pink" >
+									hot
+								</li>
+								<li class="stickers__item stickers__item--gray" >
+									sale
+								</li>
+								<li class="stickers__item stickers__item--white" >
+									limited 
+								</li>
+							</ul>
+						</a>
+
+						<a class="explore-styles__item " href="#">
+							<img class="explore-styles__img" src="img/popular-style/img_02.webp" alt="Popular style">
+							<header class="explore-styles__header header-styles ">
+								<h3 class="header-styles__title">Pants</h3>
+								<div class="header-styles__presence">
+									<span>200</span>  product 
+								</div>
+							</header>
+							<ul class="explore-styles__stickers stickers">
+								<li class="stickers__item stickers__item--light-pink" >
+									hot 
+								</li>
+								<li class="stickers__item stickers__item--gray" >
+									sale 
+								</li>
+								<li class="stickers__item stickers__item--white" >
+									limited 
+								</li>
+							</ul>
+						</a>
+
+						<a class="explore-styles__item " href="#">
+							<img class="explore-styles__img" src="img/popular-style/img_03.webp" alt="Popular style">
+							<header class="explore-styles__header header-styles ">
+								<h3 class="header-styles__title">coat</h3>
+								<div class="header-styles__presence">
+									<span>520</span>  product
+								</div>
+							</header>
+							<ul class="explore-styles__stickers stickers">
+								<li class="stickers__item stickers__item--light-pink" >
+									hot
+								</li>
+								<li class="stickers__item stickers__item--gray" >
+									sale
+								</li>
+								<li class="stickers__item stickers__item--white" >
+									limited
+								</li>
+							</ul>
+						</a>
+
+						<a class="explore-styles__item " href="#">
+							<img class="explore-styles__img" src="img/popular-style/img_04.webp" alt="Popular style">
+							<header class="explore-styles__header header-styles ">
+								<h3 class="header-styles__title">Shirt</h3>
+								<div class="header-styles__presence">
+									<span>320</span>  product
+								</div>
+							</header>
+							<ul class="explore-styles__stickers stickers">
+								<li class="stickers__item stickers__item--light-pink" >
+									hot
+								</li>
+								<li class="stickers__item stickers__item--gray" >
+									sale
+								</li>
+								<li class="stickers__item stickers__item--white" >
+									limited
+								</li>
+							</ul>
+						</a>
+
+						<a class="explore-styles__item " href="#">
+							<img class="explore-styles__img" src="img/popular-style/img_05.webp" alt="Popular style">
+							<header class="explore-styles__header header-styles ">
+								<h3 class="header-styles__title">jacket</h3>
+								<div class="header-styles__presence">
+									<span>103</span>  product
+								</div>
+							</header>
+							<ul class="explore-styles__stickers stickers">
+								<li class="stickers__item stickers__item--light-pink" >
+									hot
+								</li>
+								<li class="stickers__item stickers__item--gray" >
+									sale
+								</li>
+								<li class="stickers__item stickers__item--white" >
+									limited
+								</li>
+							</ul>
+						</a>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="newsletter">
+				<div class="newsletter__container">
+					<h2 class="newsletter__title">Or subscribe to the newsletter</h2>
+					<aside class="newsletter__interactive interactive">
+						<ul class="interactive__list">
+							<li class="interactive__item">
+								<button class="interactive__tab">
+									all products
+								</button>
+							</li>
+							<li class="interactive__item">
+								<button  class="interactive__tab">
+									t-shirt
+								</button>
+							</li>
+							<li class="interactive__item">
+								<button class="interactive__tab">
+									hoodies
+								</button>
+							</li>
+							<li class="interactive__item">
+								<button class="interactive__tab">
+									jacket
+								</button>
+							</li>
+						</ul>
+						<button class="interactive__button ">
+							<svg class="interactive__icon" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.08203 1.25391C1.27344 0.871094 1.65625 0.625 2.09375 0.625H13.9062C14.3164 0.625 14.6992 0.871094 14.8906 1.25391C15.0547 1.63672 15 2.10156 14.7266 2.42969L9.75 8.52734V12C9.75 12.3555 9.55859 12.6562 9.25781 12.793C8.95703 12.9297 8.60156 12.9023 8.32812 12.7109L6.57812 11.3984C6.35938 11.2344 6.25 10.9883 6.25 10.6875V8.52734L1.24609 2.42969C0.972656 2.10156 0.917969 1.63672 1.08203 1.25391Z" fill="white"/>
+							</svg>
+							filter
+						</button>
+					</aside>
+					<div class="newsletter__row">
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_01.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like ">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search ">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">Adicolor Classics Joggers </a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">Dress</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$63.85</div>
+									</div>
+									<div class="goods__price price-action">
+										<!-- <div class="price-action__old">$220.00</div>
+										<div class="price-action__actual">$163.85</div> -->
+										<div class="price-action__price">$63.85</div>
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_02.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like ">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#"> Nike Sportswear Futura Luxe</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">Bag</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$130.00</div>
+									</div>
+									<div class="goods__price price-action">
+										<div class="price-action__old">$220.00</div>
+										<div class="price-action__actual">$163.85</div>
+										<!-- <div class="price-action__price">$63.85</div> -->
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_03.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like ">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">Geometric print Scarf</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">scarf</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$53.00</div>
+									</div>
+									<div class="goods__price price-action">
+										<!-- <div class="price-action__old">$220.00</div> -->
+										<!-- <div class="price-action__actual">$163.85</div> -->
+										<div class="price-action__price">$53.00</div>
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_04.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like ">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search ">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">Yellow Reserved Hoodie</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">Dress</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$130.00</div>
+									</div>
+									<div class="goods__price price-action">
+										<div class="price-action__old">$364.00</div>
+										<div class="price-action__actual">$155.00</div>
+										<!-- <div class="price-action__price">$53.00</div> -->
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_05.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like ">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search ">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">ABasic Dress Green</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">Dress</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$236.00</div>
+									</div>
+									<div class="goods__price price-action">
+										<div class="price-action__old">$320.00</div>
+										<div class="price-action__actual">$180.00</div>
+										<!-- <div class="price-action__price">$63.85</div> -->
+										
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_06.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like ">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search ">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">Nike Air Zoom Pegasus</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">shoe</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$63.85</div>
+									</div>
+									<div class="goods__price price-action">
+										<div class="price-action__old">$220.00</div>
+										<div class="price-action__actual">$198.00</div>
+										<!-- <div class="price-action__price">$63.85</div> -->
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_07.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search ">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">Nike Repel Miler</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">Dress</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$120.50</div>
+									</div>
+									<div class="goods__price price-action">
+										<div class="price-action__old">$220.00</div>
+										<div class="price-action__actual">$163.85</div>
+										<!-- <div class="price-action__price">$63.85</div> -->
+									</div>
+								</div>
+							</header>
+						</article>
+						<article class="newsletter__product-card card-newsletter">
+							<div class="card-newsletter__body">
+								<a href="#" class="card-newsletter__link-body">
+									<div class="card-newsletter__image" >
+										<img  src="img/newsletter/image-product_08.webp" alt="Product card ">
+									</div>
+									<ul class="card-newsletter__stickers stickers">
+										<li class="stickers__item stickers__item--light-pink" >
+											hot
+										</li>
+										<li class="stickers__item stickers__item--gray" >
+											sale
+										</li>
+										<li class="stickers__item stickers__item--white" >
+											limited
+										</li>
+									</ul>
+								</a>
+								<div class="card-newsletter__shop shop-item">
+									<div class="shop-item__button">
+										<button class="shop-item__like">
+											<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+											</svg>
+										</button>
+										<button class="shop-item__search">
+											<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+											</svg>
+										</button>
+									</div>
+									<div class="shop-item__button-button">
+										<button class="shop-item__shop-button ">
+											<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+											</svg>
+											<span>shop now</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<header class="card-newsletter__header">
+								<h3 class="card-newsletter__title">
+									<a href="#">Nike Sportswear Futura Luxe</a>
+								</h3>
+								<div class="card-newsletter__goods goods">
+									<div class="goods__type">Glasses</div>
+									<div class="goods__basic-price basic-price ">
+										<div class="basic-price__price">$160.00</div>
+									</div>
+									<div class="goods__price price-action">
+										<div class="price-action__old">$220.00</div>
+										<div class="price-action__actual">$50.00</div>
+										<!-- <div class="price-action__price">$63.85</div> -->
+									</div>
+								</div>
+							</header>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<article class="zara">
+				<div class="zara__container">
+					<div class="zara__text-block block-zara">
+						<img class="block-zara__image-title" src="img/zara/zara-02.svg" alt="Image-title">
+						<div class="block-zara__subtitle">
+							<p>
+								Lustrous yet understated. The new evening
+								wear collection exclusively offered at the
+								reopened Giorgio Armani boutique in Los
+								Angeles.
+							</p>
+						</div>
+						<a href="#" class="zara__button">
+							see collection
+						</a>
+					</div>
+					<img class="zara__img-text" src="img/zara/zara-01.svg" alt="Image">
+				</div>
+			</article>
+
+			<section class="slider-product">
+				<div class="slider-product__container">
+					<div class="slider-product__title">Best sellers</div>
+					<aside class="slider-product__interactive interactive">
+						<ul class="interactive__list">
+							<li class="interactive__item">
+								<button class="interactive__tab">
+									all products
+								</button>
+							</li>
+							<li class="interactive__item">
+								<button  class="interactive__tab">
+									t-shirt
+								</button>
+							</li>
+							<li class="interactive__item">
+								<button class="interactive__tab">
+									hoodies
+								</button>
+							</li>
+							<li class="interactive__item">
+								<button class="interactive__tab">
+									jacket
+								</button>
+							</li>
+						</ul>
+						<button class="interactive__button ">
+							show all
+						</button>
+					</aside>
+					<button class="slider-product__button-left">
+						<img class="slider-product__icon-left" src="img/icons/icon-slider.svg" alt="Icon">
+					</button>
+					<button class="slider-product__button-right">
+						<img class="slider-product__icon-right" src="img/icons/icon-slider.svg" alt="Icon">
+					</button>
+					<div class="slider-product__row ">
+
+						<div class="slider-product__item-container ">
+
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_01.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like ">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button ">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Adicolor Classics Joggers</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">Dress</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$63.85</div>
+										</div>
+										<div class="goods__price price-action">
+											<!-- <div class="price-action__old">$220.00</div>
+											<div class="price-action__actual">$163.85</div> -->
+											<div class="price-action__price">$63.85</div>
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_02.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Nike Sportswear Futura Luxe</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">Bag</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$130.00</div>
+										</div>
+										<div class="goods__price price-action">
+											<div class="price-action__old">$220.00</div>
+											<div class="price-action__actual">$163.85</div>
+											<!-- <div class="price-action__price">$63.85</div> -->
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_03.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Geometric print Scarf</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">scarf</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$53.00</div>
+										</div>
+										<div class="goods__price price-action">
+											<!-- <div class="price-action__old">$220.00</div> -->
+											<!-- <div class="price-action__actual">$163.85</div> -->
+											<div class="price-action__price">$53.00</div>
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_04.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Yellow Reserved Hoodie</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">Dress</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$130.00</div>
+										</div>
+										<div class="goods__price price-action">
+											<div class="price-action__old">$364.00</div>
+											<div class="price-action__actual">$155.00</div>
+											<!-- <div class="price-action__price">$53.00</div> -->
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_05.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like ">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button ">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">ABasic Dress Green</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">Dress</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$236.00</div>
+										</div>
+										<div class="goods__price price-action">
+											<div class="price-action__old">$320.00</div>
+											<div class="price-action__actual">$180.00</div>
+											<!-- <div class="price-action__price">$63.85</div> -->
+											
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_06.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Nike Air Zoom Pegasus</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">shoe</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$63.85</div>
+										</div>
+										<div class="goods__price price-action">
+											<div class="price-action__old">$220.00</div>
+											<div class="price-action__actual">$198.00</div>
+											<!-- <div class="price-action__price">$63.85</div> -->
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_07.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Nike Repel Miler</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">Dress</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$120.50</div>
+										</div>
+										<div class="goods__price price-action">
+											<div class="price-action__old">$220.00</div>
+											<div class="price-action__actual">$163.85</div>
+											<!-- <div class="price-action__price">$63.85</div> -->
+										</div>
+									</div>
+								</header>
+							</article>
+							<article class="slider-product__product-card card-newsletter">
+								<div class="card-newsletter__body">
+									<a href="#" class="card-newsletter__link-body">
+										<div class="card-newsletter__image" >
+											<img  src="img/newsletter/image-product_08.webp" alt="Product card ">
+										</div>
+										<ul class="card-newsletter__stickers stickers">
+											<li class="stickers__item stickers__item--light-pink" >
+												hot
+											</li>
+											<li class="stickers__item stickers__item--gray" >
+												sale
+											</li>
+											<li class="stickers__item stickers__item--white" >
+												limited
+											</li>
+										</ul>
+									</a>
+									<div class="card-newsletter__shop shop-item">
+										<div class="shop-item__button">
+											<button class="shop-item__like">
+												<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path class="shop-item__icon" d="M10.0312 2.78125L10.4609 3.25L10.9297 2.82031C12.2188 1.53125 14.0547 0.945312 15.8125 1.25781C18.5078 1.6875 20.5 4.03125 20.5 6.76562V6.96094C20.5 8.60156 19.7969 10.1641 18.625 11.2578L11.5547 17.8594C11.2812 18.1328 10.8906 18.25 10.5 18.25C10.0703 18.25 9.67969 18.1328 9.40625 17.8594L2.33594 11.2578C1.16406 10.1641 0.5 8.60156 0.5 6.96094V6.76562C0.5 4.03125 2.45312 1.6875 5.14844 1.25781C6.90625 0.945312 8.74219 1.53125 10.0312 2.78125C10.0312 2.82031 9.99219 2.78125 10.0312 2.78125ZM10.4609 5.90625L8.70312 4.10938C7.84375 3.28906 6.63281 2.89844 5.46094 3.09375C3.66406 3.40625 2.375 4.92969 2.375 6.76562V6.96094C2.375 8.09375 2.80469 9.14844 3.625 9.89062L10.5 16.2969L17.3359 9.89062C18.1562 9.14844 18.625 8.09375 18.625 6.96094V6.76562C18.625 4.92969 17.2969 3.40625 15.5 3.09375C14.3281 2.89844 13.1172 3.28906 12.2578 4.10938L10.4609 5.90625Z" fill="white"/>
+												</svg>
+											</button>
+											<button class="shop-item__search">
+												<svg class="shop-item__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.0312 18.8438C21.6172 19.4688 21.6172 20.4453 21.0312 21.0703C20.4062 21.6562 19.4297 21.6562 18.8047 21.0703L14.1562 16.3828C12.5547 17.4375 10.6016 17.9844 8.49219 17.7109C4.89844 17.2031 2.00781 14.2734 1.53906 10.7188C0.875 5.40625 5.36719 0.914062 10.6797 1.57812C14.2344 2.04688 17.1641 4.9375 17.6719 8.53125C17.9453 10.6406 17.3984 12.5938 16.3438 14.1562L21.0312 18.8438ZM4.58594 9.625C4.58594 12.3984 6.8125 14.625 9.58594 14.625C12.3203 14.625 14.5859 12.3984 14.5859 9.625C14.5859 6.89062 12.3203 4.625 9.58594 4.625C6.8125 4.625 4.58594 6.89062 4.58594 9.625Z" fill="#000"/>
+												</svg>
+											</button>
+										</div>
+										<div class="shop-item__button-button">
+											<button class="shop-item__shop-button">
+												<svg class="shop-item__icon" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.125 4.875C5.125 2.49219 7.07812 0.5 9.5 0.5C11.8828 0.5 13.875 2.49219 13.875 4.875V6.75H16.375C17.3906 6.75 18.25 7.60938 18.25 8.625V16.75C18.25 18.8203 16.5703 20.5 14.5 20.5H4.5C2.39062 20.5 0.75 18.8203 0.75 16.75V8.625C0.75 7.60938 1.57031 6.75 2.625 6.75H5.125V4.875ZM7 6.75H12V4.875C12 3.50781 10.8672 2.375 9.5 2.375C8.09375 2.375 7 3.50781 7 4.875V6.75ZM6.0625 10.5C6.57031 10.5 7 10.1094 7 9.5625C7 9.05469 6.57031 8.625 6.0625 8.625C5.51562 8.625 5.125 9.05469 5.125 9.5625C5.125 10.1094 5.51562 10.5 6.0625 10.5ZM12.9375 8.625C12.3906 8.625 12 9.05469 12 9.5625C12 10.1094 12.3906 10.5 12.9375 10.5C13.4453 10.5 13.875 10.1094 13.875 9.5625C13.875 9.05469 13.4453 8.625 12.9375 8.625Z" fill="#1E2832"/>
+												</svg>
+												<span>shop now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<header class="card-newsletter__header">
+									<h3 class="card-newsletter__title">
+										<a href="#">Nike Sportswear Futura Luxe</a>
+									</h3>
+									<div class="card-newsletter__goods goods">
+										<div class="goods__type">Glasses</div>
+										<div class="goods__basic-price basic-price ">
+											<div class="basic-price__price">$160.00</div>
+										</div>
+										<div class="goods__price price-action">
+											<div class="price-action__old">$220.00</div>
+											<div class="price-action__actual">$50.00</div>
+											<!-- <div class="price-action__price">$63.85</div> -->
+										</div>
+									</div>
+								</header>
+							</article>
+
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+
+			<div class="products-instagram">
+				<div class="products-instagram__container">
+					<section class="products-instagram__follow follow-products">
+						<h2 class="follow-products__title">Follow products and discounts on Instagram</h2>
+						<ul class="follow-products__list">
+							<li class="follow-products__item ">
+								<a target="_blank" href="#" class="follow-products__link ">
+									<svg class="follow-products__icon " width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+									</svg>
+									<img src="img/follow-products/image_01.webp" alt="Image" class="follow-products__img ">
+								</a>
+							</li>
+							<li class="follow-products__item ">
+								<a href="#" target="_blank" class="follow-products__link ">
+									<svg class="follow-products__icon " width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+									</svg>
+									<img src="img/follow-products/image_02.webp" alt="Image" class="follow-products__img">
+								</a>
+							</li>
+							<li class="follow-products__item  ">
+								<a href="#" target="_blank" class="follow-products__link">
+									<svg class="follow-products__icon " width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+									</svg>
+									<img src="img/follow-products/image_03.webp" alt="Image" class="follow-products__img">
+								</a>
+							</li>
+							<li class="follow-products__item ">
+								<a href="#" target="_blank" class="follow-products__link ">
+									<svg class="follow-products__icon " width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+									</svg>
+									<img src="img/follow-products/image_04.webp" alt="Image" class="follow-products__img">
+								</a>
+							</li>
+							<li class="follow-products__item ">
+								<a href="#" target="_blank" class="follow-products__link ">
+									<svg class="follow-products__icon " width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+									</svg>
+									<img src="img/follow-products/image_05.webp" alt="Image" class="follow-products__img">
+								</a>
+							</li>
+							<li class="follow-products__item ">
+								<a href="#" target="_blank" class="follow-products__link ">
+									<svg class="follow-products__icon"  viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+									</svg>
+									<img src="img/follow-products/image_06.webp" alt="Image" class="follow-products__img">
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="products-instagram__form form-instagram">
+						<h2 class="form-instagram__title">Or subscribe to the newsletter</h2>
+						<div class="form-instagram__form">
+							<form class="form-instagram__submit-form" method="post" action="#" >
+								<input required class="form-instagram__input" placeholder="Email address..." type="email" name="email">
+								<button class="form-instagram__button" value="submit" type="submit">
+									<svg class="form-instagram__icon" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.6562 1.15625C16.9062 1.3125 17.0312 1.59375 16.9375 1.875L14.9375 15.375C14.9062 15.5938 14.7812 15.8125 14.5625 15.9062C14.4688 15.9688 14.3438 16.0312 14.2188 16.0312C14.0938 16.0312 14 16 13.9062 15.9688L10.8438 14.6562L7.375 16.9062C7.25 16.9688 7.09375 17 6.96875 17C6.875 17 6.75 16.9688 6.625 16.9375C6.375 16.7812 6.25 16.5312 6.25 16.25V12.7188L1.4375 10.7188C1.1875 10.5938 1 10.3438 1 10.0625C0.96875 9.78125 1.125 9.5 1.375 9.375L15.875 1.125C16.125 0.96875 16.4375 1 16.6562 1.15625ZM12.5312 4.75L3.4375 9.90625L6.6875 11.2812L12.5312 4.75ZM7.71875 14.875L9.15625 13.9688L7.71875 13.3438V14.875ZM13.625 14.1875L15.125 4.09375L8.125 11.875L13.625 14.1875Z" fill="#1E2832"/>
+									</svg>
+									SUBMIT
+								</button>
+							</form>
+						</div>
+					</section>
+				</div>
+			</div>
+
+
+		</main>
+
+	
+		<footer>
+			<div class="footer-top">
+				<div class="footer-top__container">
+					<div class="footer-top__block-text ">
+						<div class="footer-top__image">
+							<a class="footer-top__link-img" href="#">
+								<img class="footer-top__img" src="img/header/logo.svg" alt="logo">
+							</a>
+						</div>
+						<div class="footer-top__subtitle">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua
+							</p>
+						</div>
+						<address class="footer-top__social social-footer">
+							<ul class="social-footer__list">
+								<li class="social-footer__item">
+									<a class="social-footer__link" target="_blank" href="#">
+										<svg class="social-footer__icon" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.1484 11.75H7.21875V20.5H3.3125V11.75H0.109375V8.15625H3.3125V5.38281C3.3125 2.25781 5.1875 0.5 8.03906 0.5C9.40625 0.5 10.8516 0.773438 10.8516 0.773438V3.85938H9.25C7.6875 3.85938 7.21875 4.79688 7.21875 5.8125V8.15625H10.6953L10.1484 11.75Z" fill="#1E2832"/>
+										</svg>
+									</a>
+								</li> 
+								<li class="social-footer__item">
+									<a class="social-footer__link" target="_blank" href="#">
+										<svg class="social-footer__icon" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.4297 4.4375C18.4297 4.63281 18.4297 4.78906 18.4297 4.98438C18.4297 10.4141 14.3281 16.625 6.78906 16.625C4.44531 16.625 2.29688 15.9609 0.5 14.7891C0.8125 14.8281 1.125 14.8672 1.47656 14.8672C3.39062 14.8672 5.14844 14.2031 6.55469 13.1094C4.75781 13.0703 3.23438 11.8984 2.72656 10.2578C3 10.2969 3.23438 10.3359 3.50781 10.3359C3.85938 10.3359 4.25 10.2578 4.5625 10.1797C2.6875 9.78906 1.28125 8.14844 1.28125 6.15625V6.11719C1.82812 6.42969 2.49219 6.58594 3.15625 6.625C2.02344 5.88281 1.32031 4.63281 1.32031 3.22656C1.32031 2.44531 1.51562 1.74219 1.86719 1.15625C3.89844 3.61719 6.94531 5.25781 10.3438 5.45312C10.2656 5.14062 10.2266 4.82812 10.2266 4.51562C10.2266 2.25 12.0625 0.414062 14.3281 0.414062C15.5 0.414062 16.5547 0.882812 17.3359 1.70312C18.2344 1.50781 19.1328 1.15625 19.9141 0.6875C19.6016 1.66406 18.9766 2.44531 18.1172 2.95312C18.9375 2.875 19.7578 2.64062 20.4609 2.32812C19.9141 3.14844 19.2109 3.85156 18.4297 4.4375Z" fill="#1E2832"/>
+										</svg>
+									</a>
+								</li> 
+								<li class="social-footer__item">
+									<a class="social-footer__link " target="_blank" target="_blank" href="#">
+										<svg  class="social-footer__icon"  viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4.65625 18H1.02344V6.32031H4.65625V18ZM2.82031 4.75781C1.6875 4.75781 0.75 3.78125 0.75 2.60938C0.75 1.00781 2.46875 -0.0078125 3.875 0.8125C4.53906 1.16406 4.92969 1.86719 4.92969 2.60938C4.92969 3.78125 3.99219 4.75781 2.82031 4.75781ZM18.2109 18H14.6172V12.3359C14.6172 10.9688 14.5781 9.25 12.7031 9.25C10.8281 9.25 10.5547 10.6953 10.5547 12.2188V18H6.92188V6.32031H10.3984V7.92188H10.4375C10.9453 7.02344 12.1172 6.04688 13.875 6.04688C17.5469 6.04688 18.25 8.46875 18.25 11.5938V18H18.2109Z" fill="#1E2832"/>
+										</svg>
+									</a>
+								</li> 
+								<li class="social-footer__item">
+									<a class="social-footer__link " target="_blank" href="#">
+										<svg class="social-footer__icon" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.5 5.00781C11.9609 5.00781 13.9922 7.03906 13.9922 9.5C13.9922 12 11.9609 13.9922 9.5 13.9922C7 13.9922 5.00781 12 5.00781 9.5C5.00781 7.03906 7 5.00781 9.5 5.00781ZM9.5 12.4297C11.1016 12.4297 12.3906 11.1406 12.3906 9.5C12.3906 7.89844 11.1016 6.60938 9.5 6.60938C7.85938 6.60938 6.57031 7.89844 6.57031 9.5C6.57031 11.1406 7.89844 12.4297 9.5 12.4297ZM15.2031 4.85156C15.2031 4.26562 14.7344 3.79688 14.1484 3.79688C13.5625 3.79688 13.0938 4.26562 13.0938 4.85156C13.0938 5.4375 13.5625 5.90625 14.1484 5.90625C14.7344 5.90625 15.2031 5.4375 15.2031 4.85156ZM18.1719 5.90625C18.25 7.35156 18.25 11.6875 18.1719 13.1328C18.0938 14.5391 17.7812 15.75 16.7656 16.8047C15.75 17.8203 14.5 18.1328 13.0938 18.2109C11.6484 18.2891 7.3125 18.2891 5.86719 18.2109C4.46094 18.1328 3.25 17.8203 2.19531 16.8047C1.17969 15.75 0.867188 14.5391 0.789062 13.1328C0.710938 11.6875 0.710938 7.35156 0.789062 5.90625C0.867188 4.5 1.17969 3.25 2.19531 2.23438C3.25 1.21875 4.46094 0.90625 5.86719 0.828125C7.3125 0.75 11.6484 0.75 13.0938 0.828125C14.5 0.90625 15.75 1.21875 16.7656 2.23438C17.7812 3.25 18.0938 4.5 18.1719 5.90625ZM16.2969 14.6562C16.7656 13.5234 16.6484 10.7891 16.6484 9.5C16.6484 8.25 16.7656 5.51562 16.2969 4.34375C15.9844 3.60156 15.3984 2.97656 14.6562 2.70312C13.4844 2.23438 10.75 2.35156 9.5 2.35156C8.21094 2.35156 5.47656 2.23438 4.34375 2.70312C3.5625 3.01562 2.97656 3.60156 2.66406 4.34375C2.19531 5.51562 2.3125 8.25 2.3125 9.5C2.3125 10.7891 2.19531 13.5234 2.66406 14.6562C2.97656 15.4375 3.5625 16.0234 4.34375 16.3359C5.47656 16.8047 8.21094 16.6875 9.5 16.6875C10.75 16.6875 13.4844 16.8047 14.6562 16.3359C15.3984 16.0234 16.0234 15.4375 16.2969 14.6562Z" fill="#1E2832"/>
+										</svg>
+									</a>
+								</li> 
+							</ul>
+						</address>
+
+					</div>
+					<div class="footer-top__block-menu">
+						<section class="footer-top__menu">
+							<details open class="menu-footer">
+								<summary class="menu-footer__label">CATALOG</summary>
+								<ul class="menu-footer__list" >
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Necklaces
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											hoodies
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Jewelry Box
+										</a>
+									</li>
+										<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											t-shirt
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											jacket
+										</a>
+									</li>
+								</ul>
+							</details>
+						</section>
+
+						<section class="footer-top__menu ">
+							<details open class="menu-footer">
+								<summary class="menu-footer__label">ABOUT US</summary>
+								<ul class="menu-footer__list" >
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Our Producers
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Sitemap
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											FAQ
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											About Us
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Terms & Conditions
+										</a>
+									</li>
+								</ul>
+							</details>
+						</section>
+
+						<section class="footer-top__menu ">
+							<details open class="menu-footer">
+								<summary class="menu-footer__label">SERVICES</summary>
+								<ul class="menu-footer__list" >
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Contact Us
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Track Your Order
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Product Care & Repair
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Book an Appointment
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a class="menu-footer__link" href="#">
+											Shipping & Returns
+										</a>
+									</li>
+								</ul>
+							</details>
+						</section>
+
+					</div>
+				</div>
+			</div>
+			<div class="foorer-bottom">
+				<div class="foorer-bottom__container">
+					<div class="foorer-bottom__info">
+						© 2024 Coral , Inc.
+					</div>
+					<div class="foorer-bottom__payment payment-footer">
+						<ul class="payment-footer__list">
+							<li class="payment-footer__item">
+								<img src="img/pay-icons/icons_payment_1.jpg" alt="Payment card">
+							</li>
+							<li class="payment-footer__item">
+								<img src="img/pay-icons/icons_payment_2.jpg" alt="Payment card">
+							</li>
+							<li class="payment-footer__item">
+								<img src="img/pay-icons/icons_payment_3.jpg" alt="Payment card">
+							</li>
+							<li class="payment-footer__item">
+								<img src="img/pay-icons/icons_payment_4.jpg" alt="Payment card">
+							</li>
+							<li class="payment-footer__item">
+								<img src="img/pay-icons/icons_payment_5.jpg" alt="Payment card">
+							</li>
+							<li class="payment-footer__item">
+								<img src="img/pay-icons/icons_payment_6.jpg" alt="Payment card">
+							</li>
+						</ul>
+					</div>
+					<a class="foorer-bottom__scroll-top " href="#">
+						<svg class="foorer-bottom__icon " viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.9766 9.50391C14.8125 9.66797 14.5938 9.75 14.375 9.75C14.1289 9.75 13.9102 9.66797 13.7461 9.50391L10.875 6.63281V15C10.875 15.4922 10.4648 15.875 10 15.875C9.5625 15.875 9.125 15.4922 9.125 15V6.63281L6.22656 9.50391C5.89844 9.85938 5.32422 9.85938 4.99609 9.50391C4.64062 9.17578 4.64062 8.60156 4.99609 8.27344L9.37109 3.89844C9.69922 3.54297 10.2734 3.54297 10.6016 3.89844L14.9766 8.27344C15.332 8.60156 15.332 9.17578 14.9766 9.50391Z" fill="white"/>
+						</svg>
+						Scroll to top
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="js/dynamic_adapt.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
