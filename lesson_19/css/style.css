@@ -1,58 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500);
-[class*=_icon-]::before {
-  font-family: "icons";
-  speak: never;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-._icon-like::before {
-  content: "\e902";
-}
-
-._icon-filter::before {
-  content: "\e903";
-}
-
-._icon-submit::before {
-  content: "\e904";
-}
-
-._icon-account::before {
-  content: "\e905";
-}
-
-._icon-scroll-icon::before {
-  content: "\e906";
-}
-
-._icon-search1::before {
-  content: "\e907";
-}
-
-._icon-shoping::before {
-  content: "\e908";
-}
-
-._icon-facebook::before {
-  content: "\e909";
-}
-
-._icon-instagram::before {
-  content: "\e90a";
-}
-
-._icon-linkedin::before {
-  content: "\e90b";
-}
-
-._icon-twitter::before {
-  content: "\e90c";
-}
-
 @font-face {
   font-family: "icons";
   src: url("../fonts/icons.woff2") format("woff2");
@@ -1453,8 +1401,6 @@ body {
 .card-newsletter__body {
   position: relative;
   display: grid;
-  grid-column: 1fr;
-  grid-row: 1fr;
 }
 .card-newsletter__image {
   overflow: hidden;
@@ -1512,6 +1458,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1542,7 +1491,7 @@ body {
 }
 .shop-item__icon {
   width: 1.3125rem;
-  height: 1toRem 19;
+  height: 1.1875rem;
 }
 .shop-item__icon path {
   fill: #ffffff;
@@ -1551,7 +1500,7 @@ body {
 }
 .shop-item__like {
   width: 1.3125rem;
-  height: 1toRem 19;
+  height: 1.1875rem;
 }
 .shop-item__like path {
   -webkit-transition: fill 0.2s;
@@ -1564,7 +1513,7 @@ body {
 }
 .shop-item__search {
   width: 1.375rem;
-  height: 1toRem 22;
+  height: 1.375rem;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
@@ -2367,6 +2316,9 @@ body {
   }
 }
 .menu-footer__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-transform: capitalize;
   color: #000;
   font-family: "Open Sans", sans-serif;

@@ -7,7 +7,7 @@
 @import "_mixins.scss";
 
 
-@import "_icons.scss";
+// @import "_icons.scss";
 @import "_fonts.scss";
 
 /* Скидання стилів */
@@ -1011,8 +1011,6 @@ body{
 	&__body {
 		position: relative;
 		display: grid;
-		grid-column: 1fr;
-		grid-row: 1fr;
 	}
 
 	&__link-body {}
@@ -1072,6 +1070,7 @@ body{
 
 .shop-item {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	color:$colorBodyWhite;
 	padding-block: toRem(15);
@@ -1094,7 +1093,7 @@ body{
 	}
 	&__icon{
 		width:toRem(21);
-		height:1toRem(19);
+		height:toRem(19);
 		path{
 			fill: $colorBodyWhite;
 			transition: fill 0.2s;
@@ -1103,7 +1102,7 @@ body{
 
 	&__like {
 		width:toRem(21);
-		height:1toRem(19);
+		height:toRem(19);
 		path{
 			transition: fill 0.2s;
 		}
@@ -1116,7 +1115,7 @@ body{
 
 	&__search {
 		width:toRem(22);
-		height:1toRem(22);
+		height:toRem(22);
 		path{
 			transition: fill 0.2s;
 		}
@@ -1767,6 +1766,7 @@ body{
 	}
 
 	&__label {
+		display: flex;
 		text-transform: capitalize;
 		color: $colorBlack;
 		font-family: "Open Sans",sans-serif;
