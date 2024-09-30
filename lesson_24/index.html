@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 24.(JavaScript. Частина №4)</title>
+		<!-- <style>html{opacity: 0;}</style> -->
+		 <!-- <styl>
+			html{
+				opacity: 0;
+			}
+		 </style> -->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header id="button-scroll" class="header">
+				<div class="header__container">
+					<h1 class="header__title">Урок №24 (Основи JavaScript. Частина №4)</h1>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<article class="homework homework--padding">
+						<section class="task task--margin-bottom"> 
+							<div class="task__block">
+								<div class="task__number">
+									<h2  class="task__title">Завдання №1</h2>
+								</div>
+								<p class="task__text">
+									Дано в html: три елементи з класом item.
+									При кліку на кожен з елментів додати клас active,
+									при повторному кліку прибрати клас 
+								</p>
+								<div class="task__solution">
+									<p class="solution">
+										<span class="color-blue">document</span>.<span class="color-yellow">addEventListener</span><span class="color-yellow2">(</span><span class="color-yellow-gray">"click"</span class="colorYellow-gray">, <span class="color-yellow">documentAction</span><span class="color-yellow2">)</span> <br>
+										<span class="color-blue2">function</span><span  class="color-yellow"> documentAction</span><span class="color-yellow2">(</span><span class="color-blue">e</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
+										<span class="colo-gray">|--</span> <span class="color-blue2">const</span> <span class="color-blue3">elementTarget</span> = <span class="color-blue">e</span>.<span class="color-blue">target</span><br>
+										<span class="colo-gray">|--</span> <span class="color-pink">if</span> <span class="color-pink2">(</span><span class="color-blue3">elementTarget</span>.<span class="color-blue">document</span>.<span class="color-yellow">closest</span><span class="color-blue2">(</span><span class="color-yellow-gray">'.item'</span><span class="color-blue2">)</span><span class="color-pink2">)</span> <span class="color-pink2">{</span><br>
+											<span class="colo-gray">|-- --</span> <span class="color-blue2">const</span> <span class="color-blue3">currentElement</span> = <span class="color-blue3">elementTarget</span>.<span class="color-yellow">closest</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'.item'</span><span class="color-yellow2">)</span><br>
+											<span class="colo-gray">|-- --</span> <span class="color-blue3">currentElement</span>.<span class="color-blue">classList</span>.<span class="color-yellow">toggle</span><span class="color-blue2">(</span><span class="color-yellow-gray">'active'</span><span class="color-blue2">)</span><br>
+											<span class="colo-gray">|--</span> <span class="color-pink2">}</span><br>
+											<span class="colo-gray">|--</span> <span class="color-blue">e</span>.<span class="color-blue">preventDefault</span><span class="color-pink2">()</span><br>
+										<span class="color-yellow2">}</span>
+									</p>
+								</div>
+								<div class="task__result">
+									<span class="result">Результат:</span>
+									<button type="button" class="item">Елемент</button>
+									<button type="button" class="item">Елемент</button>
+									<button type="button" class="item">Елемент</button>
+								</div>
+							</div>
+						</section>
+						<section class="task task--margin-bottom"> 
+							<div class="task__block">
+								<div class="task__number">
+									<h2  class="task__title">Завдання №2</h2>
+								</div>
+								<p class="task__text">
+									Дано в css/scss: body прозорий.
+									При повному завантаженню сторінки додати клас до body який прибирає прозорість.
+								</p>
+								<div class="task__solution">
+									<p class="solution">
+										<span class="color-yellow2">body {</span> <br>
+											<span class="colo-gray">|--</span> <span class="color-blue">opacity</span>:<span class="color-green"> 0</span>;  <br>
+										
+										<span class="color-yellow2">} </span><br>
+										<span class="color-yellow2">body.loaded {</span> <br>
+											<span class="colo-gray">|--</span> <span class="color-blue">opacity</span>: <span class="color-green">1</span>; <br>
+											<span class="colo-gray">|--</span> <span class="color-blue">transition</span>:  <span class="color-blue">opacity</span> <span class="color-green">1s</span>; <br>
+										<span class="color-yellow2">} </span>
+									</p>
+
+								</div>
+								<div class="task__solution">
+									<p class="solution">
+										<span class="color-blue">window</span>.<span class="color-yellow">addEventListener</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'load'</span>, <span class="color-yellow">bodyLoaded</span><span class="color-yellow2">)</span>;<br>
+										<span class="color-blue2">function</span> <span class="color-yellow">bodyLoaded</span><span class="color-yellow2">(</span><span class="color-blue2">e</span><span class="color-yellow2">) </span><span class="color-yellow2">{</span><br>
+										<span class="colo-gray">|--</span> <span class="color-blue">document</span>.<span class="color-blue">body</span>.<span class="color-blue2">classList</span>.<span class="color-yellow">add</span><span class="color-pink2">(</span><span class="color-yellow-gray">'loaded'</span><span class="color-pink2">)</span><br>
+										<span class="color-yellow2">}</span>
+									</p>
+								</div>
+								<!-- <div class="task__result">
+								</div>  -->
+							</div>
+						</section>
+						<section class="task task--margin-bottom"> 
+							<div class="task__block">
+								<div class="task__number">
+									<h2  class="task__title">Завдання №3</h2>
+								</div>
+								<p class="task__text">
+									Дано в html: header main footer.
+									Пи наведенні курсору на header змінювати колір фону у footer.
+									Коли курсор йде з header повертати початковий фон для footer.
+								</p>
+								<div class="task__solution">
+									<p class="solution">
+										<span class="color-blue2">const</span> <span class="color-blue3">header</span> = <span class="color-blue">document</span>.<span class="color-yellow">querySelector</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'header'</span><span class="color-yellow2">)</span><br>
+										<span class="color-blue2">const </span><span class="color-blue3">footer</span> = <span class="color-blue">document</span>.<span class="color-yellow">querySelector</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'footer'</span><span class="color-yellow2">)</span><br>
+										
+										<span class="color-pink">if </span><span class="color-yellow2">(</span><span class="color-blue3">footer</span> && <span class=" color-blue3">header</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
+										<span class="colo-gray">|--</span> <span class="color-blue3">header</span>.<span class="color-yellow">addEventListener</span><span class="color-pink2">(</span><span class="color-yellow-gray">'mouseover'</span>, <span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class=" color-blue2">{</span><br>
+										<span class="colo-gray">|-- -- </span><span class="color-blue3"> footer</span>.<span class="color-blue3">style</span>.<span class="color-blue">background</span> = <span class="color-yellow-gray">'radial-gradient(circle, rgba(251,231,63,1) 0%, rgba(89,231,173,1) 14%,  <br>
+										<span class="colo-gray">|-- -- </span>rgba(185,86,202,1) 34%, rgba(185,83,83,1) 46%, rgba(80,175,174,1) 59%, <br>
+										<span class="colo-gray">|-- -- </span>rgba(104,76,203,1) 74%, rgba(70,252,159,1) 100%)'</span><br>
+										<span class="colo-gray">|--</span> <span class="color-blue2">}</span><span class="color-pink2">)</span><br>
+										<span class="colo-gray">|--</span> <span class="color-blue3">header</span>.<span class="color-yellow">addEventListener</span><span class="color-pink2">(</span><span class="color-yellow-gray">'mouseleave'</span>, <span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class="color-blue2">{</span><br>
+										<span class="colo-gray">|-- --</span> <span class="color-blue3">footer</span>.<span class="color-blue3">style</span>.<span class="color-blue">background</span> = <span class="color-yellow-gray">''</span><br>
+										<span class="colo-gray">|--</span> <span class="color-blue2">}</span><span class="color-pink2">)</span><br>
+										<span class="color-yellow2">}</span>
+									</p>
+
+								</div>
+								<!-- <div class="task__result"> -->
+								<!-- </div> -->
+							</div>
+						</section>
+						<section class="task task--margin-bottom"> 
+							<div class="task__block">
+								<div class="task__number">
+									<h2  class="task__title">Завдання №4</h2>
+								</div>
+								<p class="task__text">
+									Дано в html: текст, елемент з класом item, текст. Так, що елемент з класом item за межами в'юпорта.
+									Створити функцію яка будує інтервал який буде змінювати контент в елементі item виводячи цифру яка збільшується на одиницю: 1 2 3 ... і т.д.
+									Затримка між зміною числа, та до якого числа має працювати інтервал має задаватись в дата атрибутах елемента item.
+									Функція має запускатись коли ми доскролюємо до елементу item (його видно), і не запускатись повторно.
+								</p>
+								<div class="task__solution">
+									<p class="solution">
+										<span class="color-gray">Розпочинає відлік використовуючи значення<br>атрибутів елемента data-max і data-delay<br>
+											<br>
+											@param {HTMLElement} element<br>
+											<br>
+										</span>
+										<span class="color-blue2">function</span> <span class="color-yellow">doCountingInElement</span><span class="color-yellow2">(</span><span class="color-blue">element</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">const </span><span class="color-blue3">maxCount</span> = <span class="color-yellow">parseInt</span><span class="color-pink2">(</span><span class="color-blue">element</span>.<span class="color-blue">dataset</span>.<span class="color-blue">max</span><span class="color-pink2">)</span> || <span class="color-green">10</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">const</span> <span class="color-blue3">delaySeconds</span> = <span class="color-yellow">parseFloat</span><span class="color-pink2">(</span><span class="color-blue">element</span>.<span class="color-blue">dataset</span>.<span class="color-blue">delay</span><span class="color-pink2">)</span> || <span class="color-green">1</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">let</span> <span class="color-blue">currentCount</span> = <span class="color-green">0</span>  <span class="colo-gray">Початковий відлік</span><br>
+										<br>
+										<span class="color-gray">|--</span> <span class="color-blue2">const</span> <span class="color-blue3">interval</span> = <span class="color-yellow">setInterval</span><span class="color-pink2">(</span><span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class="color-blue2">{</span><br>
+										<span class="color-gray">|-- --</span> <span class="color-blue">currentCount</span> += <span class="color-green">1</span><br>
+										<span class="color-gray">|-- --</span> <span class="color-blue">element</span>.<span class="color-blue">textContent</span> = <span class="color-blue">currentCount</span><br>
+										<br>
+										<span class=" color-gray">Зупинити відлік при досягненні maxCount</span><br>
+										<br>
+										<span class="color-gray">|-- --</span> <span class="color-pink">if</span> <span class="color-yellow2">(</span><span class="color-blue">currentCount</span> === <span class="color-blue3">maxCount</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
+										<span class="color-gray">|-- -- --</span> <span class="color-yellow">clearInterval</span><span class="color-pink2">(</span><span class="color-blue3">interval</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|-- --</span> <span class="color-yellow2">}</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">}</span>, <span class="color-blue3">delaySeconds</span> * <span class="color-green">1500</span><span class="color-pink2">)</span> <br>
+										<span class="color-yellow2">}</span><br>
+										<br>
+										<span class="color-gray">
+											При виявленні елемента у viewport - додає клас<br>
+											.intersecting, запускає анімацію та прибирає<br>
+											стеження.<br>
+										<br>
+											 @param {IntersectionObserverEntry} entry<br>
+											 @param {IntersectionObserver} observer<br>
+											@param {HTMLElement} element<br>
+										</span>
+										<br>
+										<span class="color-blue2"> function</span> <span class="color-yellow">handleIntersection</span><span class="color-yellow2">(</span><span class="color-blue">entry</span>, <span class="color-blue">observer</span>, <span class="color-blue">element</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
+										<span class="color-gray">|--</span> <span class="color-pink">if</span> <span class="color-pink2">(</span>!<span class="color-blue">entry</span>.<span class="color-blue">isIntersecting</span><span class="color-pink2">)</span> <span class="color-pink">return</span><br>
+										<br>
+										<span class="color-gray">	Якщо видно елемент</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue">entry</span>.<span class="color-blue">target</span>.<span class="color-blue">classList</span>.<span class="color-yellow">add</span><span class="color-pink2">(</span><span class="color-yellow-gray">'intersecting'</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue">observer</span>.<span class="color-yellow">unobserve</span><span class="color-pink2">(</span><span class="color-blue">entry</span>.<span class="color-blue">target</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class="color-yellow">doCountingInElement</span class="color-yellow"><span class="color-pink2">(</span><span class="color-blue">element</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue3">childElement</span class="color-blue3">.<span class="color-blue2">classList</span>.<span class="color-yellow">add</span><span class="color-pink2">(</span><span class="color-yellow-gray">'animate'</span><span class="color-pink2">)</span><br>
+										<span class="color-yellow2">}</span><br>
+										<br>
+										<span class="color-gray">
+											Наглядає за елментом та анімує дочірній<br>
+										<br>
+											@param {HTMLElement} parentElement<br>
+											@param {HTMLElement} childElement
+										</span><br>
+										<br>
+										<span class="color-blue2">function</span> <span class="color-yellow">watchParentAndAnimateChild</span><span class="color-yellow2">(</span><span class="color-blue">parentElement</span>, <span class="color-blue">childElement</span><span class="color-yellow2">) {</span><br>
+										<span class="color-gray">|--</span> <span class="color-pink">if</span> <span class="color-pink2">(</span>!<span class="color-blue">parentElement</span><span class="color-pink2">)</span> <span class="color-pink">return</span><br>
+										<span class="color-gray">|--</span> <span class="color-pink">if</span> <span class="color-pink2">(</span>!<span class="color-blue">childElement</span><span class="color-pink2">)</span> <span class="color-pink">return</span><br>
+										<br>
+										<span class="color-gray">|--</span> <span class="color-blue2">const </span><span class="color-blue3">observer</span> = <span class="color-blue2">new</span> <span class="color-green2">IntersectionObserver</span><span class="color-pink2">(</span><br>
+										<span class="color-gray">|-- --</span> <span class="color-blue2">(</span><span class="color-blue">entries</span><span class="color-blue2">)</span> <span class="color-blue3">=></span> <span class="color-blue2">{</span><br>
+										<span class="color-gray">|-- -- --</span> <span class="color-blue">entries</span>.<span class="color-yellow">forEach</span><span class="color-yellow2">(</span><span class="color-pink2">(</span><span class="color-blue">entry</span><span class="color-pink2">)</span > <span class="color-blue3">=></span> <span class="color-pink2">{</span><br>
+										<span class="color-gray">|-- -- -- --</span> <span class="color-yellow">handleIntersection</span><span class="color-blue2">(</span><span class="color-blue">entry</span>, <span class="color-blue3">observer</span>, <span class="color-blue">childElement</span> <span class="color-blue2">)</span><br>
+										<span class="color-gray">|-- -- --</span> <span class="color-pink2">}</span><span class="color-yellow2">)</span><br>
+										<span class="color-gray">|-- --</span> <span class="color-blue2">}</span>,<br>
+										<span class="color-gray">|-- --</span> <span class="color-blue2">{</span> <span class="color-blue">threshold</span>: <span class="color-green">0.8</span> <span class="color-blue2">}</span>,<br>
+										<span class="color-gray">|--</span> <span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class=" color-blue3">observer</span>.<span class="color-yellow">observe</span><span class="color-pink2">(</span><span class="color-blue">parentElement</span>)<span class="color-pink2"></span><br>
+										<span class="color-yellow2">}</span><br>
+										<br>
+										<span class="color-blue2">const</span> <span class="color-blue3">parentElement</span> = <span class="color-blue">document</span>.<span class="color-yellow">querySelector</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'.box'</span><span class="color-yellow2">)</span><br>
+										<span class="color-blue2">const</span> <span class=" color-blue3">childElement</span> = <span class="color-blue">document</span>.<span class="color-yellow">querySelector</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'.box__item'</span><span class="color-yellow2">)</span><br>
+										<br>
+										<span class="color-yellow">watchParentAndAnimateChild</span><span class="color-yellow2">(</span><span class="color-blue3">parentElement</span>, <span class="color-blue3">childElement</span><span class="color-yellow2">)</span><br>
+									</p>
+								</div>
+								<div class="task__result result"> 
+									<div class="result__text">
+										<div > Title</div>
+										<p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ratione cum omnis unde eligendi corrupti nemo blanditiis voluptatum odit officia exercitationem ipsam optio ducimus, eaque porro impedit vero dolor minus asperiores aspernatur eum corporis nesciunt non perferendis! Molestiae quibusdam amet et quaerat voluptate est, in obcaecati recusandae veritatis earum, vel minus rerum magnam, odio cumque exercitationem ullam nostrum saepe. Mollitia eligendi autem exercitationem, explicabo iure consequuntur! Vel, debitis accusamus et impedit a nobis velit quidem atque non voluptatibus possimus tempore dolor qui eum est eius perferendis fuga! Nam nulla eius ratione aperiam! Ullam repudiandae, necessitatibus rerum voluptate accusantium deleniti ipsum.</p>
+										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur veniam minus tempore voluptates eligendi saepe accusantium ullam deserunt. Doloribus, atque velit debitis ipsa ex pariatur, accusamus voluptate minima voluptatibus voluptas totam rerum quam, molestias mollitia ut asperiores minus! Accusamus assumenda id quis, architecto ipsam tenetur veniam accusantium et reprehenderit vitae eum! Earum sapiente dignissimos ratione esse expedita quam exercitationem! Animi asperiores et quibusdam dicta, dignissimos, obcaecati ex incidunt minus perferendis quo in culpa doloribus, fuga non ratione dolorum ad similique. Quidem eos voluptatum laboriosam animi ipsam ipsa tenetur eum reprehenderit minus ipsum placeat, harum in? Animi nostrum rem quo itaque assumenda debitis ad, aspernatur quas et iusto eaque vitae commodi. A rerum doloribus dolorem molestias placeat eligendi voluptas unde, molestiae accusamus corporis nobis ipsum mollitia delectus consequatur, nam culpa est commodi sapiente assumenda atque repudiandae optio maxime vero enim. Quae sapiente commodi dolor. Doloremque ad obcaecati officia, a fugiat officiis, inventore ut ratione est quisquam distinctio ullam aperiam, enim vel dolorem quaerat nesciunt facere sed sunt eveniet rem nobis amet voluptates? Expedita magni ea ut tempora voluptatem cum sunt adipisci deleniti molestiae fugiat. Soluta, deleniti a, et enim hic assumenda rem quidem earum nesciunt, accusantium eaque porro facere perferendis quos quaerat esse dicta. Commodi ipsum autem officiis cumque rem necessitatibus ab animi suscipit ducimus a id, ipsa nostrum fuga tempore natus. Architecto, ducimus. Dolor ab minima iste ea. Corporis nam rem reiciendis odio quia aspernatur molestias deleniti minima deserunt praesentium impedit vel, nulla nisi, possimus perferendis laborum cumque ipsam. Laudantium veniam labore aspernatur nam minima corporis qui odit, similique in blanditiis neque totam quidem non iste, nemo eveniet recusandae nisi. Laboriosam quaerat suscipit cum necessitatibus! Qui dolorem voluptas a possimus asperiores harum placeat impedit magnam est? Vero dignissimos necessitatibus maiores modi rem nesciunt sapiente adipisci aut sunt soluta delectus saepe itaque dolor, expedita odit accusamus facilis architecto a nostrum illo totam eveniet, cumque possimus assumenda. Rerum veritatis dolores minus quisquam hic est harum aliquam sed odio dolorem ad qui eum, mollitia consectetur error, nesciunt rem quod, dignissimos alias tenetur magnam praesentium. Deleniti saepe, ratione numquam, ea cumque eum iste consectetur nulla tenetur quidem suscipit sint delectus sunt! Quod, vitae hic, qui iste aliquam ea nulla corrupti est, ut et natus! Beatae esse quis incidunt unde ut odit ipsa itaque, inventore, vitae, nihil natus iure reiciendis doloremque quos voluptas est. Aliquid quo, quaerat aspernatur libero eligendi mollitia rerum natus? Fuga cumque beatae quasi repudiandae nulla voluptatem non molestias magnam unde doloremque alias numquam delectus quo enim dolore cupiditate, ullam qui dignissimos mollitia tenetur inventore earum, necessitatibus asperiores? Natus, voluptates! Tempore, ipsam eius officiis, rerum rem maxime commodi ex ratione distinctio in praesentium saepe! Unde, ratione quas quisquam maiores maxime sint porro id neque, tenetur similique quasi amet esse. Aperiam reiciendis adipisci vel placeat, officiis at corporis, enim debitis neque dolor itaque labore. Natus hic commodi qui, ipsa nulla mollitia quidem sequi. Tempore tempora consectetur earum voluptate ea, dicta mollitia voluptatum similique consequuntur quas, quaerat ut ad veniam deleniti excepturi commodi?</p>
+									</div>
+									<div class="box">
+										<div class="box__item "></div>
+									</div>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, praesentium at veniam ex ea tempore asperiores quam culpa odio eligendi iusto perspiciatis facere nobis consectetur nemo esse deserunt omnis id aliquid iste repellat facilis! Totam accusamus voluptas aliquid, nemo, eum exercitationem dolores eveniet facilis facere nihil optio veniam, quia numquam perspiciatis quod est sapiente eos culpa. Assumenda voluptatibus delectus, perferendis temporibus dolorum laborum nam distinctio deleniti! Sunt inventore deserunt dicta facere hic quam. Atque iusto omnis eum ex. Quod, aspernatur fuga incidunt perferendis facilis temporibus, magni provident illo animi culpa corrupti magnam eius quibusdam maxime qui accusantium similique numquam, accusamus illum nobis! Officiis, doloremque consequatur molestias ipsum ipsam sit veniam quia. Ullam neque, possimus necessitatibus placeat sed asperiores dolorem harum vitae. Praesentium quod voluptatem odio, quia autem ullam dolor ducimus incidunt tempora assumenda animi quis consectetur quas! Sunt, voluptates a! Animi necessitatibus numquam magnam beatae amet quidem nulla quae reprehenderit alias blanditiis aut facilis minus in provident eveniet exercitationem voluptatum, doloremque eligendi iusto. Nostrum enim neque illo inventore ipsa beatae earum unde saepe voluptas dolore aperiam delectus error officia modi, autem possimus. Distinctio unde assumenda eligendi, odio incidunt eos cum non quisquam laudantium dolor, ipsa qui obcaecati ipsum nisi dolorem quod, nostrum harum dolores maxime veritatis sunt atque dicta dignissimos natus. Ipsa hic, ullam quia non tempore corrupti quae iste neque tempora dolore amet cumque ducimus at quis ad suscipit nesciunt, beatae nostrum libero cum, reiciendis sapiente? Quam perferendis veniam tenetur ab ipsa, magnam labore impedit cupiditate esse quas rerum illum delectus corporis autem quaerat ullam blanditiis accusantium. Quas temporibus nemo, numquam libero dolore corrupti delectus, adipisci voluptatem commodi voluptatibus distinctio eaque mollitia alias! Ut dolorum voluptatum unde ex? Rem maxime sit, unde non accusantium doloribus accusamus similique quia exercitationem suscipit molestiae ut dolorum magnam amet nihil optio. Illum quam repellendus deleniti iusto accusamus. Sequi tempora numquam odio in dolorum facere harum placeat ipsum. Repellat quae itaque soluta aut quam in labore laborum repudiandae dolor illo, eos consequuntur, mollitia unde. Soluta nobis architecto saepe voluptatibus laudantium magnam odio dolorum nam ipsam dignissimos iusto obcaecati iure commodi maxime voluptatem doloremque, maiores officiis laboriosam distinctio incidunt molestias! Rerum soluta cumque labore sequi. Ipsam dicta repellendus deleniti vero esse quod facere ipsum doloremque assumenda, neque, itaque qui aliquid modi unde consequatur accusantium molestias excepturi accusamus repudiandae commodi laborum dolores maxime error nisi? Enim culpa quisquam minus rem numquam? Praesentium optio, asperiores odio placeat ducimus molestiae sequi illum, facere recusandae numquam rerum doloremque unde quos exercitationem! Tenetur atque, facilis, culpa porro quibusdam ullam tempora inventore perspiciatis voluptatibus, excepturi accusamus at nisi omnis nihil facere deleniti! Temporibus nesciunt a laborum vitae quos, accusamus quisquam quidem ipsam architecto delectus adipisci. Nesciunt nemo eaque veniam dolorum repudiandae labore temporibus et obcaecati, qui facilis odit natus quidem! Illum laboriosam facere aliquam modi magnam voluptas accusamus blanditiis, quo perferendis voluptatem libero? Iusto id labore enim quae minima ipsa aliquid dolor non tempore. Pariatur aperiam similique exercitationem, aliquam eum velit, provident amet quia optio magnam fugiat voluptatem, necessitatibus ratione ducimus.</p>
+								</div> 
+							</div>
+						</section>
+					</article>
+				</div>
+			</main>
+
+			<footer class="footer"></footer>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
