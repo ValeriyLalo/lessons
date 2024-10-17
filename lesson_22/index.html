@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 22.(JavaScript. Частина №2)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Урок №22 (Основи JavaScript. Частина №2)
+				</h1>
+			</div>
+			
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<section class="page__block">
+					<h2 class="page__title">Задача №1</h2>
+					<h3 class="page__subtitle"> Що потрапить в консоль?</h3>
+					<p class="page__item">let someVar = 0; <br>
+						++someVar; <br>
+						if (someVar) { <br>
+							console.log(someVar); <br>
+						}</p>
+					<p class="page__text"> <span>Відповідь:</span> унарний оператор "++"(інкремент) додає до змінної 1-цю. (0+1=1). if переводить змінну 
+						в логічний тип "Boolean" = true(1).Умова виконається! В консоль потрапить цифра 1.
+					</p>
+				</section>
+
+				<section class="page__block">
+					<h2 class="page__title">Задача №2</h2>
+					<h3 class="page__subtitle">За допомогою циклу FOR виведіть в консоль 10 рядків:</h3>
+					<p class="page__item">for (let i = 1; i &lt;= 10; ++i) { <br>  console.log(`Пункт № ${i}`) <br> }  </p>
+					
+					<p class="page__text"><span>Відповідь:</span> <br> 
+						Пункт № 1 <br> 
+						Пункт № 2 <br>
+						Пункт № 3 <br>
+						Пункт № 4 <br>
+						Пункт № 5 <br>
+						Пункт № 6 <br>
+						Пункт № 7 <br>
+						Пункт № 8 <br>
+						Пункт № 9 <br>
+						Пункт № 10 <br>
+					</p>
+				</section>
+
+				<section class="page__block">
+					<h2 class="page__title">Задача №3</h2>
+					<h3 class="page__subtitle"> Що потрапить в консоль?</h3>
+					<p class="page__item"> if (2 * 20 &lt;= 10 || 30 / 2 &lt; 5 && 10 &lt;= "10" || 20 === "20") { <br> console.log('000'); <br>} 
+					</p>
+					<p class="page__text"><span>Відповідь:</span> в консоль нічого не потрапить , тому, що умова поверне false (false || false || false). </p>
+				</section>
+
+				<section class="page__block">
+					<h2 class="page__title">Задача №4</h2>
+					<h3 class="page__subtitle"> Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "
+						Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
+						Функція не має повертати NaN, Infinite або помилку </h3>
+					<!-- <p class="page__item"> </p> -->
+
+					<p class="page__text"><span>Рішення:</span> <br>  
+						function calculation(a = 0, b = 0) { <br> 
+							if(a !== 0 || b !== 0) { <br> 
+								a >= 1 <br> 
+								b >= 1 <br> 
+							} <br> 
+							if ( b === 0 ) {<br> 
+								return `Результат ділення:на нуль ділити не можна! `<br> 
+							}<br> 
+							if ( a === 0 ) {<br> 
+								return `Результат ділення:0`<br> 
+							}<br> 
+							if (typeof (a) !== `number` || typeof (b) !== `number`){<br> 
+								return `Результат ділення: дільник не є числом!`<br> 
+							}<br> 
+							let result = a / b <br> 
+							return`Результат ділення: ${result}` <br> 
+						} <br> 
+
+						console.log(calculation(10, 2)) //Результат ділення:5 <br>
+						console.log(calculation(30, 3)) //Результат ділення:10 <br>
+						console.log(calculation(30,0)) //Результат ділення:на нуль ділити не можна! <br>
+						console.log(calculation(0,20)) //Результат ділення:0 <br>
+						console.log(calculation(56, 8)) //Результат ділення:7 <br>
+						console.log(calculation("Коля", 8)) //Результат ділення: дільник не є числом! <br>
+						console.log(calculation(-10, 2)) //Результат ділення:-5
+					 </p>
+				</section>
+				<section class="page__block">
+					<h2 class="page__title">Задача №5</h2>
+					<h3 class="page__subtitle">
+						Створіть масив даних - 5 елементів, один з яких число 10.
+						Обробіть масив за допомогою методу перебору.
+						Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль
+					 </h3>
+					<!-- <p class="page__item"> </p> -->
+					<p class="page__text"> <span>Рішення:</span> <br> 
+						 const array = [5, '80',  "Вася", 10, 'Іштван']<br> 
+
+						array.forEach(element => {<br> 
+							if(element === 10){<br> 
+								console.log('Знайдено число:', element)<br> 
+							} <br> 
+						});
+					</p>
+				</section>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+		</footer>
+		
+	</div>
+	
+	<script src="js/dynamic_adapt.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

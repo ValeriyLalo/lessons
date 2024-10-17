@@ -1,0 +1,151 @@
+@use "sass:math";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500);
+
+// Міксіни
+@import "_mixins.scss";
+
+
+// @import "_icons.scss";
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+
+
+// Налаштування адаптивної сітки ============================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1350;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 15;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+$colorShadow:rgba(128, 128, 128, 0.4);
+$colorBodyGray: #f4f4f5;
+$colorBodyWhite: #ffffff;
+$colorHover: #ff6f61;
+$colorBlack: #000;
+$colorGray:#1e2832;
+$coloGray2:#808080;
+
+
+
+%title {
+	color: $colorBlack;
+	font-weight: 500;
+	text-align: center;
+	@include adaptiveValue ("font-size", 50, 30);
+}
+%marginBottom{
+	@include adaptiveValue ("margin-bottom", 140, 30);
+}
+
+
+
+body{
+	font-family:"Roboto", sans-serif ;
+	color: #ffffff;
+}
+
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	background-color: #1e2832;
+	min-height: 100%;
+	[class*="__container"]{
+		max-width: toRem(1200);
+		padding-inline: toRem(15) ;
+		margin: 0 auto;
+	}
+	& main{
+		flex-grow: 1;
+	}
+
+	
+}
+
+.header {
+	background-color: rgba(44, 44, 44, 0.619);
+	padding-block: toRem(20);
+
+	&__title {
+		color:#ffcfa4;
+		font-weight: 600;
+		font-size: toRem(40);
+		text-align: center;
+		
+	}
+}
+.page {
+
+	padding-block:  toRem(15);
+	
+	&__container{
+	}
+
+	&__block {
+		box-shadow:toRem(2) toRem(2) toRem(10) toRem(0) #616161;
+		background-color: #304253;
+		border: 1px solid #ffffff;
+		margin-bottom: toRem(20);
+		padding: toRem(20) ;
+		border-radius: toRem(20) ;
+	}
+
+	&__title {
+		line-height: 1.5;
+		color:#ffcfa4;
+		font-weight: 500;
+		font-size: toRem(30);
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	&__subtitle {
+		text-align: center;
+		padding-block: toRem(15);
+		color: aqua;
+		font-size: toRem(20);
+		font-style: italic;
+	}
+
+	&__list {
+		margin-bottom:  toRem(10);
+		
+	}
+
+	&__item {
+		font-size: toRem(18);
+		line-height: 1.5;
+		color: #ffffff;
+		margin-bottom: toRem(5);
+	}
+
+	&__text {
+		line-height: 1.2;
+		padding-block:  toRem(10);
+		color:#ffcfa4;
+		span{
+			color: aqua;
+			margin-inline-end:toRem(5);
+		}
+	}
+}
+.footer {
+	background-color:#ffcfa4 ;
+	block-size:toRem(20) ;
+}
+
+
