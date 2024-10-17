@@ -40,12 +40,12 @@
 									<p class="solution">
 										<span class="color-blue">document</span>.<span class="color-yellow">addEventListener</span><span class="color-yellow2">(</span><span class="color-yellow-gray">"click"</span >, <span class="color-yellow">documentAction</span><span class="color-yellow2">)</span> <br>
 										<span class="color-blue2">function</span><span  class="color-yellow"> documentAction</span><span class="color-yellow2">(</span><span class="color-blue">e</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
-										<span class="colo-gray">|--</span> <span class="color-blue2">const</span> <span class="color-blue3">elementTarget</span> = <span class="color-blue">e</span>.<span class="color-blue">target</span><br>
-										<span class="colo-gray">|--</span> <span class="color-pink">if</span> <span class="color-pink2">(</span><span class="color-blue3">elementTarget</span>.<span class="color-blue">document</span>.<span class="color-yellow">closest</span><span class="color-blue2">(</span><span class="color-yellow-gray">'.item'</span><span class="color-blue2">)</span><span class="color-pink2">)</span> <span class="color-pink2">{</span><br>
-											<span class="colo-gray">|-- --</span> <span class="color-blue2">const</span> <span class="color-blue3">currentElement</span> = <span class="color-blue3">elementTarget</span>.<span class="color-yellow">closest</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'.item'</span><span class="color-yellow2">)</span><br>
-											<span class="colo-gray">|-- --</span> <span class="color-blue3">currentElement</span>.<span class="color-blue">classList</span>.<span class="color-yellow">toggle</span><span class="color-blue2">(</span><span class="color-yellow-gray">'active'</span><span class="color-blue2">)</span><br>
-											<span class="colo-gray">|--</span> <span class="color-pink2">}</span><br>
-											<span class="colo-gray">|--</span> <span class="color-blue">e</span>.<span class="color-blue">preventDefault</span><span class="color-pink2">()</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">const</span> <span class="color-blue3">elementTarget</span> = <span class="color-blue">e</span>.<span class="color-blue">target</span><br>
+										<span class="color-gray">|--</span> <span class="color-pink">if</span> <span class="color-pink2">(</span><span class="color-blue3">elementTarget</span>.<span class="color-blue">document</span>.<span class="color-yellow">closest</span><span class="color-blue2">(</span><span class="color-yellow-gray">'.item'</span><span class="color-blue2">)</span><span class="color-pink2">)</span> <span class="color-pink2">{</span><br>
+											<span class="color-gray">|-- --</span> <span class="color-blue2">const</span> <span class="color-blue3">currentElement</span> = <span class="color-blue3">elementTarget</span>.<span class="color-yellow">closest</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'.item'</span><span class="color-yellow2">)</span><br>
+											<span class="color-gray">|-- --</span> <span class="color-blue3">currentElement</span>.<span class="color-blue">classList</span>.<span class="color-yellow">toggle</span><span class="color-blue2">(</span><span class="color-yellow-gray">'active'</span><span class="color-blue2">)</span><br>
+											<span class="color-gray">|--</span> <span class="color-pink2">}</span><br>
+											<span class="color-gray">|--</span> <span class="color-blue">e</span>.<span class="color-blue">preventDefault</span><span class="color-pink2">()</span><br>
 										<span class="color-yellow2">}</span>
 									</p>
 								</div>
@@ -73,8 +73,8 @@
 										
 										<span class="color-yellow2">} </span><br>
 										<span class="color-yellow2">body.loaded {</span> <br>
-											<span class="colo-gray">|--</span> <span class="color-blue">opacity</span>: <span class="color-green">1</span>; <br>
-											<span class="colo-gray">|--</span> <span class="color-blue">transition</span>:  <span class="color-blue">opacity</span> <span class="color-green">1s</span>; <br>
+											<span class="color-gray">|--</span> <span class="color-blue">opacity</span>: <span class="color-green">1</span>; <br>
+											<span class="color-gray">|--</span> <span class="color-blue">transition</span>:  <span class="color-blue">opacity</span> <span class="color-green">1s</span>; <br>
 										<span class="color-yellow2">} </span>
 									</p>
 
@@ -83,7 +83,7 @@
 									<p class="solution">
 										<span class="color-blue">window</span>.<span class="color-yellow">addEventListener</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'load'</span>, <span class="color-yellow">bodyLoaded</span><span class="color-yellow2">)</span>;<br>
 										<span class="color-blue2">function</span> <span class="color-yellow">bodyLoaded</span><span class="color-yellow2">(</span><span class="color-blue2">e</span><span class="color-yellow2">) </span><span class="color-yellow2">{</span><br>
-										<span class="colo-gray">|--</span> <span class="color-blue">document</span>.<span class="color-blue">body</span>.<span class="color-blue2">classList</span>.<span class="color-yellow">add</span><span class="color-pink2">(</span><span class="color-yellow-gray">'loaded'</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue">document</span>.<span class="color-blue">body</span>.<span class="color-blue2">classList</span>.<span class="color-yellow">add</span><span class="color-pink2">(</span><span class="color-yellow-gray">'loaded'</span><span class="color-pink2">)</span><br>
 										<span class="color-yellow2">}</span>
 									</p>
 								</div>
@@ -98,7 +98,7 @@
 								</div>
 								<p class="task__text">
 									Дано в html: header main footer.
-									Пи наведенні курсору на header змінювати колір фону у footer.
+									Пpи наведенні курсору на header змінювати колір фону у footer.
 									Коли курсор йде з header повертати початковий фон для footer.
 								</p>
 								<div class="task__solution">
@@ -107,14 +107,14 @@
 										<span class="color-blue2">const </span><span class="color-blue3">footer</span> = <span class="color-blue">document</span>.<span class="color-yellow">querySelector</span><span class="color-yellow2">(</span><span class="color-yellow-gray">'footer'</span><span class="color-yellow2">)</span><br>
 										
 										<span class="color-pink">if </span><span class="color-yellow2">(</span><span class="color-blue3">footer</span> && <span class=" color-blue3">header</span><span class="color-yellow2">)</span> <span class="color-yellow2">{</span><br>
-										<span class="colo-gray">|--</span> <span class="color-blue3">header</span>.<span class="color-yellow">addEventListener</span><span class="color-pink2">(</span><span class="color-yellow-gray">'mouseover'</span>, <span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class=" color-blue2">{</span><br>
-										<span class="colo-gray">|-- -- </span><span class="color-blue3"> footer</span>.<span class="color-blue3">style</span>.<span class="color-blue">background</span> = <span class="color-yellow-gray">'radial-gradient(circle, rgba(251,231,63,1) 0%, rgba(89,231,173,1) 14%,  <br>
-										<span class="colo-gray">|-- -- </span>rgba(185,86,202,1) 34%, rgba(185,83,83,1) 46%, rgba(80,175,174,1) 59%, <br>
-										<span class="colo-gray">|-- -- </span>rgba(104,76,203,1) 74%, rgba(70,252,159,1) 100%)'</span><br>
-										<span class="colo-gray">|--</span> <span class="color-blue2">}</span><span class="color-pink2">)</span><br>
-										<span class="colo-gray">|--</span> <span class="color-blue3">header</span>.<span class="color-yellow">addEventListener</span><span class="color-pink2">(</span><span class="color-yellow-gray">'mouseleave'</span>, <span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class="color-blue2">{</span><br>
-										<span class="colo-gray">|-- --</span> <span class="color-blue3">footer</span>.<span class="color-blue3">style</span>.<span class="color-blue">background</span> = <span class="color-yellow-gray">''</span><br>
-										<span class="colo-gray">|--</span> <span class="color-blue2">}</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue3">header</span>.<span class="color-yellow">addEventListener</span><span class="color-pink2">(</span><span class="color-yellow-gray">'mouseover'</span>, <span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class=" color-blue2">{</span><br>
+										<span class="color-gray">|-- -- </span><span class="color-blue3"> footer</span>.<span class="color-blue3">style</span>.<span class="color-blue">background</span> = <span class="color-yellow-gray">'radial-gradient(circle, rgba(251,231,63,1) 0%, rgba(89,231,173,1) 14%,  <br>
+										<span class="color-gray">|-- -- </span>rgba(185,86,202,1) 34%, rgba(185,83,83,1) 46%, rgba(80,175,174,1) 59%, <br>
+										<span class="color-gray">|-- -- </span>rgba(104,76,203,1) 74%, rgba(70,252,159,1) 100%)'</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">}</span><span class="color-pink2">)</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue3">header</span>.<span class="color-yellow">addEventListener</span><span class="color-pink2">(</span><span class="color-yellow-gray">'mouseleave'</span>, <span class="color-blue2">()</span> <span class="color-blue3">=></span> <span class="color-blue2">{</span><br>
+										<span class="color-gray">|-- --</span> <span class="color-blue3">footer</span>.<span class="color-blue3">style</span>.<span class="color-blue">background</span> = <span class="color-yellow-gray">''</span><br>
+										<span class="color-gray">|--</span> <span class="color-blue2">}</span><span class="color-pink2">)</span><br>
 										<span class="color-yellow2">}</span>
 									</p>
 
