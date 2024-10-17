@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="zxx">
 
 <head>
 	<meta charset="UTF-8">
@@ -20,7 +20,7 @@
 			<div class="page__container">
 				<section class="page__block">
 					<h2 class="page__title">Задача №1</h2>
-					<h3 class="page__subtitle">  Отримати в константу елемент <span>&lt</span>body<span>></span> </h3>
+					<h3 class="page__subtitle">  Отримати в константу елемент <span>&lt;</span>body<span>></span> </h3>
 					<!-- <p class="page__item"></p> -->
 					<p class="page__text"> <span>Рішення:</span><br>
 						const bodyElement = document.body<br>
@@ -37,7 +37,7 @@
 					<p class="page__text"><span>Рішення:</span> <br> 
 						function addListToBody( number = 1) { <br> 
 							const list = document.createElement('ul') <br> 
-							for (let index = 0; index &lt number; index++) { <br> 
+							for (let index = 0; index &lt; number; index++) { <br> 
 								const item = document.createElement('li') ; <br> 
 								item.textContent = `Привіт!` <br> 
 								list.appendChild(item) <br> 
@@ -50,7 +50,7 @@
 
 				<section class="page__block">
 					<h2 class="page__title">Задача №3</h2>
-					<h3 class="page__subtitle">Додати до елементу <span>&lt</span>body<span>></span> body класс loaded.
+					<h3 class="page__subtitle">Додати до елементу <span>&lt;</span>body<span>></span> body класс loaded.
 						Потім перевірити чи є клас loaded у елемента body
 						 і, якщо є, додати стиль кольору тесту зелений.</h3>
 
@@ -185,7 +185,7 @@
 						pageLink.setAttribute('data', '100') <br> 
 						const dataValue = parseFloat(pageLink.getAttribute('data'))<br> 
 						console.log(dataValue);<br> 
-						if(dataValue &lt 200){<br> 
+						if(dataValue &lt; 200){<br> 
 							pageLink.style.color = 'red'<br> 
 						}
 					</p>
