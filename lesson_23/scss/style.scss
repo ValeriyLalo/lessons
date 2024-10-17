@@ -171,6 +171,7 @@ body{
 			margin-bottom: toRem(30);
 		}
 		&__buttons{
+			text-align: center;
 		}
 
 		&__button--right{
@@ -184,7 +185,10 @@ body{
 		}
 
 		&__button{
-			border: 1px solid #ffffff;
+			// text-align: center;
+			margin: 0 auto;
+			margin:toRem(5) ;
+			border: toRem(1) solid #ffffff;
 			margin-inline-end: toRem(20);
 			text-align: center;
 			max-width: toRem(300) ;
