@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" >
+	<title>Lesson 21.(JavaScript. Частина №1)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Урок №21 (Основи JavaScript. Частина №1)
+				</h1>
+			</div>
+			
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<section class="page__block">
+					<h2 class="page__title">Задача №1</h2>
+					<h3 class="page__subtitle">Яка назва змінної вірна?</h3>
+					<ol class="page__list">
+						<li class="page__item"> 
+							1. user-name
+						</li>
+						<li class="page__item">
+							2. let UserName
+						</li>
+						<li class="page__item">
+							3. let userName
+						</li>
+					</ol>
+
+					<p class="page__text"> <span>Відповідь:</span>  №3 -- let userName, тому що запись має бути в стилі lowerCamelCase!</p>
+				</section>
+
+				<section class="page__block">
+					<h2 class="page__title">Задача №2</h2>
+					<h3 class="page__subtitle"> Чи буде помилка при виконанні наступної програми?</h3>
+					<p class="page__item">const userName = 20 </p>
+					<p class="page__item">userName = "Іштван" </p>
+					<p class="page__text"><span>Відповідь:</span>так, буде помилка. Значення константи змінювати неможна!</p>
+				</section>
+
+				<section class="page__block">
+					<h2 class="page__title">Задача №3</h2>
+					<h3 class="page__subtitle"> Що потрапить в консоль?</h3>
+					<p class="page__item">let numOne = 20 </p>
+					<p class="page__item">let numTwo = "20" </p>
+					<br>
+					<p class="page__item">let numSumm = numOne + numTwo </p>
+					<p class="page__item">console.log(numSumm) </p>
+					<p class="page__text"><span>Відповідь:</span> в консоль потрапить рядок "2020". Так як numTwo = "20" - це рядок ,
+						 а оператор "+" виконує додавання  лише тоді, коли обидва операнди є числом.</p>
+				</section>
+
+			</div>
+		</main>
+
+		<footer class="footer">
+
+
+		</footer>
+		
+	</div>
+	
+	<script src="js/dynamic_adapt.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
