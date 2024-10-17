@@ -32,7 +32,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 // ==========================================================
 
 
-$coloGray:#3f3f3e;
+$colorGray:#3f3f3e;
 $colorBlue:#9cdcfe;
 $colorBlue2:#378ed6;
 $colorBlue3:#4fc1ff;
@@ -50,8 +50,8 @@ $colorGreen2: #44c9b0;
 .color-green2{
 	color:$colorGreen2;
 }
-.colo-gray{
-	color: $coloGray;
+.color-gray{
+	color: $colorGray;
 }
 .color-blue {
 	color: $colorBlue;
@@ -222,7 +222,7 @@ body.loaded{
 	}
 
 	&__text {
-		
+		padding: toRem(20);
 		font-size: toRem(18) ;
 		color: #f4f4f5;
 		line-height: 1.2;
