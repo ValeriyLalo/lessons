@@ -1,0 +1,213 @@
+@use "sass:math";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500);
+
+// Міксіни
+@import "_mixins.scss";
+
+
+// @import "_icons.scss";
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+
+
+// Налаштування адаптивної сітки ============================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1350;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 15;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+$colorShadow:rgba(128, 128, 128, 0.4);
+$colorBodyGray: #f4f4f5;
+$colorBodyWhite: #ffffff;
+$colorHover: #ff6f61;
+$colorBlack: #000;
+$colorGray:#1e2832;
+$coloGray2:#808080;
+
+
+
+// %title {
+// 	color: $colorBlack;
+// 	font-weight: 500;
+// 	text-align: center;
+// 	@include adaptiveValue ("font-size", 50, 30);
+// }
+// %marginBottom{
+// 	@include adaptiveValue ("margin-bottom", 140, 30);
+// }
+
+html{
+	scroll-behavior: smooth ;
+}
+
+body{
+
+	font-family:"Roboto", sans-serif ;
+	color: #c6c6c6;
+}
+
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	[class*="__container"]{
+		max-width: toRem(1200);
+		padding-inline: toRem(15) ;
+		margin: 0 auto;
+	}
+	& main{
+		flex-grow: 1;
+	}
+
+	
+}
+
+.header {
+	background-color: #1c262f;
+	padding-block: toRem(20);
+	&__container{
+	}
+	&__title {
+		color:#d7d7d7;
+		font-weight: 600;
+		font-size: toRem(40);
+		text-align: center;
+	}
+}
+.page {
+
+	padding-block:  toRem(15);
+	
+	&__container{
+
+
+	}
+
+	&__block {
+		
+		box-shadow:toRem(2) toRem(2) toRem(10) toRem(0) #616161;
+		background-color: #304253;
+		border: 1px solid #ffffff;
+		margin-bottom: toRem(20);
+		padding: toRem(20) ;
+		border-radius: toRem(20) ;
+	}
+
+	&__title {
+		line-height: 1.5;
+		color:#ffcfa4;
+		font-weight: 500;
+		font-size: toRem(30);
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	&__subtitle {
+		text-align: center;
+		padding-block: toRem(15);
+		color: aqua;
+		font-size: toRem(20);
+		font-style: italic;
+	}
+
+	&__list {
+		margin-bottom:  toRem(10);
+		
+	}
+
+	&__item {
+		font-size: toRem(18);
+		line-height: 1.5;
+		color: #ffffff;
+		margin-bottom: toRem(5);
+	}
+
+	&__text {
+		line-height: 1.2;
+		padding-block:  toRem(10);
+		color:#ffcfa4;
+		span{
+			color: aqua;
+			margin-inline-end:toRem(5);
+		}
+	}
+
+		&__scroll {
+			border-radius: toRem(8) ;
+			border: 2px solid #2f333b;
+			box-shadow:inset toRem(0) toRem(0) toRem(10) toRem(0) #b7b7b7 ;
+			padding: toRem(10);
+			background-color: #41415d;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			overflow: auto;
+			max-width: toRem(800);
+			height: toRem(200);
+			margin: 0 auto;
+			
+		}
+
+		&__scroll-text {
+			
+			color: #ffffff;
+			max-width: toRem(500) ;
+			margin-bottom: toRem(30);
+		}
+		&__buttons{
+		}
+
+		&__button--right{
+			color: #00ffd5;
+			background-color: #414a56;
+
+		}
+		&__button--left{
+			color: #fff1b5;
+			background-color: #ff6f61;
+		}
+
+		&__button{
+			border: 1px solid #ffffff;
+			margin-inline-end: toRem(20);
+			text-align: center;
+			max-width: toRem(300) ;
+			border-radius: toRem(8) ;
+			display: inline-block;
+			padding-inline: toRem(30);
+			padding-block: toRem(10);
+		}
+		&__link{
+
+			display:inline-block;
+			padding:toRem(5) ;
+			// text-align: center;
+			background-color: #f1f1f1;
+			font-size: toRem(18) ;
+			font-weight: 500;
+		}
+
+}
+.footer {
+	background-color: #1c262f;
+	block-size:toRem(20) ;
+}
+
+
+
